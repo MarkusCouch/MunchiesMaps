@@ -248,17 +248,21 @@
 
     /* Cluster icon */
     .cluster-badge {
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-weight: 750;
-      border: 1px solid rgba(0,0,0,0.25);
-      background: rgba(255,255,255,0.92);
-      box-shadow: 0 1px 6px rgba(0,0,0,0.15);
-      min-width: 34px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-weight: 800;
+      font-size: 13px;
+      border: 2px solid rgba(255,255,255,0.7);
+      background: #4b5563;
+      color: #f8fafc;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.25);
       text-align: center;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      justify-content: center;
+      gap: 4px;
+      box-sizing: border-box;
     }
     .cluster-badge svg { width: 14px; height: 14px; display:block; }
 
@@ -496,6 +500,7 @@
 
     let aggregatedLayer = null;
     let applyFiltersTimer = null;
+    let filterRunId = 0;
 
     function comboKey(bundeslandId, categoryId) {
       return `${bundeslandId}__${categoryId}`;
@@ -974,13 +979,13 @@
 
           if (it.properties && it.properties.cluster) {
             const count = it.properties.point_count;
-            const glyph = this.options.clusterGlyphSvg || '';
+            const glyph = this.options.clusterGlyphSvg ? `<span class="cluster-glyph">${this.options.clusterGlyphSvg}</span>` : '';
             const marker = L.marker(ll, {
               icon: L.divIcon({
                 className: '',
-                html: `<div class="cluster-badge">${glyph}${count}</div>`,
-                iconSize: [44, 34],
-                iconAnchor: [22, 17]
+                html: `<div class="cluster-badge">${glyph}<span class="cluster-count">${count}</span></div>`,
+                iconSize: [40, 40],
+                iconAnchor: [20, 20]
               })
             });
             marker.on('click', () => {
@@ -1002,7 +1007,7 @@
     aggregatedLayer = new SuperclusterLayer(aggregatedGeojson, {
       minPoints: 10,
       radius: 60,
-      clusterGlyphSvg: clusterGlyphForCategory(null)
+      clusterGlyphSvg: ''
     });
     aggregatedLayer.addTo(map);
 
@@ -1062,6 +1067,7 @@
     }
 
     async function applyFilters() {
+      const runId = ++filterRunId;
       const combos = [];
       filterState.bundeslaender.forEach((bundeslandId) => {
         filterState.kategorien.forEach((categoryId) => {
@@ -1070,6 +1076,8 @@
       });
 
       await Promise.all(combos.map(({ bundeslandId, categoryId }) => ensureDataset(bundeslandId, categoryId)));
+
+      if (runId !== filterRunId) return;
 
       if (aggregatedLayer) {
         const mergedFeatures = buildVisibleFeatures(combos);
