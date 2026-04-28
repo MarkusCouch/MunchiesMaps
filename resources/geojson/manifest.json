@@ -5554,7 +5554,7 @@
       "bbox": [
         42.4260708,
         39.1582337,
-        44.1356146,
+        44.2772253,
         39.8244573
       ]
     },
@@ -5608,8 +5608,8 @@
       "region": "tr-08",
       "country_label": "Türkei",
       "bbox": [
-        41.1755534,
-        40.8033383,
+        41.1609914,
+        40.7986678,
         42.5115668,
         41.5192709
       ]
@@ -5734,8 +5734,8 @@
       "region": "tr-17",
       "country_label": "Türkei",
       "bbox": [
-        25.6779935,
-        39.4694463,
+        25.6768821,
+        39.4594445,
         27.4993925,
         40.7371916
       ]
@@ -5762,8 +5762,8 @@
       "region": "tr-19",
       "country_label": "Türkei",
       "bbox": [
-        34.0247449,
-        40.0113775,
+        34.021333,
+        39.9900253,
         35.3038337,
         41.1375257
       ]
@@ -5846,9 +5846,9 @@
       "region": "tr-25",
       "country_label": "Türkei",
       "bbox": [
-        40.6082202,
+        40.5856466,
         39.3066006,
-        42.3451867,
+        42.4048205,
         40.8259065
       ]
     },
@@ -5930,7 +5930,7 @@
       "region": "tr-31",
       "country_label": "Türkei",
       "bbox": [
-        35.8754154,
+        35.8315319,
         35.8999502,
         36.5895888,
         37.0224412
@@ -5959,9 +5959,9 @@
       "country_label": "Türkei",
       "bbox": [
         32.563959,
-        36.0414025,
+        36.0315598,
         35.1133228,
-        37.2852625
+        37.3459859
       ]
     },
     {
@@ -6028,7 +6028,7 @@
       "region": "tr-38",
       "country_label": "Türkei",
       "bbox": [
-        35.0004432,
+        34.972549,
         37.7009673,
         36.7869023,
         39.1946317
@@ -6059,7 +6059,7 @@
         33.5608487,
         38.8789149,
         34.5838641,
-        39.6432645
+        39.7039281
       ]
     },
     {
@@ -6128,7 +6128,7 @@
       "bbox": [
         27.3023118,
         38.1526197,
-        28.8999695,
+        28.9453835,
         39.292651
       ]
     },
@@ -6168,7 +6168,7 @@
       "region": "tr-48",
       "country_label": "Türkei",
       "bbox": [
-        27.2354803,
+        27.2330904,
         36.2942157,
         29.7361849,
         37.544542
@@ -6212,7 +6212,7 @@
       "bbox": [
         34.2917414,
         37.4217958,
-        35.177921,
+        35.1788137,
         38.3521708
       ]
     },
@@ -6227,7 +6227,7 @@
         36.9925547,
         40.4458927,
         38.0719508,
-        41.1452844
+        41.1459921
       ]
     },
     {
@@ -6240,7 +6240,7 @@
       "bbox": [
         40.3311431,
         40.6456,
-        41.2455478,
+        41.2879305,
         41.3225558
       ]
     },
@@ -6267,7 +6267,7 @@
       "country_label": "Türkei",
       "bbox": [
         35.1690592,
-        40.9174626,
+        40.8772766,
         37.1473596,
         41.6699039
       ]
@@ -6577,7 +6577,7 @@
         28.7898687,
         40.4664823,
         29.5534083,
-        40.6968495
+        40.7276001
       ]
     },
     {
@@ -6591,7 +6591,7 @@
         32.3193631,
         40.8585565,
         32.9570264,
-        41.4473823
+        41.537202
       ]
     },
     {
@@ -6803,6 +6803,150 @@
         -5.4389392,
         55.2931134
       ]
+    },
+    {
+      "id": "de-bw",
+      "label": "Baden-Württemberg",
+      "path": "germany/de-bw",
+      "country": "germany",
+      "region": "de-bw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-by",
+      "label": "Bayern",
+      "path": "germany/de-by",
+      "country": "germany",
+      "region": "de-by",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-be",
+      "label": "Berlin",
+      "path": "germany/de-be",
+      "country": "germany",
+      "region": "de-be",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-bb",
+      "label": "Brandenburg",
+      "path": "germany/de-bb",
+      "country": "germany",
+      "region": "de-bb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hb",
+      "label": "Bremen",
+      "path": "germany/de-hb",
+      "country": "germany",
+      "region": "de-hb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hh",
+      "label": "Hamburg",
+      "path": "germany/de-hh",
+      "country": "germany",
+      "region": "de-hh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-he",
+      "label": "Hessen",
+      "path": "germany/de-he",
+      "country": "germany",
+      "region": "de-he",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-mv",
+      "label": "Mecklenburg-Vorpommern",
+      "path": "germany/de-mv",
+      "country": "germany",
+      "region": "de-mv",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-ni",
+      "label": "Niedersachsen",
+      "path": "germany/de-ni",
+      "country": "germany",
+      "region": "de-ni",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-nw",
+      "label": "Nordrhein-Westfalen",
+      "path": "germany/de-nw",
+      "country": "germany",
+      "region": "de-nw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-rp",
+      "label": "Rheinland-Pfalz",
+      "path": "germany/de-rp",
+      "country": "germany",
+      "region": "de-rp",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sl",
+      "label": "Saarland",
+      "path": "germany/de-sl",
+      "country": "germany",
+      "region": "de-sl",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sn",
+      "label": "Sachsen",
+      "path": "germany/de-sn",
+      "country": "germany",
+      "region": "de-sn",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-st",
+      "label": "Sachsen-Anhalt",
+      "path": "germany/de-st",
+      "country": "germany",
+      "region": "de-st",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sh",
+      "label": "Schleswig-Holstein",
+      "path": "germany/de-sh",
+      "country": "germany",
+      "region": "de-sh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-th",
+      "label": "Thüringen",
+      "path": "germany/de-th",
+      "country": "germany",
+      "region": "de-th",
+      "country_label": "Germany",
+      "bbox": null
     },
     {
       "id": "gr-a",
@@ -12556,7 +12700,7 @@
       "bbox": [
         42.4260708,
         39.1582337,
-        44.1356146,
+        44.2772253,
         39.8244573
       ]
     },
@@ -12610,8 +12754,8 @@
       "region": "tr-08",
       "country_label": "Türkei",
       "bbox": [
-        41.1755534,
-        40.8033383,
+        41.1609914,
+        40.7986678,
         42.5115668,
         41.5192709
       ]
@@ -12736,8 +12880,8 @@
       "region": "tr-17",
       "country_label": "Türkei",
       "bbox": [
-        25.6779935,
-        39.4694463,
+        25.6768821,
+        39.4594445,
         27.4993925,
         40.7371916
       ]
@@ -12764,8 +12908,8 @@
       "region": "tr-19",
       "country_label": "Türkei",
       "bbox": [
-        34.0247449,
-        40.0113775,
+        34.021333,
+        39.9900253,
         35.3038337,
         41.1375257
       ]
@@ -12848,9 +12992,9 @@
       "region": "tr-25",
       "country_label": "Türkei",
       "bbox": [
-        40.6082202,
+        40.5856466,
         39.3066006,
-        42.3451867,
+        42.4048205,
         40.8259065
       ]
     },
@@ -12932,7 +13076,7 @@
       "region": "tr-31",
       "country_label": "Türkei",
       "bbox": [
-        35.8754154,
+        35.8315319,
         35.8999502,
         36.5895888,
         37.0224412
@@ -12961,9 +13105,9 @@
       "country_label": "Türkei",
       "bbox": [
         32.563959,
-        36.0414025,
+        36.0315598,
         35.1133228,
-        37.2852625
+        37.3459859
       ]
     },
     {
@@ -13030,7 +13174,7 @@
       "region": "tr-38",
       "country_label": "Türkei",
       "bbox": [
-        35.0004432,
+        34.972549,
         37.7009673,
         36.7869023,
         39.1946317
@@ -13061,7 +13205,7 @@
         33.5608487,
         38.8789149,
         34.5838641,
-        39.6432645
+        39.7039281
       ]
     },
     {
@@ -13130,7 +13274,7 @@
       "bbox": [
         27.3023118,
         38.1526197,
-        28.8999695,
+        28.9453835,
         39.292651
       ]
     },
@@ -13170,7 +13314,7 @@
       "region": "tr-48",
       "country_label": "Türkei",
       "bbox": [
-        27.2354803,
+        27.2330904,
         36.2942157,
         29.7361849,
         37.544542
@@ -13214,7 +13358,7 @@
       "bbox": [
         34.2917414,
         37.4217958,
-        35.177921,
+        35.1788137,
         38.3521708
       ]
     },
@@ -13229,7 +13373,7 @@
         36.9925547,
         40.4458927,
         38.0719508,
-        41.1452844
+        41.1459921
       ]
     },
     {
@@ -13242,7 +13386,7 @@
       "bbox": [
         40.3311431,
         40.6456,
-        41.2455478,
+        41.2879305,
         41.3225558
       ]
     },
@@ -13269,7 +13413,7 @@
       "country_label": "Türkei",
       "bbox": [
         35.1690592,
-        40.9174626,
+        40.8772766,
         37.1473596,
         41.6699039
       ]
@@ -13579,7 +13723,7 @@
         28.7898687,
         40.4664823,
         29.5534083,
-        40.6968495
+        40.7276001
       ]
     },
     {
@@ -13593,7 +13737,7 @@
         32.3193631,
         40.8585565,
         32.9570264,
-        41.4473823
+        41.537202
       ]
     },
     {
@@ -13805,6 +13949,150 @@
         -5.4389392,
         55.2931134
       ]
+    },
+    {
+      "id": "de-bw",
+      "label": "Baden-Württemberg",
+      "path": "germany/de-bw",
+      "country": "germany",
+      "region": "de-bw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-by",
+      "label": "Bayern",
+      "path": "germany/de-by",
+      "country": "germany",
+      "region": "de-by",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-be",
+      "label": "Berlin",
+      "path": "germany/de-be",
+      "country": "germany",
+      "region": "de-be",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-bb",
+      "label": "Brandenburg",
+      "path": "germany/de-bb",
+      "country": "germany",
+      "region": "de-bb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hb",
+      "label": "Bremen",
+      "path": "germany/de-hb",
+      "country": "germany",
+      "region": "de-hb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hh",
+      "label": "Hamburg",
+      "path": "germany/de-hh",
+      "country": "germany",
+      "region": "de-hh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-he",
+      "label": "Hessen",
+      "path": "germany/de-he",
+      "country": "germany",
+      "region": "de-he",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-mv",
+      "label": "Mecklenburg-Vorpommern",
+      "path": "germany/de-mv",
+      "country": "germany",
+      "region": "de-mv",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-ni",
+      "label": "Niedersachsen",
+      "path": "germany/de-ni",
+      "country": "germany",
+      "region": "de-ni",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-nw",
+      "label": "Nordrhein-Westfalen",
+      "path": "germany/de-nw",
+      "country": "germany",
+      "region": "de-nw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-rp",
+      "label": "Rheinland-Pfalz",
+      "path": "germany/de-rp",
+      "country": "germany",
+      "region": "de-rp",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sl",
+      "label": "Saarland",
+      "path": "germany/de-sl",
+      "country": "germany",
+      "region": "de-sl",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sn",
+      "label": "Sachsen",
+      "path": "germany/de-sn",
+      "country": "germany",
+      "region": "de-sn",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-st",
+      "label": "Sachsen-Anhalt",
+      "path": "germany/de-st",
+      "country": "germany",
+      "region": "de-st",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sh",
+      "label": "Schleswig-Holstein",
+      "path": "germany/de-sh",
+      "country": "germany",
+      "region": "de-sh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-th",
+      "label": "Thüringen",
+      "path": "germany/de-th",
+      "country": "germany",
+      "region": "de-th",
+      "country_label": "Germany",
+      "bbox": null
     },
     {
       "id": "gr-a",
