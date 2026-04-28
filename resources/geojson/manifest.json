@@ -1130,7 +1130,7 @@
       "bbox": [
         17.8951725,
         45.2261928,
-        18.9944334,
+        19.0666047,
         45.8884019
       ]
     },
@@ -1156,7 +1156,7 @@
       "region": "brodsko-posavska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        17.2004214,
+        17.1839235,
         45.0750172,
         18.4848412,
         45.3677139
@@ -1172,8 +1172,8 @@
       "bbox": [
         17.2005643,
         45.4833592,
-        17.9520468,
-        45.9677281
+        17.9648894,
+        45.9729688
       ]
     },
     {
@@ -1215,7 +1215,7 @@
         16.5322322,
         45.482268,
         17.4325749,
-        46.0227249
+        46.0837674
       ]
     },
     {
@@ -1226,7 +1226,7 @@
       "region": "medimurska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        16.2616496,
+        16.2588453,
         46.3110341,
         16.813626,
         46.5312775
@@ -1242,7 +1242,7 @@
       "bbox": [
         16.3902918,
         45.9341585,
-        17.2309306,
+        17.2484668,
         46.2982852
       ]
     },
@@ -1268,9 +1268,9 @@
       "region": "krapinsko-zagorska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        15.6675756,
-        45.9250857,
-        16.2174007,
+        15.6158236,
+        45.9022563,
+        16.2343458,
         46.2664233
       ]
     },
@@ -1285,7 +1285,7 @@
         15.8032955,
         45.6381983,
         16.1928079,
-        45.9441409
+        45.9569042
       ]
     },
     {
@@ -1352,9 +1352,9 @@
       "region": "licko-senjska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        14.7367765,
+        14.7340735,
         44.3176753,
-        15.9639412,
+        15.9665763,
         45.068715
       ]
     },
@@ -1381,7 +1381,7 @@
       "country_label": "Croatia",
       "bbox": [
         15.2210824,
-        43.4951435,
+        43.4932362,
         16.5082585,
         44.1701605
       ]
@@ -1408,7 +1408,7 @@
       "region": "dubrovacko-neretvanska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        16.7106355,
+        16.4902576,
         42.4072443,
         18.5099931,
         43.1565062
@@ -6803,6 +6803,150 @@
         -5.4389392,
         55.2931134
       ]
+    },
+    {
+      "id": "de-bw",
+      "label": "Baden-Württemberg",
+      "path": "germany/de-bw",
+      "country": "germany",
+      "region": "de-bw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-by",
+      "label": "Bayern",
+      "path": "germany/de-by",
+      "country": "germany",
+      "region": "de-by",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-be",
+      "label": "Berlin",
+      "path": "germany/de-be",
+      "country": "germany",
+      "region": "de-be",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-bb",
+      "label": "Brandenburg",
+      "path": "germany/de-bb",
+      "country": "germany",
+      "region": "de-bb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hb",
+      "label": "Bremen",
+      "path": "germany/de-hb",
+      "country": "germany",
+      "region": "de-hb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hh",
+      "label": "Hamburg",
+      "path": "germany/de-hh",
+      "country": "germany",
+      "region": "de-hh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-he",
+      "label": "Hessen",
+      "path": "germany/de-he",
+      "country": "germany",
+      "region": "de-he",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-mv",
+      "label": "Mecklenburg-Vorpommern",
+      "path": "germany/de-mv",
+      "country": "germany",
+      "region": "de-mv",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-ni",
+      "label": "Niedersachsen",
+      "path": "germany/de-ni",
+      "country": "germany",
+      "region": "de-ni",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-nw",
+      "label": "Nordrhein-Westfalen",
+      "path": "germany/de-nw",
+      "country": "germany",
+      "region": "de-nw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-rp",
+      "label": "Rheinland-Pfalz",
+      "path": "germany/de-rp",
+      "country": "germany",
+      "region": "de-rp",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sl",
+      "label": "Saarland",
+      "path": "germany/de-sl",
+      "country": "germany",
+      "region": "de-sl",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sn",
+      "label": "Sachsen",
+      "path": "germany/de-sn",
+      "country": "germany",
+      "region": "de-sn",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-st",
+      "label": "Sachsen-Anhalt",
+      "path": "germany/de-st",
+      "country": "germany",
+      "region": "de-st",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sh",
+      "label": "Schleswig-Holstein",
+      "path": "germany/de-sh",
+      "country": "germany",
+      "region": "de-sh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-th",
+      "label": "Thüringen",
+      "path": "germany/de-th",
+      "country": "germany",
+      "region": "de-th",
+      "country_label": "Germany",
+      "bbox": null
     },
     {
       "id": "gr-a",
@@ -8132,7 +8276,7 @@
       "bbox": [
         17.8951725,
         45.2261928,
-        18.9944334,
+        19.0666047,
         45.8884019
       ]
     },
@@ -8158,7 +8302,7 @@
       "region": "brodsko-posavska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        17.2004214,
+        17.1839235,
         45.0750172,
         18.4848412,
         45.3677139
@@ -8174,8 +8318,8 @@
       "bbox": [
         17.2005643,
         45.4833592,
-        17.9520468,
-        45.9677281
+        17.9648894,
+        45.9729688
       ]
     },
     {
@@ -8217,7 +8361,7 @@
         16.5322322,
         45.482268,
         17.4325749,
-        46.0227249
+        46.0837674
       ]
     },
     {
@@ -8228,7 +8372,7 @@
       "region": "medimurska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        16.2616496,
+        16.2588453,
         46.3110341,
         16.813626,
         46.5312775
@@ -8244,7 +8388,7 @@
       "bbox": [
         16.3902918,
         45.9341585,
-        17.2309306,
+        17.2484668,
         46.2982852
       ]
     },
@@ -8270,9 +8414,9 @@
       "region": "krapinsko-zagorska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        15.6675756,
-        45.9250857,
-        16.2174007,
+        15.6158236,
+        45.9022563,
+        16.2343458,
         46.2664233
       ]
     },
@@ -8287,7 +8431,7 @@
         15.8032955,
         45.6381983,
         16.1928079,
-        45.9441409
+        45.9569042
       ]
     },
     {
@@ -8354,9 +8498,9 @@
       "region": "licko-senjska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        14.7367765,
+        14.7340735,
         44.3176753,
-        15.9639412,
+        15.9665763,
         45.068715
       ]
     },
@@ -8383,7 +8527,7 @@
       "country_label": "Croatia",
       "bbox": [
         15.2210824,
-        43.4951435,
+        43.4932362,
         16.5082585,
         44.1701605
       ]
@@ -8410,7 +8554,7 @@
       "region": "dubrovacko-neretvanska-zupanija",
       "country_label": "Croatia",
       "bbox": [
-        16.7106355,
+        16.4902576,
         42.4072443,
         18.5099931,
         43.1565062
@@ -13805,6 +13949,150 @@
         -5.4389392,
         55.2931134
       ]
+    },
+    {
+      "id": "de-bw",
+      "label": "Baden-Württemberg",
+      "path": "germany/de-bw",
+      "country": "germany",
+      "region": "de-bw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-by",
+      "label": "Bayern",
+      "path": "germany/de-by",
+      "country": "germany",
+      "region": "de-by",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-be",
+      "label": "Berlin",
+      "path": "germany/de-be",
+      "country": "germany",
+      "region": "de-be",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-bb",
+      "label": "Brandenburg",
+      "path": "germany/de-bb",
+      "country": "germany",
+      "region": "de-bb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hb",
+      "label": "Bremen",
+      "path": "germany/de-hb",
+      "country": "germany",
+      "region": "de-hb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hh",
+      "label": "Hamburg",
+      "path": "germany/de-hh",
+      "country": "germany",
+      "region": "de-hh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-he",
+      "label": "Hessen",
+      "path": "germany/de-he",
+      "country": "germany",
+      "region": "de-he",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-mv",
+      "label": "Mecklenburg-Vorpommern",
+      "path": "germany/de-mv",
+      "country": "germany",
+      "region": "de-mv",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-ni",
+      "label": "Niedersachsen",
+      "path": "germany/de-ni",
+      "country": "germany",
+      "region": "de-ni",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-nw",
+      "label": "Nordrhein-Westfalen",
+      "path": "germany/de-nw",
+      "country": "germany",
+      "region": "de-nw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-rp",
+      "label": "Rheinland-Pfalz",
+      "path": "germany/de-rp",
+      "country": "germany",
+      "region": "de-rp",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sl",
+      "label": "Saarland",
+      "path": "germany/de-sl",
+      "country": "germany",
+      "region": "de-sl",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sn",
+      "label": "Sachsen",
+      "path": "germany/de-sn",
+      "country": "germany",
+      "region": "de-sn",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-st",
+      "label": "Sachsen-Anhalt",
+      "path": "germany/de-st",
+      "country": "germany",
+      "region": "de-st",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sh",
+      "label": "Schleswig-Holstein",
+      "path": "germany/de-sh",
+      "country": "germany",
+      "region": "de-sh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-th",
+      "label": "Thüringen",
+      "path": "germany/de-th",
+      "country": "germany",
+      "region": "de-th",
+      "country_label": "Germany",
+      "bbox": null
     },
     {
       "id": "gr-a",
