@@ -3648,10 +3648,10 @@
       "region": "pt-02",
       "country_label": "Portugal",
       "bbox": [
-        -8.8064262,
+        -8.8097747,
         37.3614272,
-        -6.9798475,
-        38.2939397
+        -6.9789948,
+        38.2940607
       ]
     },
     {
@@ -3662,7 +3662,7 @@
       "region": "pt-03",
       "country_label": "Portugal",
       "bbox": [
-        -8.7935048,
+        -8.8005117,
         41.3344561,
         -7.8445777,
         41.810787
@@ -3692,7 +3692,7 @@
       "bbox": [
         -8.2508818,
         39.5725415,
-        -6.8790693,
+        -6.8766392,
         40.3771481
       ]
     },
@@ -3720,8 +3720,8 @@
       "bbox": [
         -8.6513318,
         38.2135198,
-        -7.2398383,
-        38.9580207
+        -7.2361508,
+        38.9692129
       ]
     },
     {
@@ -3735,7 +3735,7 @@
         -8.9945844,
         36.9744146,
         -7.4120995,
-        37.4963665
+        37.5111974
       ]
     },
     {
@@ -3746,7 +3746,7 @@
       "region": "pt-09",
       "country_label": "Portugal",
       "bbox": [
-        -7.7948111,
+        -7.8287994,
         40.272701,
         -6.8170005,
         41.1302927
@@ -3760,8 +3760,8 @@
       "region": "pt-10",
       "country_label": "Portugal",
       "bbox": [
-        -9.5099849,
-        39.2530062,
+        -9.5102095,
+        39.2276339,
         -8.1216633,
         40.0796556
       ]
@@ -3789,8 +3789,8 @@
       "country_label": "Portugal",
       "bbox": [
         -8.2616334,
-        38.8418039,
-        -7.0306859,
+        38.8215509,
+        -7.0236621,
         39.6460538
       ]
     },
@@ -3831,7 +3831,7 @@
       "country_label": "Portugal",
       "bbox": [
         -9.2571141,
-        37.7883706,
+        37.7853849,
         -8.2195253,
         38.76876
       ]
@@ -3875,7 +3875,7 @@
         -8.3510788,
         40.3438447,
         -7.3161774,
-        41.1869165
+        41.1897342
       ]
     },
     {
@@ -3900,7 +3900,7 @@
       "region": "pt-30",
       "country_label": "Portugal",
       "bbox": [
-        -17.2478472,
+        -17.2575919,
         32.6340432,
         -16.3173728,
         33.0873332
@@ -6803,6 +6803,150 @@
         -5.4389392,
         55.2931134
       ]
+    },
+    {
+      "id": "de-bw",
+      "label": "Baden-Württemberg",
+      "path": "germany/de-bw",
+      "country": "germany",
+      "region": "de-bw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-by",
+      "label": "Bayern",
+      "path": "germany/de-by",
+      "country": "germany",
+      "region": "de-by",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-be",
+      "label": "Berlin",
+      "path": "germany/de-be",
+      "country": "germany",
+      "region": "de-be",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-bb",
+      "label": "Brandenburg",
+      "path": "germany/de-bb",
+      "country": "germany",
+      "region": "de-bb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hb",
+      "label": "Bremen",
+      "path": "germany/de-hb",
+      "country": "germany",
+      "region": "de-hb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hh",
+      "label": "Hamburg",
+      "path": "germany/de-hh",
+      "country": "germany",
+      "region": "de-hh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-he",
+      "label": "Hessen",
+      "path": "germany/de-he",
+      "country": "germany",
+      "region": "de-he",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-mv",
+      "label": "Mecklenburg-Vorpommern",
+      "path": "germany/de-mv",
+      "country": "germany",
+      "region": "de-mv",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-ni",
+      "label": "Niedersachsen",
+      "path": "germany/de-ni",
+      "country": "germany",
+      "region": "de-ni",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-nw",
+      "label": "Nordrhein-Westfalen",
+      "path": "germany/de-nw",
+      "country": "germany",
+      "region": "de-nw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-rp",
+      "label": "Rheinland-Pfalz",
+      "path": "germany/de-rp",
+      "country": "germany",
+      "region": "de-rp",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sl",
+      "label": "Saarland",
+      "path": "germany/de-sl",
+      "country": "germany",
+      "region": "de-sl",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sn",
+      "label": "Sachsen",
+      "path": "germany/de-sn",
+      "country": "germany",
+      "region": "de-sn",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-st",
+      "label": "Sachsen-Anhalt",
+      "path": "germany/de-st",
+      "country": "germany",
+      "region": "de-st",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sh",
+      "label": "Schleswig-Holstein",
+      "path": "germany/de-sh",
+      "country": "germany",
+      "region": "de-sh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-th",
+      "label": "Thüringen",
+      "path": "germany/de-th",
+      "country": "germany",
+      "region": "de-th",
+      "country_label": "Germany",
+      "bbox": null
     },
     {
       "id": "gr-a",
@@ -10650,10 +10794,10 @@
       "region": "pt-02",
       "country_label": "Portugal",
       "bbox": [
-        -8.8064262,
+        -8.8097747,
         37.3614272,
-        -6.9798475,
-        38.2939397
+        -6.9789948,
+        38.2940607
       ]
     },
     {
@@ -10664,7 +10808,7 @@
       "region": "pt-03",
       "country_label": "Portugal",
       "bbox": [
-        -8.7935048,
+        -8.8005117,
         41.3344561,
         -7.8445777,
         41.810787
@@ -10694,7 +10838,7 @@
       "bbox": [
         -8.2508818,
         39.5725415,
-        -6.8790693,
+        -6.8766392,
         40.3771481
       ]
     },
@@ -10722,8 +10866,8 @@
       "bbox": [
         -8.6513318,
         38.2135198,
-        -7.2398383,
-        38.9580207
+        -7.2361508,
+        38.9692129
       ]
     },
     {
@@ -10737,7 +10881,7 @@
         -8.9945844,
         36.9744146,
         -7.4120995,
-        37.4963665
+        37.5111974
       ]
     },
     {
@@ -10748,7 +10892,7 @@
       "region": "pt-09",
       "country_label": "Portugal",
       "bbox": [
-        -7.7948111,
+        -7.8287994,
         40.272701,
         -6.8170005,
         41.1302927
@@ -10762,8 +10906,8 @@
       "region": "pt-10",
       "country_label": "Portugal",
       "bbox": [
-        -9.5099849,
-        39.2530062,
+        -9.5102095,
+        39.2276339,
         -8.1216633,
         40.0796556
       ]
@@ -10791,8 +10935,8 @@
       "country_label": "Portugal",
       "bbox": [
         -8.2616334,
-        38.8418039,
-        -7.0306859,
+        38.8215509,
+        -7.0236621,
         39.6460538
       ]
     },
@@ -10833,7 +10977,7 @@
       "country_label": "Portugal",
       "bbox": [
         -9.2571141,
-        37.7883706,
+        37.7853849,
         -8.2195253,
         38.76876
       ]
@@ -10877,7 +11021,7 @@
         -8.3510788,
         40.3438447,
         -7.3161774,
-        41.1869165
+        41.1897342
       ]
     },
     {
@@ -10902,7 +11046,7 @@
       "region": "pt-30",
       "country_label": "Portugal",
       "bbox": [
-        -17.2478472,
+        -17.2575919,
         32.6340432,
         -16.3173728,
         33.0873332
@@ -13805,6 +13949,150 @@
         -5.4389392,
         55.2931134
       ]
+    },
+    {
+      "id": "de-bw",
+      "label": "Baden-Württemberg",
+      "path": "germany/de-bw",
+      "country": "germany",
+      "region": "de-bw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-by",
+      "label": "Bayern",
+      "path": "germany/de-by",
+      "country": "germany",
+      "region": "de-by",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-be",
+      "label": "Berlin",
+      "path": "germany/de-be",
+      "country": "germany",
+      "region": "de-be",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-bb",
+      "label": "Brandenburg",
+      "path": "germany/de-bb",
+      "country": "germany",
+      "region": "de-bb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hb",
+      "label": "Bremen",
+      "path": "germany/de-hb",
+      "country": "germany",
+      "region": "de-hb",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-hh",
+      "label": "Hamburg",
+      "path": "germany/de-hh",
+      "country": "germany",
+      "region": "de-hh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-he",
+      "label": "Hessen",
+      "path": "germany/de-he",
+      "country": "germany",
+      "region": "de-he",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-mv",
+      "label": "Mecklenburg-Vorpommern",
+      "path": "germany/de-mv",
+      "country": "germany",
+      "region": "de-mv",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-ni",
+      "label": "Niedersachsen",
+      "path": "germany/de-ni",
+      "country": "germany",
+      "region": "de-ni",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-nw",
+      "label": "Nordrhein-Westfalen",
+      "path": "germany/de-nw",
+      "country": "germany",
+      "region": "de-nw",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-rp",
+      "label": "Rheinland-Pfalz",
+      "path": "germany/de-rp",
+      "country": "germany",
+      "region": "de-rp",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sl",
+      "label": "Saarland",
+      "path": "germany/de-sl",
+      "country": "germany",
+      "region": "de-sl",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sn",
+      "label": "Sachsen",
+      "path": "germany/de-sn",
+      "country": "germany",
+      "region": "de-sn",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-st",
+      "label": "Sachsen-Anhalt",
+      "path": "germany/de-st",
+      "country": "germany",
+      "region": "de-st",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-sh",
+      "label": "Schleswig-Holstein",
+      "path": "germany/de-sh",
+      "country": "germany",
+      "region": "de-sh",
+      "country_label": "Germany",
+      "bbox": null
+    },
+    {
+      "id": "de-th",
+      "label": "Thüringen",
+      "path": "germany/de-th",
+      "country": "germany",
+      "region": "de-th",
+      "country_label": "Germany",
+      "bbox": null
     },
     {
       "id": "gr-a",
