@@ -4,7 +4,6 @@
     "region": "luxembourg",
     "category": "fuel",
     "path": "resources/geojson/luxembourg/luxembourg/fuel.geojson",
-    "reason": "full_refresh",
-    "error": "legacy_fetch_exit_code=0"
+    "reason": "full_refresh"
   }
 ]

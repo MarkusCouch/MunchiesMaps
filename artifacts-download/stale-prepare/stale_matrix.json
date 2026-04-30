@@ -1,0 +1,8 @@
+{
+  "include": [
+    {
+      "country": "luxembourg",
+      "targets_file": "artifacts/stale-targets-by-country/luxembourg.json"
+    }
+  ]
+}
