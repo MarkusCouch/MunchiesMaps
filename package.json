@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.5",
   "scripts": {
+    "test": "node scripts/test_url_state.mjs && node scripts/test_poi_favorites_filter.mjs",
     "sync-vendor": "node scripts/sync-vendor-assets.mjs",
     "check-vendor": "node scripts/check-vendor-assets.mjs"
   },
