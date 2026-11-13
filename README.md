@@ -85,7 +85,9 @@ Playwright smoke tests on every pull request and on `main`. Use `npm run serve` 
 `sw.js` contains a `BUILD_ID`, a content hash of the app shell (`index.html`, `js/`, `vendor/`, icons).
 A new `BUILD_ID` makes browsers install the updated service worker and drop the old static cache. The same
 value is stamped as `?v=<BUILD_ID>` onto all `css/` and `js/` references in `index.html`, so a new release
-never runs with CSS/JS from the previous one.
+never runs with CSS/JS from the previous one. Icons get their own `?v=<ICON_VERSION>` (hash of `assets/icons/`)
+in `index.html` and `manifest.webmanifest`, so a new logo is picked up immediately by browsers, Firefox' icon
+cache and "Add to Home Screen" – existing home screen shortcuts still need to be removed and re-added.
 After merges to `main`, the workflow `sw-build-id.yml` updates it automatically. Locally:
 
 ```bash
