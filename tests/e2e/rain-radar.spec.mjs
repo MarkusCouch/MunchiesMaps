@@ -229,3 +229,31 @@ test('app CSS/JS references carry the current BUILD_ID', async ({ page, request 
   expect(refs.length).toBeGreaterThan(5);
   for (const ref of refs) expect(ref).toContain(`?v=${buildId}`);
 });
+
+test('no error text when wind data fails; the arrow appears once wind aloft is reachable', async ({ page }) => {
+  await mockGeolocation(page, 52.52, 13.405);
+  await mockRadarAndWind(page, { analysisStatus: 404 });
+  // First two wind requests fail (pipeline + direct fallback), later ones succeed.
+  let windCalls = 0;
+  const now = Math.floor(Date.now() / 1000);
+  await page.context().unroute(/api\.open-meteo\.com/);
+  await page.context().route(/api\.open-meteo\.com/, (route) => {
+    windCalls += 1;
+    if (windCalls <= 2) return route.abort();
+    return route.fulfill({
+      contentType: 'application/json',
+      body: JSON.stringify({ hourly: { time: [now], wind_speed_700hPa: [25], wind_direction_700hPa: [90] } })
+    });
+  });
+  await page.addInitScript(() => { window.__mmMotionRetryMs = 500; });
+  await openApp(page);
+  await page.click('#rainRadarBtn');
+
+  await expect.poll(() => windCalls).toBeGreaterThanOrEqual(2);
+  // While no data is available: no error message, just the radar.
+  await expect(page.locator('#rainRadarMotion')).toBeHidden();
+
+  // Retry picks up the wind aloft.
+  await expect(page.locator('.rain-motion-tip')).toHaveCount(1, { timeout: 10_000 });
+  await expect(page.locator('#rainRadarMotion')).toContainText('Wind aloft (≈3 km) toward W · 25 km/h');
+});

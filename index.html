@@ -57,7 +57,7 @@
   <link rel="stylesheet" href="./vendor/leaflet.markercluster/MarkerCluster.css" />
   <link rel="stylesheet" href="./vendor/leaflet.markercluster/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
-  <link rel="stylesheet" href="./css/app.css?v=06716aa7a8fe" />
+  <link rel="stylesheet" href="./css/app.css?v=33daacbcff7d" />
   <script>
     (function() {
       const storedTheme = localStorage.getItem('theme');
@@ -69,7 +69,7 @@
     })();
   </script>
   <!-- Google Analytics is only loaded after explicit consent, see js/consent.js -->
-  <script src="./js/consent.js?v=06716aa7a8fe"></script>
+  <script src="./js/consent.js?v=33daacbcff7d"></script>
 </head>
 <body>
 <script>
@@ -372,11 +372,11 @@
   <script src="./vendor/i18next/i18next.min.js"></script>
   <script src="./vendor/suncalc/suncalc.js"></script>
   <script src="./vendor/opening_hours/opening_hours.min.js"></script>
-  <script src="./js/offline-route-store.js?v=06716aa7a8fe"></script>
-  <script src="./js/gpx-utils.js?v=06716aa7a8fe"></script>
-  <script src="./js/route-state.js?v=06716aa7a8fe"></script>
-  <script src="./js/rain-radar.js?v=06716aa7a8fe"></script>
-  <script src="./js/rain-motion.js?v=06716aa7a8fe"></script>
+  <script src="./js/offline-route-store.js?v=33daacbcff7d"></script>
+  <script src="./js/gpx-utils.js?v=33daacbcff7d"></script>
+  <script src="./js/route-state.js?v=33daacbcff7d"></script>
+  <script src="./js/rain-radar.js?v=33daacbcff7d"></script>
+  <script src="./js/rain-motion.js?v=33daacbcff7d"></script>
 
   <script>
     const qs = (selector, root = document) => root.querySelector(selector);
@@ -5156,16 +5156,14 @@
       const Motion = window.MunchiesRainMotion;
       if (!button || !window.MunchiesRainRadar || !Motion) return;
 
-      const MOTION_REASON_TEXT = {
-        calm: 'No wind right now – no direction to show.',
-        'no-wind-data': 'Wind data is unavailable right now – no direction arrow.'
-      };
       const mapEl = map.getContainer();
       let motionLayer = null;
       let motionGeometry = null;
       let motionPosition = null;
       let viewBeforeRadar = null;
       let motionRunId = 0;
+      let motionRetryTimer = null;
+      const MOTION_RETRY_MS = Number(window.__mmMotionRetryMs) || 30000;
 
       const updateIntermediateMarkers = () => {
         const spacing = motionGeometry
@@ -5210,37 +5208,53 @@
         });
       };
 
+      const renderMotion = (motion, { fit }) => {
+        clearMotion();
+        motionGeometry = Motion.computeTimelineGeometry(motionPosition, motion.bearing, motion.speedKmh);
+        motionLayer = Motion.createMotionLayer(L, motionGeometry, motion).addTo(map);
+        const where = motionPosition.source === 'map-center' ? 'map center' : 'your location';
+        const label = motion.source === 'radar'
+          ? 'Rain moving'
+          : motion.source === 'wind' ? 'Wind aloft (≈3 km)' : 'Wind (10 m)';
+        if (motionEl) {
+          motionEl.textContent = `${label} toward ${Motion.bearingToCompass(motion.bearing)} · ${Math.round(motion.speedKmh)} km/h · from ${where}`;
+          motionEl.hidden = false;
+        }
+        if (fit) fitToMotion();
+        updateIntermediateMarkers();
+      };
+
+      // Like Rainy: measured rain motion first, otherwise the wind aloft. No error texts – if there is
+      // no data at all, only the position stays visible and the arrow is retried shortly after.
       const updateMotion = async (metadata, { fit = false } = {}) => {
         const runId = ++motionRunId;
+        clearTimeout(motionRetryTimer);
         if (!motionPosition) motionPosition = await resolveMotionPosition();
         if (runId !== motionRunId || !controller.isActive()) return;
+        let motion = null;
         try {
-          const result = await Motion.computeDisplayMotion(motionPosition, metadata);
-          if (runId !== motionRunId || !controller.isActive()) return;
-          clearMotion();
-          if (!result.motion) {
-            if (motionEl) { motionEl.textContent = MOTION_REASON_TEXT[result.reason] || 'No direction arrow available right now.'; motionEl.hidden = false; }
-            if (fit) map.setView([motionPosition.lat, motionPosition.lng], Math.min(map.getZoom(), 8), { animate: true });
-            return;
-          }
-          motionGeometry = result.geometry;
-          motionLayer = Motion.createMotionLayer(L, result.geometry, result.motion).addTo(map);
-          const where = motionPosition.source === 'map-center' ? 'map center' : 'your location';
-          const speed = Math.round(result.motion.speedKmh);
-          const toward = Motion.bearingToCompass(result.motion.bearing);
-          if (motionEl) {
-            const label = result.motion.source === 'radar'
-              ? 'Rain moving'
-              : result.motion.source === 'wind' ? 'Wind aloft (≈3 km)' : 'Wind (10 m)';
-            motionEl.textContent = `${label} toward ${toward} · ${speed} km/h · from ${where}`;
-            motionEl.hidden = false;
-          }
-          if (fit) fitToMotion();
-          updateIntermediateMarkers();
+          motion = (await Motion.computeDisplayMotion(motionPosition, metadata)).motion;
         } catch (error) {
-          console.warn('[rain-radar] motion analysis failed', error);
-          if (motionEl) { motionEl.textContent = 'Rain movement could not be calculated.'; motionEl.hidden = false; }
+          console.warn('[rain-radar] radar motion failed, using wind aloft', error);
         }
+        if (!motion) {
+          try {
+            const wind = await Motion.loadWindMotion(motionPosition);
+            if (wind && wind.ok) motion = wind;
+          } catch (error) {
+            console.warn('[rain-radar] wind aloft unavailable', error);
+          }
+        }
+        if (runId !== motionRunId || !controller.isActive()) return;
+        if (motion) {
+          renderMotion(motion, { fit });
+          return;
+        }
+        clearMotion();
+        if (fit) map.setView([motionPosition.lat, motionPosition.lng], Math.min(map.getZoom(), 8), { animate: true });
+        motionRetryTimer = setTimeout(() => {
+          if (controller.isActive()) updateMotion(metadata, { fit });
+        }, MOTION_RETRY_MS);
       };
 
       let firstFrame = true;
@@ -5265,6 +5279,7 @@
           }
           if (state === 'off') {
             motionRunId += 1;
+            clearTimeout(motionRetryTimer);
             clearMotion();
             motionPosition = null;
             firstFrame = true;
