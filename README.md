@@ -51,8 +51,9 @@ The accuracy, completeness and freshness of individual points of interest depend
 
 | Path | Purpose |
 |---|---|
-| `index.html` | The web app (markup, styles, main script) |
-| `js/` | Extracted browser modules (offline route store, route backup helpers, …) |
+| `index.html` | The web app (markup + main script) |
+| `css/app.css` | App styles |
+| `js/` | Browser modules: `gpx-utils.js` (GPX parsing), `route-state.js` (POI ids, backup format), `offline-route-store.js` (IndexedDB), `consent.js` (analytics consent) |
 | `sw.js` | Service worker (offline app shell, GeoJSON + tile caching) |
 | `resources/geojson/` | Generated POI datasets per country / region / category + `manifest.json` |
 | `resources/icons/` | Category marker icons |

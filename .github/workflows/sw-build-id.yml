@@ -8,6 +8,7 @@ on:
     paths:
       - index.html
       - manifest.webmanifest
+      - css/**
       - js/**
       - legal/**
       - vendor/**

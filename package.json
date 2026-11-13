@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.5",
   "scripts": {
-    "test": "node scripts/test_url_state.mjs && node scripts/test_poi_favorites_filter.mjs",
+    "test": "node scripts/test_url_state.mjs && node scripts/test_poi_favorites_filter.mjs && node scripts/test_route_modules.mjs",
     "test:e2e": "playwright test",
     "serve": "node scripts/serve-static.mjs 4173",
     "sync-vendor": "node scripts/sync-vendor-assets.mjs",
