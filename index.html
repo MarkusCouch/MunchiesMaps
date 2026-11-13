@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- CSP: scripts are still inline, so 'unsafe-inline' is required until the main script is moved to js/. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://api.rainviewer.com https://tilecache.rainviewer.com https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
   <!-- iOS/Firefox homescreen icon fallbacks -->
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
@@ -110,7 +110,17 @@
       <div class="map-title">Munchies Maps</div>
       <div class="map-subtitle">Night-friendly stops for your ride</div>
     </div>
+    <div id="rainRadarLegend" class="rain-radar-legend" role="status" aria-live="polite" hidden>
+      <span class="rain-radar-legend__title"><i class="fa-solid fa-cloud-rain" aria-hidden="true"></i> Rain radar <span id="rainRadarTime"></span></span>
+      <span class="rain-radar-legend__scale" aria-label="Intensity from light to very heavy">
+        <i style="--c:rgb(0,244,90)"></i><i style="--c:rgb(0,216,121)"></i><i style="--c:rgb(40,207,214)"></i><i style="--c:rgb(89,107,230)"></i><i style="--c:rgb(163,77,225)"></i>
+      </span>
+      <span class="rain-radar-legend__labels"><span>light</span><span>heavy</span></span>
+    </div>
     <div class="map-controls-br">
+      <button id="rainRadarBtn" type="button" aria-pressed="false" aria-label="Show rain radar" title="Rain radar">
+        <i class="fa-solid fa-cloud-rain" aria-hidden="true"></i>
+      </button>
       <button id="poiHideToggleBtn" type="button" class="poi-hide-toggle" aria-label="Toggle POI hide mode" title="POI hide mode" hidden>
         <i class="fa-solid fa-eye-slash" aria-hidden="true"></i>
       </button>
@@ -364,6 +374,7 @@
   <script src="./js/offline-route-store.js"></script>
   <script src="./js/gpx-utils.js"></script>
   <script src="./js/route-state.js"></script>
+  <script src="./js/rain-radar.js"></script>
 
   <script>
     const qs = (selector, root = document) => root.querySelector(selector);
@@ -5135,6 +5146,36 @@
 
 
 
+    function setupRainRadar() {
+      const button = document.getElementById('rainRadarBtn');
+      const legend = document.getElementById('rainRadarLegend');
+      const timeEl = document.getElementById('rainRadarTime');
+      if (!button || !window.MunchiesRainRadar) return;
+      const controller = window.MunchiesRainRadar.createRainRadarController(L, map, {
+        onStatus: ({ state, time, message }) => {
+          const on = state === 'on' || state === 'loading';
+          button.classList.toggle('is-active', on);
+          button.classList.toggle('is-loading', state === 'loading');
+          button.setAttribute('aria-pressed', String(on));
+          button.setAttribute('aria-label', on ? 'Hide rain radar' : 'Show rain radar');
+          if (legend) legend.hidden = !on;
+          if (timeEl) timeEl.textContent = state === 'on' && time ? `· ${time}` : (state === 'loading' ? '· loading…' : '');
+          if (state === 'error') {
+            controller.disable();
+            showMapToast(message || 'Rain radar is unavailable right now.');
+          }
+        }
+      });
+      window.rainRadar = controller;
+      button.addEventListener('click', () => {
+        if (!controller.isActive() && navigator.onLine === false) {
+          showMapToast('Rain radar needs an internet connection.');
+          return;
+        }
+        controller.toggle();
+      });
+    }
+
     function setupOfflineMapDetailControl() {
       const select = document.getElementById('offlineMapDetailSelect');
       const hint = document.getElementById('offlineMapDetailHint');
@@ -6999,6 +7040,7 @@
       setupDrawerWidthMeasurement();
       setAppVersion();
       on(qs('#privacySettingsBtn'), 'click', () => window.munchiesConsent?.openSettings());
+      setupRainRadar();
       setupThemeToggle();
       setupClusterThresholdControl();
       setupMinPoiZoomControl();
