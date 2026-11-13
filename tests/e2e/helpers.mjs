@@ -12,7 +12,7 @@ export const BERLIN_GPX = path.join(here, 'fixtures', 'berlin-route.gpx');
  * - intro modal is suppressed
  * - page errors are collected
  */
-export async function openApp(page, { url = 'index.html' } = {}) {
+export async function openApp(page, { url = 'index.html', consent = 'denied' } = {}) {
   const pageErrors = [];
   const warnings = [];
   page.on('pageerror', (err) => pageErrors.push(err.message));
@@ -20,11 +20,12 @@ export async function openApp(page, { url = 'index.html' } = {}) {
     if (msg.type() === 'warning' || msg.type() === 'error') warnings.push(msg.text());
   });
   await page.context().route(/basemaps\.cartocdn\.com|tile\.openstreetmap\.org|googletagmanager\.com|google-analytics\.com|script\.google\.com/, (route) => route.abort());
-  await page.addInitScript(() => {
+  await page.addInitScript((consentChoice) => {
     try {
       localStorage.setItem('munchiesMapsHideIntro', 'true');
+      if (consentChoice) localStorage.setItem('munchiesAnalyticsConsent', consentChoice);
     } catch (_) { /* ignore */ }
-  });
+  }, consent);
   await page.goto(url);
   await expect(page.locator('#map .leaflet-pane').first()).toBeAttached();
   return { pageErrors, warnings };

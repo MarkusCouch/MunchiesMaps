@@ -12,7 +12,7 @@ import process from 'node:process';
 const ROOT = process.cwd();
 const SW_PATH = path.join(ROOT, 'sw.js');
 const SHELL_FILES = ['index.html', 'manifest.webmanifest'];
-const SHELL_DIRS = ['js', 'vendor', 'assets/icons', 'resources/icons'];
+const SHELL_DIRS = ['js', 'vendor', 'assets/icons', 'resources/icons', 'legal'];
 const BUILD_ID_PATTERN = /const BUILD_ID = '([^']*)';/;
 
 async function listFiles(dir) {

@@ -9,6 +9,7 @@ on:
       - index.html
       - manifest.webmanifest
       - js/**
+      - legal/**
       - vendor/**
       - assets/icons/**
       - resources/icons/**
