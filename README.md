@@ -1,6 +1,99 @@
-# MunchiesMaps
+# Munchies Maps – Night-friendly stops for long rides
 
-## Lokale Vendor-Dateien aktualisieren
+Munchies Maps is an early-stage, community-driven map for cyclists, focused on **night-friendly stops for long rides**.
+While it was originally designed with night rides in mind, **it is equally useful during daytime rides, touring and bikepacking**.
+The project is a practical reference tool rather than a routing or navigation app. It is actively developed and already usable, but **data completeness and accuracy can vary** depending on region and source.
+
+Live: <https://nightrides.cc/munchiesmaps/>
+
+## Who it’s for
+- Night riders and long-distance cyclists
+- Brevet, randonneuring and ultra-distance riders
+- Bikepacking and touring cyclists
+- Anyone riding outside regular opening hours and looking for basic infrastructure
+
+## What works today
+- Night-friendly points of interest: food, fuel, water, toilets, shelters, vending, accommodation
+- Filters for categories, countries/regions (grouped **Country → Region**) and night availability
+- Option to include POIs with missing or unknown opening hours
+- **Route tools:** GPX import (POIs near the route), GPX export of visible POIs
+- Hide POIs and mark favorites along a route (`Restore hidden`, `Show favorites only`)
+- Save routes locally (IndexedDB) incl. an offline map tile snapshot (`Offline Map detail`)
+- JSON session backup (route, radius, filters, hidden POIs, favorites) – export and re-import
+- Shareable URLs with compact filter state (see [`URL_STATE.md`](URL_STATE.md))
+- Open any POI in Google Maps; shelters additionally in Mapy.com
+- Installable PWA with offline support, dark mode, mobile-friendly interface
+- Feedback form and support link in the drawer (`Feedback & Support`)
+
+## Country coverage
+32 countries are configured in [`fetch_data/config.yml`](fetch_data/config.yml), among them Germany, Austria,
+Switzerland, Czechia, Poland, France, Italy, Spain, Portugal, the Benelux countries, Great Britain, Ireland,
+Scandinavia and most of the Balkans. Datasets are generated automatically via GitHub Actions from OpenStreetMap.
+
+## Alpha status & feedback
+Munchies Maps is currently in an **Alpha stage**. Features, data coverage and behavior may change at any time.
+Feedback from real-world use is highly appreciated and helps improve data quality, usability and future features.
+
+## A quick note on the data
+All information comes from OpenStreetMap and other community-maintained sources.
+Some details might be missing, outdated or simply wrong.
+Please treat this map as a **helpful guide, not a guarantee** — especially at night.
+
+## Data sources & license
+Map data is © OpenStreetMap contributors and licensed under the **Open Database License (ODbL)**.
+The accuracy, completeness and freshness of individual points of interest depend on local contributions and tagging practices.
+
+---
+
+## Development
+
+### Repository layout
+
+| Path | Purpose |
+|---|---|
+| `index.html` | The web app (markup, styles, main script) |
+| `js/` | Extracted browser modules (offline route store, route backup helpers, …) |
+| `sw.js` | Service worker (offline app shell, GeoJSON + tile caching) |
+| `resources/geojson/` | Generated POI datasets per country / region / category + `manifest.json` |
+| `resources/icons/` | Category marker icons |
+| `fetch_data/` | Python Overpass fetch pipeline (see [`fetch_data/README.md`](fetch_data/README.md)) |
+| `scripts/` | Maintenance scripts, tests, SEO page generator |
+| `tests/e2e/` | Playwright smoke tests |
+| `vendor/` | Local copies of Leaflet, MarkerCluster, opening_hours.js, Font Awesome |
+| `.github/workflows/` | Data fetch automation and CI (see [`.github/workflows/README.md`](.github/workflows/README.md)) |
+
+### Tests
+
+```bash
+npm install
+npm test          # unit / regression tests (Node)
+npm run test:e2e  # Playwright smoke tests (GPX, favorites, saved routes, backup roundtrip)
+```
+
+CI (`.github/workflows/ci.yml`) runs the unit tests, the vendor check, the GeoJSON integrity check and the
+Playwright smoke tests on every pull request.
+
+### Service worker cache version
+
+`sw.js` contains a `BUILD_ID`. Bump it with
+
+```bash
+npm run bump-sw
+```
+
+whenever app shell files (`index.html`, `js/*`, icons, vendor files) change. CI fails if app shell files
+changed without a new `BUILD_ID`.
+
+### SEO landing pages
+
+Static, crawlable landing pages per category and country (`/map/<category>/<country>/`) and `sitemap.xml`
+are generated from `fetch_data/config.yml` and `resources/geojson/manifest.json`:
+
+```bash
+npm run generate-seo
+```
+
+### Vendor files
 
 ```bash
 npm install
@@ -8,24 +101,10 @@ npm run sync-vendor
 npm run check-vendor
 ```
 
-Danach den Ordner `vendor/` (inklusive erzeugter Binary-Assets aus npm-Paketen) committen.
+Commit the `vendor/` folder afterwards (including binary assets from npm packages).
+Alternatively run **Actions → Sync vendor assets → Run workflow**.
+Do not use placeholder files, CDN wrappers or synchronous XHR fallbacks for vendor libraries.
 
-## Alternative über GitHub Actions
+### PWA icons
 
-1. GitHub → **Actions** → **Sync vendor assets**
-2. **Run workflow** starten
-
-Der Workflow installiert npm-Abhängigkeiten, synchronisiert echte lokale Vendor-Dateien aus `node_modules` nach `vendor/`, prüft sie und committet Änderungen automatisch.
-
-## Wichtiger Hinweis
-
-Keine Placeholder-Dateien, CDN-Wrapper oder synchrone XHR-Fallbacks für Vendor-Libraries verwenden.
-
-## PWA-Icons
-
-Die App verwendet nun eigene PWA-/Homescreen-/Favicon-Icons aus `assets/icons/` (inkl. maskable Icons für Android und Apple Touch Icon für iOS).
-
-## SEO-Basics (manuell gepflegt)
-
-Basis-SEO-Metadaten in `index.html` sowie `robots.txt` und `sitemap.xml` werden aktuell manuell gepflegt.
-Share-URLs mit Query-Parametern sollten per Canonical-URL auf `https://nightrides.cc/munchiesmaps/` verweisen.
+PWA / home screen / favicon icons live in `assets/icons/` (incl. maskable icons for Android and an Apple touch icon for iOS).
