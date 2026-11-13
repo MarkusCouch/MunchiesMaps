@@ -122,10 +122,21 @@ const Motion = require('../js/rain-motion.js');
   const radar = { ok: true, speedKmh: 25, bearing: 120 };
   const mustNotFetch = () => { throw new Error('must not fetch'); };
   assert.equal(await Motion.chooseDisplayMotion(radar, {}, mustNotFetch), radar);
-  assert.equal(await Motion.chooseDisplayMotion({ ok: false, reason: 'inconsistent' }, {}, mustNotFetch), null);
-  for (const data of [{}, response(null), response(0), response(30, null), response(30, 270, now - 7200)]) {
+  // Unlike Rainy, an unclear radar pattern also falls back to wind: the arrow should always show.
+  const windFallback = await Motion.chooseDisplayMotion({ ok: false, reason: 'inconsistent' }, {}, async () => Motion.windMotionFromResponse(response(), now));
+  assert.equal(windFallback.source, 'wind');
+  for (const data of [{}, response(null), response(30, null), response(30, 270, now - 7200)]) {
     assert.equal(Motion.windMotionFromResponse(data, now), null);
   }
+  assert.deepEqual(Motion.windMotionFromResponse(response(0), now), { ok: false, reason: 'calm' });
+  // 700 hPa missing -> 10 m wind.
+  const surface = Motion.windMotionFromResponse({ hourly: { time: [now - 3600, now], wind_speed_10m: [5, 12], wind_direction_10m: [0, 180] } }, now);
+  assert.equal(surface.source, 'wind-surface');
+  assert.equal(surface.speedKmh, 12);
+  assert.equal(surface.bearing, 0); // wind from south travels north
+  // Picks the hour closest to now.
+  const closest = Motion.windMotionFromResponse({ hourly: { time: [now - 3600, now + 600], wind_speed_700hPa: [10, 40], wind_direction_700hPa: [90, 90] } }, now);
+  assert.equal(closest.speedKmh, 40);
   assert.equal(await Motion.chooseDisplayMotion({ ok: false, reason: 'not-enough-rain' }, {}, async () => { throw new Error('offline'); }), null);
 }
 {
@@ -147,5 +158,20 @@ const Motion = require('../js/rain-motion.js');
   assert.ok(Math.abs(result.motion.bearing - 90) < 10, `bearing ${result.motion.bearing}`);
   assert.ok(result.motion.speedKmh > 5 && result.motion.speedKmh < 140);
   assert.ok(result.geometry.point4.lng < 13.4);
+
+  // Radar images unavailable -> wind arrow instead of an error.
+  const fallback = await Motion.computeDisplayMotion({ lat: 52.5, lng: 13.4 }, meta, {
+    loadField: async () => { throw new Error('HTTP 404'); },
+    loadWind: async () => ({ ok: true, source: 'wind', speedKmh: 20, bearing: 45 })
+  });
+  assert.equal(fallback.motion.source, 'wind');
+  assert.equal(fallback.radarReason, 'radar-unavailable');
+  // Calm air -> no arrow, explicit reason.
+  const calm = await Motion.computeDisplayMotion({ lat: 52.5, lng: 13.4 }, meta, {
+    loadField: async () => { throw new Error('HTTP 404'); },
+    loadWind: async () => ({ ok: false, reason: 'calm' })
+  });
+  assert.equal(calm.motion, null);
+  assert.equal(calm.reason, 'calm');
 }
 console.log('rain motion tests passed');

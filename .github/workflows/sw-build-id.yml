@@ -38,12 +38,12 @@ jobs:
 
       - name: Commit if changed
         run: |
-          if git diff --quiet -- sw.js; then
+          if git diff --quiet -- sw.js index.html; then
             echo "BUILD_ID already up to date."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sw.js
-          git commit -m "Update service worker BUILD_ID"
+          git add sw.js index.html
+          git commit -m "Update service worker BUILD_ID and asset versions"
           git push

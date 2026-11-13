@@ -1,6 +1,6 @@
 // BUILD_ID is a content hash of the app shell, maintained by `npm run bump-sw`
 // (CI fails when it is stale). Changing it invalidates the static cache.
-const BUILD_ID = 'fb5e29652259';
+const BUILD_ID = '06716aa7a8fe';
 const STATIC_CACHE = `munchiesmaps-static-${BUILD_ID}`;
 const GEOJSON_CACHE = 'munchiesmaps-geojson-v2';
 const OFFLINE_TILE_CACHE_NAME = 'munchiesmaps-offline-tiles-v1';
@@ -241,16 +241,24 @@ function isAppCodeRequest(requestUrl) {
   return ['css/', 'js/', 'legal/'].some((dir) => requestUrl.pathname.startsWith(`${scopePath}${dir}`));
 }
 
+// Cache key without the ?v=<BUILD_ID> query, so the precached plain URLs serve as offline fallback.
+function withoutSearch(request) {
+  const url = new URL(request.url);
+  return `${url.origin}${url.pathname}`;
+}
+
 async function handleAppCodeRequest(event) {
   const cache = await caches.open(STATIC_CACHE);
   try {
-    const networkResponse = await fetch(event.request);
+    // no-cache: revalidate with the server instead of trusting a possibly stale HTTP cache entry.
+    const networkResponse = await fetch(event.request, { cache: 'no-cache' });
     if (isCacheableResponse(networkResponse)) {
-      await cache.put(event.request, networkResponse.clone());
+      await cache.put(withoutSearch(event.request), networkResponse.clone());
     }
     return networkResponse;
   } catch (error) {
-    const cached = await cache.match(event.request) || await caches.match(event.request);
+    const cached = await cache.match(event.request, { ignoreSearch: true })
+      || await caches.match(event.request, { ignoreSearch: true });
     if (cached) return cached;
     throw error;
   }

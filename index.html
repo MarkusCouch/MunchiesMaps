@@ -57,7 +57,7 @@
   <link rel="stylesheet" href="./vendor/leaflet.markercluster/MarkerCluster.css" />
   <link rel="stylesheet" href="./vendor/leaflet.markercluster/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
-  <link rel="stylesheet" href="./css/app.css" />
+  <link rel="stylesheet" href="./css/app.css?v=06716aa7a8fe" />
   <script>
     (function() {
       const storedTheme = localStorage.getItem('theme');
@@ -69,7 +69,7 @@
     })();
   </script>
   <!-- Google Analytics is only loaded after explicit consent, see js/consent.js -->
-  <script src="./js/consent.js"></script>
+  <script src="./js/consent.js?v=06716aa7a8fe"></script>
 </head>
 <body>
 <script>
@@ -372,11 +372,11 @@
   <script src="./vendor/i18next/i18next.min.js"></script>
   <script src="./vendor/suncalc/suncalc.js"></script>
   <script src="./vendor/opening_hours/opening_hours.min.js"></script>
-  <script src="./js/offline-route-store.js"></script>
-  <script src="./js/gpx-utils.js"></script>
-  <script src="./js/route-state.js"></script>
-  <script src="./js/rain-radar.js"></script>
-  <script src="./js/rain-motion.js"></script>
+  <script src="./js/offline-route-store.js?v=06716aa7a8fe"></script>
+  <script src="./js/gpx-utils.js?v=06716aa7a8fe"></script>
+  <script src="./js/route-state.js?v=06716aa7a8fe"></script>
+  <script src="./js/rain-radar.js?v=06716aa7a8fe"></script>
+  <script src="./js/rain-motion.js?v=06716aa7a8fe"></script>
 
   <script>
     const qs = (selector, root = document) => root.querySelector(selector);
@@ -5157,11 +5157,8 @@
       if (!button || !window.MunchiesRainRadar || !Motion) return;
 
       const MOTION_REASON_TEXT = {
-        frames: 'Not enough radar frames to measure rain movement.',
-        'not-enough-rain': 'Hardly any rain nearby and no wind data available.',
-        'low-correlation': 'The rain pattern cannot be tracked reliably between frames.',
-        inconsistent: 'Rain movement is too inconsistent for a reliable arrow.',
-        'speed-range': 'Measured movement is outside the plausible range (5–140 km/h).'
+        calm: 'No wind right now – no direction to show.',
+        'no-wind-data': 'Wind data is unavailable right now – no direction arrow.'
       };
       const mapEl = map.getContainer();
       let motionLayer = null;
@@ -5222,7 +5219,7 @@
           if (runId !== motionRunId || !controller.isActive()) return;
           clearMotion();
           if (!result.motion) {
-            if (motionEl) { motionEl.textContent = MOTION_REASON_TEXT[result.reason] || 'Rain movement is unclear right now.'; motionEl.hidden = false; }
+            if (motionEl) { motionEl.textContent = MOTION_REASON_TEXT[result.reason] || 'No direction arrow available right now.'; motionEl.hidden = false; }
             if (fit) map.setView([motionPosition.lat, motionPosition.lng], Math.min(map.getZoom(), 8), { animate: true });
             return;
           }
@@ -5232,9 +5229,10 @@
           const speed = Math.round(result.motion.speedKmh);
           const toward = Motion.bearingToCompass(result.motion.bearing);
           if (motionEl) {
-            motionEl.textContent = result.motion.source === 'wind'
-              ? `Wind aloft (≈3 km) toward ${toward} · ${speed} km/h · from ${where}`
-              : `Rain moving toward ${toward} · ${speed} km/h · from ${where}`;
+            const label = result.motion.source === 'radar'
+              ? 'Rain moving'
+              : result.motion.source === 'wind' ? 'Wind aloft (≈3 km)' : 'Wind (10 m)';
+            motionEl.textContent = `${label} toward ${toward} · ${speed} km/h · from ${where}`;
             motionEl.hidden = false;
           }
           if (fit) fitToMotion();

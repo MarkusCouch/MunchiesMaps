@@ -22,7 +22,8 @@ Live: <https://nightrides.cc/munchiesmaps/>
 - JSON session backup (route, radius, filters, hidden POIs, favorites) – export and re-import
 - Shareable URLs with compact filter state (see [`URL_STATE.md`](URL_STATE.md))
 - Rain mode (cloud button): radar overlay in Rainy's five intensity classes, POIs hidden, Rainy's direction arrow
-  with +1 h … +4 h points (rain movement from radar, or wind aloft when there is little rain); map zooms to the arrow
+  with +1 h … +4 h points (rain movement from radar; otherwise wind at ≈3 km or 10 m, so the arrow also shows
+  without rain nearby); map zooms to the arrow
 - Open any POI in Google Maps; shelters additionally in Mapy.com
 - Installable PWA with offline support, dark mode, mobile-friendly interface
 - Feedback form and support link in the drawer (`Feedback & Support`)
@@ -82,7 +83,9 @@ Playwright smoke tests on every pull request and on `main`. Use `npm run serve` 
 ### Service worker cache version
 
 `sw.js` contains a `BUILD_ID`, a content hash of the app shell (`index.html`, `js/`, `vendor/`, icons).
-A new `BUILD_ID` makes browsers install the updated service worker and drop the old static cache.
+A new `BUILD_ID` makes browsers install the updated service worker and drop the old static cache. The same
+value is stamped as `?v=<BUILD_ID>` onto all `css/` and `js/` references in `index.html`, so a new release
+never runs with CSS/JS from the previous one.
 After merges to `main`, the workflow `sw-build-id.yml` updates it automatically. Locally:
 
 ```bash
