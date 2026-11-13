@@ -32,6 +32,8 @@ Living plan for the project. Status as of 2026-11. Implementation details: see R
 ### Rain radar
 - Cloud button above the map controls toggles a RainViewer radar overlay in Rainy's pixel style
   (5 intensity classes, auto-refresh every 5 min, legend with radar time)
+- Rain mode hides POIs, shows Rainy's direction arrow with +1 h … +4 h points (radar motion, wind aloft as
+  fallback) and zooms to it; switching off restores POIs and the previous view
 
 ## Next
 
@@ -52,4 +54,4 @@ Living plan for the project. Status as of 2026-11. Implementation details: see R
 
 ### Later
 Community trust signals / rankings, public backup viewer / share by UUID, Wahoo export, data tiles instead of
-admin regions, more of *Rainy* in the app (motion arrow, 4 h rain timeline along the route).
+admin regions, more of *Rainy* in the app (4 h rain timeline at the position or along the route).

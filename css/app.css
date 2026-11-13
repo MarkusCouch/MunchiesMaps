@@ -1046,3 +1046,35 @@ html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text);
 .rain-radar-legend__scale { display: flex; gap: 2px; }
 .rain-radar-legend__scale i { width: 22px; height: 8px; border-radius: 2px; background: var(--c); }
 .rain-radar-legend__labels { display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; }
+
+/* Rain mode: POIs are hidden while the radar is on. */
+.rain-mode .mm-marker-wrap,
+.rain-mode .marker-cluster { display: none !important; }
+.rain-radar-legend__motion { max-width: 230px; color: var(--text); font-size: 11.5px; white-space: normal; }
+.rain-radar-legend__motion[hidden] { display: none; }
+
+/* Rain motion arrow + hourly timeline (same look as Rainy) */
+.rain-motion-tip { width: 40px; height: 30px; transform: rotate(var(--bearing)); transform-origin: 20px 4px; pointer-events: none; }
+.rain-motion-tip svg { display: block; width: 40px; height: 30px; overflow: visible; }
+.rain-motion-tip path { fill: none; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.rain-motion-tip .tip-halo { stroke: rgba(255, 255, 255, 0.8); stroke-width: 4; }
+.rain-motion-tip .tip-core { stroke: #253238; stroke-width: 2; }
+.rain-motion-marker { position: relative; width: 88px; height: 68px; pointer-events: none; transition: opacity 180ms ease, transform 180ms ease; }
+.rain-motion-marker i {
+  position: absolute; left: 44px; top: 21px; display: block; width: 16px; height: 2px;
+  transform: translate(-50%, -50%) rotate(var(--bearing));
+  border-radius: 1px; background: #253238; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+.rain-motion-marker b {
+  position: absolute; left: 50%; top: 35px; min-width: 40px; padding: 4px 7px 3px; transform: translateX(-50%);
+  color: #253238; text-shadow: 0 1px 2px #fff, 1px 0 2px #fff, -1px 0 2px #fff, 0 -1px 2px #fff;
+  font: 760 10px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  text-align: center; white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+.rain-motion-source { display: block; margin-top: 5px; font-size: 9px; font-weight: 500; }
+.rain-motion-marker.is-intermediate { visibility: hidden; opacity: 0; transform: scale(0.72); }
+.rain-motion-show-intermediate .rain-motion-marker.is-intermediate { visibility: visible; opacity: 1; transform: scale(1); }
+.theme-dark .rain-motion-tip .tip-core { stroke: #e5e7eb; }
+.theme-dark .rain-motion-tip .tip-halo { stroke: rgba(17, 24, 39, 0.8); }
+.theme-dark .rain-motion-marker i { background: #e5e7eb; box-shadow: 0 0 0 1px rgba(17, 24, 39, 0.7); }
+.theme-dark .rain-motion-marker b { color: #e5e7eb; text-shadow: 0 1px 2px #000, 1px 0 2px #000, -1px 0 2px #000, 0 -1px 2px #000; }

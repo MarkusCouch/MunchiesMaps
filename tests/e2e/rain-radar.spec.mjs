@@ -89,3 +89,96 @@ test('rain radar shows a message when RainViewer is unreachable', async ({ page 
   await expect(page.locator('#mapToast')).toContainText('Rain radar');
   await expect(page.locator('#rainRadarBtn')).toHaveAttribute('aria-pressed', 'false');
 });
+
+async function mockRadarAndWind(page, { windFrom = 270, windKmh = 30 } = {}) {
+  const now = Math.floor(Date.now() / 1000);
+  await page.context().route('https://api.rainviewer.com/public/weather-maps.json', (route) => route.fulfill({
+    contentType: 'application/json',
+    body: JSON.stringify({
+      host: 'https://tilecache.rainviewer.com',
+      radar: { past: [
+        { time: now - 1200, path: '/v2/radar/a' },
+        { time: now - 600, path: '/v2/radar/b' },
+        { time: now, path: '/v2/radar/c' }
+      ] }
+    })
+  }));
+  // No rain anywhere -> Rainy falls back to the modelled wind at 700 hPa.
+  const empty = solidPng(0, 0, 0, 0);
+  await page.context().route(/tilecache\.rainviewer\.com/, (route) => route.fulfill({ contentType: 'image/png', body: empty }));
+  const windRequests = [];
+  await page.context().route(/api\.open-meteo\.com/, (route) => {
+    windRequests.push(route.request().url());
+    route.fulfill({
+      contentType: 'application/json',
+      body: JSON.stringify({ hourly: { time: [now], wind_speed_700hPa: [windKmh], wind_direction_700hPa: [windFrom] } })
+    });
+  });
+  return windRequests;
+}
+
+function mockGeolocation(page, lat, lng) {
+  return page.addInitScript(([la, ln]) => {
+    const fix = { coords: { latitude: la, longitude: ln, accuracy: 20 }, timestamp: Date.now() };
+    Object.defineProperty(navigator, 'geolocation', {
+      configurable: true,
+      value: {
+        getCurrentPosition: (ok) => setTimeout(() => ok(fix), 20),
+        watchPosition: (ok) => { setTimeout(() => ok(fix), 20); return 1; },
+        clearWatch: () => {}
+      }
+    });
+  }, [lat, lng]);
+}
+
+test('rain button matches the other controls in size', async ({ page }) => {
+  await openApp(page);
+  const rain = await page.locator('#rainRadarBtn').boundingBox();
+  const locate = await page.locator('#locateButton').boundingBox();
+  expect(Math.round(rain.width)).toBe(Math.round(locate.width));
+  expect(Math.round(rain.height)).toBe(Math.round(locate.height));
+});
+
+test('rain mode hides POIs, shows the +4 h direction arrow and zooms to it', async ({ page }) => {
+  await mockGeolocation(page, 52.52, 13.405);
+  const windRequests = await mockRadarAndWind(page, { windFrom: 270, windKmh: 30 });
+  await page.addInitScript(() => {
+    window.__cspViolations = [];
+    document.addEventListener('securitypolicyviolation', (e) => window.__cspViolations.push(`${e.violatedDirective} ${e.blockedURI}`));
+  });
+  await openApp(page);
+  await page.evaluate(() => map.setView([52.52, 13.405], 14, { animate: false }));
+  await expect.poll(() => page.locator('.mm-marker-wrap, .marker-cluster').count()).toBeGreaterThan(0);
+  const viewBefore = await page.evaluate(() => ({ zoom: map.getZoom() }));
+
+  await page.click('#rainRadarBtn');
+
+  // POIs are hidden.
+  await expect(page.locator('#map')).toHaveClass(/rain-mode/);
+  await expect(page.locator('.mm-marker-wrap:visible, .marker-cluster:visible')).toHaveCount(0);
+
+  // Arrow tip + four hourly markers; wind fallback is labelled.
+  await expect(page.locator('.rain-motion-tip')).toHaveCount(1);
+  await expect(page.locator('.rain-motion-marker')).toHaveCount(4);
+  await expect(page.locator('.rain-motion-marker b').last()).toContainText('+4 h');
+  await expect(page.locator('.rain-motion-source')).toHaveText('wind aloft');
+  await expect(page.locator('#rainRadarMotion')).toContainText('toward E · 30 km/h');
+  expect(windRequests[0]).toContain('latitude=52.5200');
+
+  // Map is zoomed out to show the whole 4 h arrow (120 km to the west of Berlin).
+  await expect.poll(() => page.evaluate(() => map.getZoom())).toBeLessThan(viewBefore.zoom);
+  const fits = await page.evaluate(() => {
+    const bounds = map.getBounds();
+    const p4 = MunchiesRainMotion.computeTimelineGeometry({ lat: 52.52, lng: 13.405 }, 90, 30).point4;
+    return bounds.contains([52.52, 13.405]) && bounds.contains([p4.lat, p4.lng]) && p4.lng < 13.405;
+  });
+  expect(fits).toBe(true);
+
+  // Switching off restores POIs and the previous view.
+  await page.click('#rainRadarBtn');
+  await expect(page.locator('#map')).not.toHaveClass(/rain-mode/);
+  await expect(page.locator('.rain-motion-tip')).toHaveCount(0);
+  await expect.poll(() => page.evaluate(() => map.getZoom())).toBe(viewBefore.zoom);
+  await expect.poll(() => page.locator('.mm-marker-wrap:visible, .marker-cluster:visible').count()).toBeGreaterThan(0);
+  expect(await page.evaluate(() => window.__cspViolations)).toEqual([]);
+});

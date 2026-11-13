@@ -89,7 +89,7 @@
     var data = await response.json();
     var frames = data && data.radar && data.radar.past;
     if (!data.host || !Array.isArray(frames) || !frames.length) throw new Error('Radar metadata incomplete');
-    return { host: data.host, frame: frames[frames.length - 1] };
+    return { host: data.host, frames: frames, frame: frames[frames.length - 1] };
   }
 
   async function blobToBitmap(blob) {
@@ -157,6 +157,8 @@
     var opts = options || {};
     var paneName = opts.pane || 'rainRadarPane';
     var onStatus = typeof opts.onStatus === 'function' ? opts.onStatus : function () {};
+    // Called with the full metadata ({ host, frames, frame }) whenever a new radar frame is shown.
+    var onFrame = typeof opts.onFrame === 'function' ? opts.onFrame : function () {};
     var layer = null;
     var timer = null;
     var active = false;
@@ -183,6 +185,7 @@
           }
           layer = next;
           currentFramePath = meta.frame.path;
+          onFrame(meta);
         }
         onStatus({ state: 'on', time: formatFrameTime(meta.frame) });
       } catch (error) {
