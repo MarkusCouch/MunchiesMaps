@@ -1,6 +1,6 @@
 // BUILD_ID is a content hash of the app shell, maintained by `npm run bump-sw`
 // (CI fails when it is stale). Changing it invalidates the static cache.
-const BUILD_ID = '6bec15bbb32c';
+const BUILD_ID = '74564506c56d';
 const STATIC_CACHE = `munchiesmaps-static-${BUILD_ID}`;
 const GEOJSON_CACHE = 'munchiesmaps-geojson-v2';
 const OFFLINE_TILE_CACHE_NAME = 'munchiesmaps-offline-tiles-v1';
@@ -39,6 +39,7 @@ const APP_SHELL_CANDIDATES = [
   './js/gpx-utils.js',
   './js/route-state.js',
   './js/rain-radar.js',
+  './js/rain-motion.js',
   './legal/imprint.html',
   './legal/privacy.html',
   './legal/legal.css',
@@ -232,6 +233,29 @@ async function handleGeoJsonRequest(event) {
   }
 }
 
+// App code (css/, js/, legal/) changes with every release. Serving it cache-first could pair a
+// fresh index.html (network-first) with stale CSS/JS from the previous version, e.g. an unstyled
+// new button. So these are network-first with the cache as offline fallback.
+function isAppCodeRequest(requestUrl) {
+  const scopePath = SCOPE_URL.pathname;
+  return ['css/', 'js/', 'legal/'].some((dir) => requestUrl.pathname.startsWith(`${scopePath}${dir}`));
+}
+
+async function handleAppCodeRequest(event) {
+  const cache = await caches.open(STATIC_CACHE);
+  try {
+    const networkResponse = await fetch(event.request);
+    if (isCacheableResponse(networkResponse)) {
+      await cache.put(event.request, networkResponse.clone());
+    }
+    return networkResponse;
+  } catch (error) {
+    const cached = await cache.match(event.request) || await caches.match(event.request);
+    if (cached) return cached;
+    throw error;
+  }
+}
+
 async function handleStaticAssetRequest(event) {
   const cache = await caches.open(STATIC_CACHE);
   const cached = await cache.match(event.request);
@@ -256,6 +280,11 @@ self.addEventListener('fetch', (event) => {
 
   if (isGeoJsonRequest(requestUrl)) {
     event.respondWith(handleGeoJsonRequest(event));
+    return;
+  }
+
+  if (isStaticAssetRequest(requestUrl) && isAppCodeRequest(requestUrl)) {
+    event.respondWith(handleAppCodeRequest(event));
     return;
   }
 

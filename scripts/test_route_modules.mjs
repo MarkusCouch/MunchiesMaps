@@ -89,3 +89,63 @@ assert.equal(
   'https://tilecache.rainviewer.com/v2/radar/x/256/6/33/21/2/0_0.png'
 );
 console.log('rain radar palette tests passed');
+
+// --- Rain motion (ported from Rainy's tests) -----------------------------
+const Motion = require('../js/rain-motion.js');
+{
+  const width = 40; const height = 40;
+  const first = new Int16Array(width * height).fill(-999);
+  const second = new Int16Array(width * height).fill(-999);
+  for (let y = 10; y < 17; y += 1) {
+    for (let x = 11; x < 19; x += 1) {
+      first[y * width + x] = 30 + ((x + y) % 8);
+      second[(y + 2) * width + x + 3] = 30 + ((x + y) % 8);
+    }
+  }
+  const shift = Motion.estimateShift(first, second, width, height, 8, 15);
+  assert.ok(Math.abs(shift.dx - 3) < 0.55 && Math.abs(shift.dy - 2) < 0.55 && shift.score > 0.95);
+}
+{
+  const position = { lat: 48.137, lng: 11.575 };
+  const g = Motion.computeTimelineGeometry(position, 120, 30);
+  for (let h = 1; h <= 4; h += 1) assert.ok(Math.abs(Motion.haversineKm(position, g[`point${h}`]) - 30 * h) < 0.2);
+  assert.equal(g.distance4, 120);
+}
+{
+  const now = 1_800_000_000;
+  const response = (speed = 30, direction = 270, time = now) => ({ hourly: { time: [time], wind_speed_700hPa: [speed], wind_direction_700hPa: [direction] } });
+  const wind = await Motion.chooseDisplayMotion({ ok: false, reason: 'not-enough-rain' }, {}, async () => Motion.windMotionFromResponse(response(), now));
+  assert.equal(wind.source, 'wind');
+  assert.equal(wind.bearing, 90); // wind from west travels east
+  const position = { lat: 51.05, lng: 13.74 };
+  assert.ok(Motion.computeTimelineGeometry(position, wind.bearing, wind.speedKmh).point4.lng < position.lng);
+  const radar = { ok: true, speedKmh: 25, bearing: 120 };
+  const mustNotFetch = () => { throw new Error('must not fetch'); };
+  assert.equal(await Motion.chooseDisplayMotion(radar, {}, mustNotFetch), radar);
+  assert.equal(await Motion.chooseDisplayMotion({ ok: false, reason: 'inconsistent' }, {}, mustNotFetch), null);
+  for (const data of [{}, response(null), response(0), response(30, null), response(30, 270, now - 7200)]) {
+    assert.equal(Motion.windMotionFromResponse(data, now), null);
+  }
+  assert.equal(await Motion.chooseDisplayMotion({ ok: false, reason: 'not-enough-rain' }, {}, async () => { throw new Error('offline'); }), null);
+}
+{
+  // Full pipeline: a rain blob moving east by 2 px (512 px tiles, zoom 7) per 10 min frame.
+  const size = 512;
+  const blob = (offset) => {
+    const values = new Int16Array(size * size).fill(-999);
+    for (let y = 200; y < 300; y += 1) for (let x = 150 + offset; x < 260 + offset; x += 1) values[y * size + x] = 25 + ((x * 7 + y * 3) % 15);
+    return { values, width: size, height: size };
+  };
+  const now = 1_800_000_000;
+  const meta = { host: 'h', frames: [{ time: now - 1200, path: '/a' }, { time: now - 600, path: '/b' }, { time: now, path: '/c' }] };
+  const fields = { '/a': blob(0), '/b': blob(8), '/c': blob(16) };
+  const result = await Motion.computeDisplayMotion({ lat: 52.5, lng: 13.4 }, meta, {
+    loadField: async (host, frame) => fields[frame.path],
+    loadWind: () => { throw new Error('wind must not be used when radar motion is clear'); }
+  });
+  assert.equal(result.motion.source, 'radar');
+  assert.ok(Math.abs(result.motion.bearing - 90) < 10, `bearing ${result.motion.bearing}`);
+  assert.ok(result.motion.speedKmh > 5 && result.motion.speedKmh < 140);
+  assert.ok(result.geometry.point4.lng < 13.4);
+}
+console.log('rain motion tests passed');

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- CSP: scripts are still inline, so 'unsafe-inline' is required until the main script is moved to js/. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://api.rainviewer.com https://tilecache.rainviewer.com https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://api.rainviewer.com https://tilecache.rainviewer.com https://api.open-meteo.com https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
   <!-- iOS/Firefox homescreen icon fallbacks -->
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
@@ -116,6 +116,7 @@
         <i style="--c:rgb(0,244,90)"></i><i style="--c:rgb(0,216,121)"></i><i style="--c:rgb(40,207,214)"></i><i style="--c:rgb(89,107,230)"></i><i style="--c:rgb(163,77,225)"></i>
       </span>
       <span class="rain-radar-legend__labels"><span>light</span><span>heavy</span></span>
+      <span id="rainRadarMotion" class="rain-radar-legend__motion" hidden></span>
     </div>
     <div class="map-controls-br">
       <button id="rainRadarBtn" type="button" aria-pressed="false" aria-label="Show rain radar" title="Rain radar">
@@ -375,6 +376,7 @@
   <script src="./js/gpx-utils.js"></script>
   <script src="./js/route-state.js"></script>
   <script src="./js/rain-radar.js"></script>
+  <script src="./js/rain-motion.js"></script>
 
   <script>
     const qs = (selector, root = document) => root.querySelector(selector);
@@ -5150,8 +5152,105 @@
       const button = document.getElementById('rainRadarBtn');
       const legend = document.getElementById('rainRadarLegend');
       const timeEl = document.getElementById('rainRadarTime');
-      if (!button || !window.MunchiesRainRadar) return;
+      const motionEl = document.getElementById('rainRadarMotion');
+      const Motion = window.MunchiesRainMotion;
+      if (!button || !window.MunchiesRainRadar || !Motion) return;
+
+      const MOTION_REASON_TEXT = {
+        frames: 'Not enough radar frames to measure rain movement.',
+        'not-enough-rain': 'Hardly any rain nearby and no wind data available.',
+        'low-correlation': 'The rain pattern cannot be tracked reliably between frames.',
+        inconsistent: 'Rain movement is too inconsistent for a reliable arrow.',
+        'speed-range': 'Measured movement is outside the plausible range (5–140 km/h).'
+      };
+      const mapEl = map.getContainer();
+      let motionLayer = null;
+      let motionGeometry = null;
+      let motionPosition = null;
+      let viewBeforeRadar = null;
+      let motionRunId = 0;
+
+      const updateIntermediateMarkers = () => {
+        const spacing = motionGeometry
+          ? map.latLngToContainerPoint(motionGeometry.point1).distanceTo(map.latLngToContainerPoint(motionGeometry.point2))
+          : 0;
+        mapEl.classList.toggle('rain-motion-show-intermediate', map.getZoom() >= 8 && spacing >= 52);
+      };
+      map.on('zoomend', updateIntermediateMarkers);
+
+      const clearMotion = () => {
+        if (motionLayer) map.removeLayer(motionLayer);
+        motionLayer = null;
+        motionGeometry = null;
+        if (motionEl) { motionEl.textContent = ''; motionEl.hidden = true; }
+      };
+
+      // Arrow origin: fresh GPS fix, else a recent last known position, else the map center.
+      const resolveMotionPosition = async () => {
+        try {
+          const position = await getCurrentPositionAsync({ enableHighAccuracy: false, timeout: 6000, maximumAge: 600000 });
+          const fix = { lat: position.coords.latitude, lng: position.coords.longitude, accuracy: position.coords.accuracy, timestamp: position.timestamp };
+          saveLastKnownLocation(fix);
+          updateUserLocationLayers(fix, { isStale: false });
+          return { lat: fix.lat, lng: fix.lng, source: 'gps' };
+        } catch (_) {
+          const saved = loadLastKnownLocation();
+          if (saved && Date.now() - Number(saved.timestamp || 0) < 60 * 60 * 1000) {
+            return { lat: saved.lat, lng: saved.lng, source: 'last-known' };
+          }
+          const center = map.getCenter();
+          return { lat: center.lat, lng: center.lng, source: 'map-center' };
+        }
+      };
+
+      const fitToMotion = () => {
+        if (!motionGeometry) return;
+        map.fitBounds(Motion.motionBounds(L, motionGeometry), {
+          paddingTopLeft: [48, 110],
+          paddingBottomRight: [72, 48],
+          maxZoom: 10,
+          animate: true
+        });
+      };
+
+      const updateMotion = async (metadata, { fit = false } = {}) => {
+        const runId = ++motionRunId;
+        if (!motionPosition) motionPosition = await resolveMotionPosition();
+        if (runId !== motionRunId || !controller.isActive()) return;
+        try {
+          const result = await Motion.computeDisplayMotion(motionPosition, metadata);
+          if (runId !== motionRunId || !controller.isActive()) return;
+          clearMotion();
+          if (!result.motion) {
+            if (motionEl) { motionEl.textContent = MOTION_REASON_TEXT[result.reason] || 'Rain movement is unclear right now.'; motionEl.hidden = false; }
+            if (fit) map.setView([motionPosition.lat, motionPosition.lng], Math.min(map.getZoom(), 8), { animate: true });
+            return;
+          }
+          motionGeometry = result.geometry;
+          motionLayer = Motion.createMotionLayer(L, result.geometry, result.motion).addTo(map);
+          const where = motionPosition.source === 'map-center' ? 'map center' : 'your location';
+          const speed = Math.round(result.motion.speedKmh);
+          const toward = Motion.bearingToCompass(result.motion.bearing);
+          if (motionEl) {
+            motionEl.textContent = result.motion.source === 'wind'
+              ? `Wind aloft (≈3 km) toward ${toward} · ${speed} km/h · from ${where}`
+              : `Rain moving toward ${toward} · ${speed} km/h · from ${where}`;
+            motionEl.hidden = false;
+          }
+          if (fit) fitToMotion();
+          updateIntermediateMarkers();
+        } catch (error) {
+          console.warn('[rain-radar] motion analysis failed', error);
+          if (motionEl) { motionEl.textContent = 'Rain movement could not be calculated.'; motionEl.hidden = false; }
+        }
+      };
+
+      let firstFrame = true;
       const controller = window.MunchiesRainRadar.createRainRadarController(L, map, {
+        onFrame: (metadata) => {
+          updateMotion(metadata, { fit: firstFrame });
+          firstFrame = false;
+        },
         onStatus: ({ state, time, message }) => {
           const on = state === 'on' || state === 'loading';
           button.classList.toggle('is-active', on);
@@ -5159,10 +5258,22 @@
           button.setAttribute('aria-pressed', String(on));
           button.setAttribute('aria-label', on ? 'Hide rain radar' : 'Show rain radar');
           if (legend) legend.hidden = !on;
+          // POIs are hidden while the radar is on and come back when it is switched off.
+          mapEl.classList.toggle('rain-mode', on);
           if (timeEl) timeEl.textContent = state === 'on' && time ? `· ${time}` : (state === 'loading' ? '· loading…' : '');
           if (state === 'error') {
             controller.disable();
             showMapToast(message || 'Rain radar is unavailable right now.');
+          }
+          if (state === 'off') {
+            motionRunId += 1;
+            clearMotion();
+            motionPosition = null;
+            firstFrame = true;
+            if (viewBeforeRadar) {
+              map.setView(viewBeforeRadar.center, viewBeforeRadar.zoom, { animate: true });
+              viewBeforeRadar = null;
+            }
           }
         }
       });
@@ -5172,6 +5283,7 @@
           showMapToast('Rain radar needs an internet connection.');
           return;
         }
+        if (!controller.isActive()) viewBeforeRadar = { center: map.getCenter(), zoom: map.getZoom() };
         controller.toggle();
       });
     }
