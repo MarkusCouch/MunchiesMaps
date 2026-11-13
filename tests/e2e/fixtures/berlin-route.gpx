@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="MunchiesMaps e2e" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata><name>E2E Berlin test route</name></metadata>
+  <trk>
+    <name>E2E Berlin test route</name>
+    <trkseg>
+      <trkpt lat="52.514500" lon="13.350100"></trkpt>
+      <trkpt lat="52.514680" lon="13.352860"></trkpt>
+      <trkpt lat="52.514860" lon="13.355620"></trkpt>
+      <trkpt lat="52.515040" lon="13.358380"></trkpt>
+      <trkpt lat="52.515220" lon="13.361140"></trkpt>
+      <trkpt lat="52.515400" lon="13.363900"></trkpt>
+      <trkpt lat="52.515580" lon="13.366660"></trkpt>
+      <trkpt lat="52.515760" lon="13.369420"></trkpt>
+      <trkpt lat="52.515940" lon="13.372180"></trkpt>
+      <trkpt lat="52.516120" lon="13.374940"></trkpt>
+      <trkpt lat="52.516300" lon="13.377700"></trkpt>
+      <trkpt lat="52.516370" lon="13.378820"></trkpt>
+      <trkpt lat="52.516440" lon="13.379940"></trkpt>
+      <trkpt lat="52.516510" lon="13.381060"></trkpt>
+      <trkpt lat="52.516580" lon="13.382180"></trkpt>
+      <trkpt lat="52.516650" lon="13.383300"></trkpt>
+      <trkpt lat="52.516720" lon="13.384420"></trkpt>
+      <trkpt lat="52.516790" lon="13.385540"></trkpt>
+      <trkpt lat="52.516860" lon="13.386660"></trkpt>
+      <trkpt lat="52.516930" lon="13.387780"></trkpt>
+      <trkpt lat="52.517000" lon="13.388900"></trkpt>
+      <trkpt lat="52.517160" lon="13.390110"></trkpt>
+      <trkpt lat="52.517320" lon="13.391320"></trkpt>
+      <trkpt lat="52.517480" lon="13.392530"></trkpt>
+      <trkpt lat="52.517640" lon="13.393740"></trkpt>
+      <trkpt lat="52.517800" lon="13.394950"></trkpt>
+      <trkpt lat="52.517960" lon="13.396160"></trkpt>
+      <trkpt lat="52.518120" lon="13.397370"></trkpt>
+      <trkpt lat="52.518280" lon="13.398580"></trkpt>
+      <trkpt lat="52.518440" lon="13.399790"></trkpt>
+      <trkpt lat="52.518600" lon="13.401000"></trkpt>
+      <trkpt lat="52.518930" lon="13.402220"></trkpt>
+      <trkpt lat="52.519260" lon="13.403440"></trkpt>
+      <trkpt lat="52.519590" lon="13.404660"></trkpt>
+      <trkpt lat="52.519920" lon="13.405880"></trkpt>
+      <trkpt lat="52.520250" lon="13.407100"></trkpt>
+      <trkpt lat="52.520580" lon="13.408320"></trkpt>
+      <trkpt lat="52.520910" lon="13.409540"></trkpt>
+      <trkpt lat="52.521240" lon="13.410760"></trkpt>
+      <trkpt lat="52.521570" lon="13.411980"></trkpt>
+      <trkpt lat="52.521900" lon="13.413200"></trkpt>
+      <trkpt lat="52.521510" lon="13.414780"></trkpt>
+      <trkpt lat="52.521120" lon="13.416360"></trkpt>
+      <trkpt lat="52.520730" lon="13.417940"></trkpt>
+      <trkpt lat="52.520340" lon="13.419520"></trkpt>
+      <trkpt lat="52.519950" lon="13.421100"></trkpt>
+      <trkpt lat="52.519560" lon="13.422680"></trkpt>
+      <trkpt lat="52.519170" lon="13.424260"></trkpt>
+      <trkpt lat="52.518780" lon="13.425840"></trkpt>
+      <trkpt lat="52.518390" lon="13.427420"></trkpt>
+      <trkpt lat="52.518000" lon="13.429000"></trkpt>
+      <trkpt lat="52.517500" lon="13.430600"></trkpt>
+      <trkpt lat="52.517000" lon="13.432200"></trkpt>
+      <trkpt lat="52.516500" lon="13.433800"></trkpt>
+      <trkpt lat="52.516000" lon="13.435400"></trkpt>
+      <trkpt lat="52.515500" lon="13.437000"></trkpt>
+      <trkpt lat="52.515000" lon="13.438600"></trkpt>
+      <trkpt lat="52.514500" lon="13.440200"></trkpt>
+      <trkpt lat="52.514000" lon="13.441800"></trkpt>
+      <trkpt lat="52.513500" lon="13.443400"></trkpt>
+      <trkpt lat="52.513000" lon="13.445000"></trkpt>
+      <trkpt lat="52.512500" lon="13.446100"></trkpt>
+      <trkpt lat="52.512000" lon="13.447200"></trkpt>
+      <trkpt lat="52.511500" lon="13.448300"></trkpt>
+      <trkpt lat="52.511000" lon="13.449400"></trkpt>
+      <trkpt lat="52.510500" lon="13.450500"></trkpt>
+      <trkpt lat="52.510000" lon="13.451600"></trkpt>
+      <trkpt lat="52.509500" lon="13.452700"></trkpt>
+      <trkpt lat="52.509000" lon="13.453800"></trkpt>
+      <trkpt lat="52.508500" lon="13.454900"></trkpt>
+      <trkpt lat="52.508000" lon="13.456000"></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

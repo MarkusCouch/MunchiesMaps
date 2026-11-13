@@ -18,6 +18,8 @@ const VENDOR_ASSETS = [
   './vendor/leaflet.markercluster/MarkerCluster.css',
   './vendor/leaflet.markercluster/MarkerCluster.Default.css',
   './vendor/leaflet.markercluster/leaflet.markercluster.js',
+  './vendor/i18next/i18next.min.js',
+  './vendor/suncalc/suncalc.js',
   './vendor/opening_hours/opening_hours.min.js',
   './vendor/fontawesome/css/all.min.css',
   './vendor/fontawesome/webfonts/fa-solid-900.woff2',

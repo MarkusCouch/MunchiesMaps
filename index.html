@@ -1332,6 +1332,8 @@
   </aside>
   <script src="./vendor/leaflet/leaflet.js"></script>
   <script src="./vendor/leaflet.markercluster/leaflet.markercluster.js"></script>
+  <script src="./vendor/i18next/i18next.min.js"></script>
+  <script src="./vendor/suncalc/suncalc.js"></script>
   <script src="./vendor/opening_hours/opening_hours.min.js"></script>
   <script src="./js/offline-route-store.js"></script>
 
@@ -2028,8 +2030,18 @@
       if (!order.length) return null;
       const selected = activeRegions instanceof Set ? activeRegions : new Set(activeRegions || []);
       const bitString = order.map((regionId) => (selected.has(regionId) ? '1' : '0')).join('');
-      const value = parseInt(bitString, 2);
-      return Number.isFinite(value) ? value.toString(36) : null;
+      // BigInt: countries with more than 53 regions (e.g. Turkey, 81) exceed Number precision.
+      return BigInt(`0b${bitString}`).toString(36);
+    }
+
+    function parseBase36BigInt(token) {
+      let value = 0n;
+      for (const char of token) {
+        const digit = parseInt(char, 36);
+        if (!Number.isFinite(digit)) return null;
+        value = value * 36n + BigInt(digit);
+      }
+      return value;
     }
 
     function decodeActiveRegions(country, code) {
@@ -2037,8 +2049,8 @@
       if (!order.length) return null;
       const token = String(code || '').trim().toLowerCase();
       if (!/^[0-9a-z]+$/.test(token)) return null;
-      const value = parseInt(token, 36);
-      if (!Number.isFinite(value)) return null;
+      const value = parseBase36BigInt(token);
+      if (value === null) return null;
       const bits = value.toString(2);
       if (bits.length > order.length) return null;
       const normalizedBits = bits.padStart(order.length, '0');
@@ -5250,6 +5262,8 @@
         });
         activeOfflineRouteId = pkg.id;
         activeRouteSource = 'offline-route-package';
+        // Everything (route, hidden POIs, favorites) is persisted now.
+        poiVisibilityState.unsavedChanges = false;
         await listSavedOfflineRoutes();
         setGpxUiMode('cache-found');
         refreshGpxUiState();

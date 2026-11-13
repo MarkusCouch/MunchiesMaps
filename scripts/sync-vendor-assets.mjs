@@ -136,6 +136,11 @@ async function main() {
     copied
   );
 
+  // opening_hours.js expects the globals `i18next` and `SunCalc` (UMD build).
+  // Without them the library throws during load and `window.opening_hours` stays undefined.
+  await copyFileChecked('node_modules/i18next/dist/umd/i18next.min.js', 'vendor/i18next/i18next.min.js', copied);
+  await copyFileChecked('node_modules/suncalc/suncalc.js', 'vendor/suncalc/suncalc.js', copied);
+
   const openingHoursTargetRelativePath = 'vendor/opening_hours/opening_hours.min.js';
   const openingHoursTarget = abs(openingHoursTargetRelativePath);
 
