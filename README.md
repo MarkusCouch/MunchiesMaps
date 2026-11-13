@@ -71,18 +71,19 @@ npm run test:e2e  # Playwright smoke tests (GPX, favorites, saved routes, backup
 ```
 
 CI (`.github/workflows/ci.yml`) runs the unit tests, the vendor check, the GeoJSON integrity check and the
-Playwright smoke tests on every pull request.
+Playwright smoke tests on every pull request and on `main`. Use `npm run serve` to run the app locally on
+<http://localhost:4173/>.
 
 ### Service worker cache version
 
-`sw.js` contains a `BUILD_ID`. Bump it with
+`sw.js` contains a `BUILD_ID`, a content hash of the app shell (`index.html`, `js/`, `vendor/`, icons).
+A new `BUILD_ID` makes browsers install the updated service worker and drop the old static cache.
+After merges to `main`, the workflow `sw-build-id.yml` updates it automatically. Locally:
 
 ```bash
-npm run bump-sw
+npm run bump-sw   # update BUILD_ID
+npm run check-sw  # verify it is current
 ```
-
-whenever app shell files (`index.html`, `js/*`, icons, vendor files) change. CI fails if app shell files
-changed without a new `BUILD_ID`.
 
 ### SEO landing pages
 

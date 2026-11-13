@@ -30,6 +30,9 @@ jobs:
       - name: Check vendor assets
         run: npm run check-vendor
 
+      - name: Update service worker BUILD_ID
+        run: npm run bump-sw
+
       - name: Commit generated vendor assets
         run: |
           if [ -n "$(git status --porcelain)" ]; then

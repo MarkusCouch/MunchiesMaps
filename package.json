@@ -7,7 +7,9 @@
     "test:e2e": "playwright test",
     "serve": "node scripts/serve-static.mjs 4173",
     "sync-vendor": "node scripts/sync-vendor-assets.mjs",
-    "check-vendor": "node scripts/check-vendor-assets.mjs"
+    "check-vendor": "node scripts/check-vendor-assets.mjs",
+    "bump-sw": "node scripts/sw-build-id.mjs",
+    "check-sw": "node scripts/sw-build-id.mjs --check"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.5.2",
