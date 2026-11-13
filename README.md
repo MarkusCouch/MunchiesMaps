@@ -21,6 +21,7 @@ Live: <https://nightrides.cc/munchiesmaps/>
 - Save routes locally (IndexedDB) incl. an offline map tile snapshot (`Offline Map detail`)
 - JSON session backup (route, radius, filters, hidden POIs, favorites) – export and re-import
 - Shareable URLs with compact filter state (see [`URL_STATE.md`](URL_STATE.md))
+- Rain radar overlay (cloud button) with Rainy's five intensity classes, data from RainViewer
 - Open any POI in Google Maps; shelters additionally in Mapy.com
 - Installable PWA with offline support, dark mode, mobile-friendly interface
 - Feedback form and support link in the drawer (`Feedback & Support`)
@@ -53,7 +54,7 @@ The accuracy, completeness and freshness of individual points of interest depend
 |---|---|
 | `index.html` | The web app (markup + main script) |
 | `css/app.css` | App styles |
-| `js/` | Browser modules: `gpx-utils.js` (GPX parsing), `route-state.js` (POI ids, backup format), `offline-route-store.js` (IndexedDB), `consent.js` (analytics consent) |
+| `js/` | Browser modules: `gpx-utils.js` (GPX parsing), `route-state.js` (POI ids, backup format), `offline-route-store.js` (IndexedDB), `consent.js` (analytics consent), `rain-radar.js` (radar overlay ported from Rainy) |
 | `sw.js` | Service worker (offline app shell, GeoJSON + tile caching) |
 | `resources/geojson/` | Generated POI datasets per country / region / category + `manifest.json` |
 | `resources/icons/` | Category marker icons |

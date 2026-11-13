@@ -157,6 +157,7 @@ html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text);
   flex-direction: column;
   gap: 10px;
 }
+#rainRadarBtn,
 #layerDrawerToggle,
 #locateButton,
 #shareMainBtn,
@@ -176,6 +177,7 @@ html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text);
   font-weight: 700;
   cursor: pointer;
 }
+#rainRadarBtn:active,
 #layerDrawerToggle:active,
 #locateButton:active,
 #shareMainBtn:active,
@@ -1016,3 +1018,31 @@ html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text);
   align-items: center;
   gap: 6px;
 }
+
+/* Rain radar (ported from Rainy) */
+#rainRadarBtn.is-active { color: #fff; background: #1f6fb2; border-color: #1f6fb2; }
+#rainRadarBtn.is-loading i { animation: rain-radar-pulse 1s ease-in-out infinite; }
+@keyframes rain-radar-pulse { 50% { opacity: 0.35; } }
+.rain-radar-tile { image-rendering: pixelated; image-rendering: crisp-edges; }
+.rain-radar-legend {
+  position: fixed;
+  left: 56px;
+  top: 12px;
+  z-index: 1030;
+  display: grid;
+  gap: 3px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: var(--btn-shadow);
+  font: 12px/1.3 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  pointer-events: none;
+}
+.rain-radar-legend[hidden] { display: none; }
+.rain-radar-legend__title { font-weight: 650; white-space: nowrap; }
+.rain-radar-legend__title span { font-weight: 500; color: var(--muted); }
+.rain-radar-legend__scale { display: flex; gap: 2px; }
+.rain-radar-legend__scale i { width: 22px; height: 8px; border-radius: 2px; background: var(--c); }
+.rain-radar-legend__labels { display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; }

@@ -29,6 +29,10 @@ Living plan for the project. Status as of 2026-11. Implementation details: see R
 - Extracted `css/app.css`, `js/gpx-utils.js`, `js/route-state.js` (with unit tests)
 - Content Security Policy (meta tag)
 
+### Rain radar
+- Cloud button above the map controls toggles a RainViewer radar overlay in Rainy's pixel style
+  (5 intensity classes, auto-refresh every 5 min, legend with radar time)
+
 ## Next
 
 ### Phase 3 – Product
@@ -48,4 +52,4 @@ Living plan for the project. Status as of 2026-11. Implementation details: see R
 
 ### Later
 Community trust signals / rankings, public backup viewer / share by UUID, Wahoo export, data tiles instead of
-admin regions, rain radar integration (separate project *Rainy*).
+admin regions, more of *Rainy* in the app (motion arrow, 4 h rain timeline along the route).

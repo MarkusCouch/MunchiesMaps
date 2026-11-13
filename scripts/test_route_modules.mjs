@@ -72,3 +72,20 @@ assert.equal(Gpx.parseGpxText('<gpx/>', { DOMParser: null }).points.length, 0);
 assert.equal(Gpx.buildGpxGeoJson(null), null);
 
 console.log('route module tests passed');
+
+// --- Rain radar palette (ported from Rainy) ------------------------------
+const Rain = require('../js/rain-radar.js');
+assert.equal(Rain.rgbToDbz(0x00, 0xa3, 0xe0, 255), 20);
+assert.equal(Rain.rgbToDbz(0x00, 0xa3, 0xe0, 0), null);
+assert.equal(Rain.rgbToDbz(1, 2, 3, 255), null);
+assert.equal(Rain.radarClassForDbz(5).name, 'very light');
+assert.equal(Rain.radarClassForDbz(20).name, 'moderate');
+assert.equal(Rain.radarClassForDbz(60).name, 'very heavy');
+const px = [0x00, 0xa3, 0xe0, 255, 1, 2, 3, 255];
+Rain.recolorPixels(px);
+assert.deepEqual(px, [40, 207, 214, 202, 1, 2, 3, 0]);
+assert.equal(
+  Rain.radarTileUrl('https://tilecache.rainviewer.com', { path: '/v2/radar/x' }, { z: 6, x: 33, y: 21 }),
+  'https://tilecache.rainviewer.com/v2/radar/x/256/6/33/21/2/0_0.png'
+);
+console.log('rain radar palette tests passed');
