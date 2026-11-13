@@ -266,7 +266,9 @@ async function handleAppCodeRequest(event) {
 
 async function handleStaticAssetRequest(event) {
   const cache = await caches.open(STATIC_CACHE);
-  const cached = await cache.match(event.request);
+  // Icons and the manifest are requested with ?v=<ICON_VERSION>; the precache holds the plain URLs.
+  // ignoreSearch is safe here: changed icons change BUILD_ID and thus use a fresh cache.
+  const cached = await cache.match(event.request) || await cache.match(event.request, { ignoreSearch: true });
   if (cached) return cached;
 
   const networkResponse = await fetch(event.request);
