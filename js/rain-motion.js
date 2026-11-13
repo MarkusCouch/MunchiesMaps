@@ -217,25 +217,42 @@
   // ---- Wind fallback ------------------------------------------------------------------------
 
   // A labelled display fallback only: model wind is never fed into a rain forecast.
+  // Prefers wind at 700 hPa (≈3 km, steers rain cells, as in Rainy); falls back to 10 m wind.
+  // Returns { ok: true, source, speedKmh, bearing }, { ok: false, reason: 'calm' } or null.
   function windMotionFromResponse(data, nowSeconds) {
     var now = nowSeconds === undefined ? Date.now() / 1000 : nowSeconds;
     var hourly = data && data.hourly;
-    var time = hourly && hourly.time && hourly.time[0];
-    var speedKmh = hourly && hourly.wind_speed_700hPa && hourly.wind_speed_700hPa[0];
-    var fromBearing = hourly && hourly.wind_direction_700hPa && hourly.wind_direction_700hPa[0];
-    if (!Number.isFinite(time) || Math.abs(now - time) > 90 * 60
-      || !Number.isFinite(speedKmh) || speedKmh < 1 || speedKmh > 250
-      || !Number.isFinite(fromBearing) || fromBearing < 0 || fromBearing > 360) return null;
-    // Meteorological wind direction names its origin; the arrow points downwind.
-    return { ok: true, source: 'wind', speedKmh: speedKmh, bearing: (fromBearing + 180) % 360 };
+    var times = (hourly && hourly.time) || [];
+    var index = -1;
+    var bestDelta = Infinity;
+    for (var i = 0; i < times.length; i += 1) {
+      var delta = Math.abs(now - times[i]);
+      if (Number.isFinite(times[i]) && delta < bestDelta) { bestDelta = delta; index = i; }
+    }
+    if (index < 0 || bestDelta > 90 * 60) return null;
+    var levels = [
+      ['wind', 'wind_speed_700hPa', 'wind_direction_700hPa'],
+      ['wind-surface', 'wind_speed_10m', 'wind_direction_10m']
+    ];
+    var sawCalm = false;
+    for (var l = 0; l < levels.length; l += 1) {
+      var speedKmh = hourly[levels[l][1]] && hourly[levels[l][1]][index];
+      var fromBearing = hourly[levels[l][2]] && hourly[levels[l][2]][index];
+      if (!Number.isFinite(speedKmh) || speedKmh > 250 || !Number.isFinite(fromBearing) || fromBearing < 0 || fromBearing > 360) continue;
+      if (speedKmh < 1) { sawCalm = true; continue; }
+      // Meteorological wind direction names its origin; the arrow points downwind.
+      return { ok: true, source: levels[l][0], speedKmh: speedKmh, bearing: (fromBearing + 180) % 360 };
+    }
+    return sawCalm ? { ok: false, reason: 'calm' } : null;
   }
 
   function windUrl(position) {
     var params = [
       'latitude=' + position.lat.toFixed(4),
       'longitude=' + position.lng.toFixed(4),
-      'hourly=wind_speed_700hPa,wind_direction_700hPa',
-      'forecast_hours=1',
+      'hourly=wind_speed_700hPa,wind_direction_700hPa,wind_speed_10m,wind_direction_10m',
+      'past_hours=1',
+      'forecast_hours=2',
       'timeformat=unixtime',
       'wind_speed_unit=kmh',
       'timezone=UTC'
@@ -245,7 +262,7 @@
 
   async function loadWindMotion(position) {
     var controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-    var timeout = setTimeout(function () { if (controller) controller.abort(); }, 6000);
+    var timeout = setTimeout(function () { if (controller) controller.abort(); }, 8000);
     try {
       var response = await fetch(windUrl(position), { signal: controller ? controller.signal : undefined, cache: 'no-cache' });
       if (!response.ok) throw new Error('Wind: HTTP ' + response.status);
@@ -255,11 +272,16 @@
     }
   }
 
+  /**
+   * Measured radar motion wins. Otherwise (no rain nearby, unclear pattern, radar images
+   * unavailable) the wind is shown, so there is an arrow whenever wind data exists.
+   * Returns a motion object, { ok: false, reason } or null.
+   */
   async function chooseDisplayMotion(radarMotion, position, loadWind) {
     if (radarMotion && radarMotion.ok) return radarMotion;
-    if (!radarMotion || radarMotion.reason !== 'not-enough-rain') return null;
     try {
-      return await (loadWind || loadWindMotion)(position);
+      var wind = await (loadWind || loadWindMotion)(position);
+      return wind || null;
     } catch (_) {
       return null;
     }
@@ -305,21 +327,28 @@
    */
   async function computeDisplayMotion(position, metadata, deps) {
     var d = deps || {};
-    var frames = (metadata.frames || []).slice(-3);
+    var frames = ((metadata && metadata.frames) || []).slice(-3);
     var radarMotion = { ok: false, reason: 'frames' };
     if (frames.length >= 3) {
-      var fields = await Promise.all(frames.map(function (frame) {
-        return (d.loadField || loadAnalysisField)(metadata.host, frame, position);
-      }));
-      radarMotion = analyzeMotion(fields, {
-        latitude: position.lat,
-        frameTimes: frames.map(function (frame) { return frame.time; })
-      });
+      try {
+        var fields = await Promise.all(frames.map(function (frame) {
+          return (d.loadField || loadAnalysisField)(metadata.host, frame, position);
+        }));
+        radarMotion = analyzeMotion(fields, {
+          latitude: position.lat,
+          frameTimes: frames.map(function (frame) { return frame.time; })
+        });
+      } catch (error) {
+        // Radar images around the position could not be loaded – the wind fallback still works.
+        radarMotion = { ok: false, reason: 'radar-unavailable' };
+      }
     }
-    var motion = await chooseDisplayMotion(radarMotion, position, d.loadWind);
+    var choice = await chooseDisplayMotion(radarMotion, position, d.loadWind);
+    var motion = choice && choice.ok ? choice : null;
     return {
       motion: motion,
-      reason: motion ? null : radarMotion.reason,
+      radarReason: radarMotion.ok ? null : radarMotion.reason,
+      reason: motion ? null : ((choice && choice.reason) || 'no-wind-data'),
       geometry: motion ? computeTimelineGeometry(position, motion.bearing, motion.speedKmh) : null
     };
   }
@@ -359,7 +388,8 @@
     L.marker(geometry.position, withPane({ icon: arrowIcon, interactive: false, keyboard: false, zIndexOffset: 1300 }, markerPane)).addTo(layer);
     [[geometry.point1, '+1 h', true], [geometry.point2, '+2 h', false], [geometry.point3, '+3 h', true], [geometry.point4, '+4 h', false]]
       .forEach(function (entry) {
-        var sourceLabel = motion.source === 'wind' && entry[1] === '+4 h' ? '<small class="rain-motion-source">wind aloft</small>' : '';
+        var sourceLabel = entry[1] !== '+4 h' ? '' : motion.source === 'wind' ? '<small class="rain-motion-source">wind aloft</small>'
+          : motion.source === 'wind-surface' ? '<small class="rain-motion-source">wind</small>' : '';
         var icon = L.divIcon({
           className: '',
           html: '<div class="rain-motion-marker' + (entry[2] ? ' is-intermediate' : '') + '" style="--bearing:' + motion.bearing + 'deg"><i></i><b>' + entry[1] + sourceLabel + '</b></div>',

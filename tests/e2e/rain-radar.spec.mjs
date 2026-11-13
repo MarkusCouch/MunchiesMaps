@@ -90,7 +90,7 @@ test('rain radar shows a message when RainViewer is unreachable', async ({ page 
   await expect(page.locator('#rainRadarBtn')).toHaveAttribute('aria-pressed', 'false');
 });
 
-async function mockRadarAndWind(page, { windFrom = 270, windKmh = 30 } = {}) {
+async function mockRadarAndWind(page, { windFrom = 270, windKmh = 30, analysisStatus = 200 } = {}) {
   const now = Math.floor(Date.now() / 1000);
   await page.context().route('https://api.rainviewer.com/public/weather-maps.json', (route) => route.fulfill({
     contentType: 'application/json',
@@ -105,7 +105,11 @@ async function mockRadarAndWind(page, { windFrom = 270, windKmh = 30 } = {}) {
   }));
   // No rain anywhere -> Rainy falls back to the modelled wind at 700 hPa.
   const empty = solidPng(0, 0, 0, 0);
-  await page.context().route(/tilecache\.rainviewer\.com/, (route) => route.fulfill({ contentType: 'image/png', body: empty }));
+  await page.context().route(/tilecache\.rainviewer\.com/, (route) => {
+    const isAnalysis = /\/512\/7\//.test(route.request().url());
+    if (isAnalysis && analysisStatus !== 200) return route.fulfill({ status: analysisStatus, body: '' });
+    return route.fulfill({ contentType: 'image/png', body: empty });
+  });
   const windRequests = [];
   await page.context().route(/api\.open-meteo\.com/, (route) => {
     windRequests.push(route.request().url());
@@ -181,4 +185,75 @@ test('rain mode hides POIs, shows the +4 h direction arrow and zooms to it', asy
   await expect.poll(() => page.evaluate(() => map.getZoom())).toBe(viewBefore.zoom);
   await expect.poll(() => page.locator('.mm-marker-wrap:visible, .marker-cluster:visible').count()).toBeGreaterThan(0);
   expect(await page.evaluate(() => window.__cspViolations)).toEqual([]);
+});
+
+test('rain mode also hides POI clusters', async ({ page }) => {
+  await mockGeolocation(page, 52.52, 13.405);
+  await mockRadarAndWind(page);
+  await openApp(page);
+  // Force clustering: a low threshold at a zoom with many POIs.
+  await page.evaluate(() => {
+    localStorage.setItem('clusterThreshold', '1');
+    const input = document.getElementById('clusterThresholdInput');
+    input.value = '1';
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+    map.setView([52.52, 13.405], 13, { animate: false });
+  });
+  await expect.poll(() => page.locator('.cluster-icon-wrap').count()).toBeGreaterThan(0);
+
+  await page.click('#rainRadarBtn');
+  await expect(page.locator('#map')).toHaveClass(/rain-mode/);
+  await expect(page.locator('.cluster-icon-wrap:visible, .mm-marker-wrap:visible')).toHaveCount(0);
+
+  await page.click('#rainRadarBtn');
+  await expect.poll(() => page.locator('.cluster-icon-wrap:visible, .mm-marker-wrap:visible').count()).toBeGreaterThan(0);
+});
+
+test('arrow is shown even when radar images around the position are unavailable', async ({ page }) => {
+  await mockGeolocation(page, 52.52, 13.405);
+  await mockRadarAndWind(page, { windFrom: 0, windKmh: 20, analysisStatus: 404 });
+  await openApp(page);
+  await page.click('#rainRadarBtn');
+  await expect(page.locator('.rain-motion-tip')).toHaveCount(1);
+  await expect(page.locator('#rainRadarMotion')).toContainText('toward S · 20 km/h');
+});
+
+test('app CSS/JS references carry the current BUILD_ID', async ({ page, request }) => {
+  const sw = await (await request.get('sw.js')).text();
+  const buildId = sw.match(/const BUILD_ID = '([^']+)'/)[1];
+  await openApp(page);
+  const refs = await page.evaluate(() => [
+    ...Array.from(document.querySelectorAll('link[rel="stylesheet"][href*="css/"]'), (el) => el.getAttribute('href')),
+    ...Array.from(document.querySelectorAll('script[src*="js/"]'), (el) => el.getAttribute('src'))
+  ].filter((ref) => ref.startsWith('./css/') || ref.startsWith('./js/')));
+  expect(refs.length).toBeGreaterThan(5);
+  for (const ref of refs) expect(ref).toContain(`?v=${buildId}`);
+});
+
+test('no error text when wind data fails; the arrow appears once wind aloft is reachable', async ({ page }) => {
+  await mockGeolocation(page, 52.52, 13.405);
+  await mockRadarAndWind(page, { analysisStatus: 404 });
+  // First two wind requests fail (pipeline + direct fallback), later ones succeed.
+  let windCalls = 0;
+  const now = Math.floor(Date.now() / 1000);
+  await page.context().unroute(/api\.open-meteo\.com/);
+  await page.context().route(/api\.open-meteo\.com/, (route) => {
+    windCalls += 1;
+    if (windCalls <= 2) return route.abort();
+    return route.fulfill({
+      contentType: 'application/json',
+      body: JSON.stringify({ hourly: { time: [now], wind_speed_700hPa: [25], wind_direction_700hPa: [90] } })
+    });
+  });
+  await page.addInitScript(() => { window.__mmMotionRetryMs = 500; });
+  await openApp(page);
+  await page.click('#rainRadarBtn');
+
+  await expect.poll(() => windCalls).toBeGreaterThanOrEqual(2);
+  // While no data is available: no error message, just the radar.
+  await expect(page.locator('#rainRadarMotion')).toBeHidden();
+
+  // Retry picks up the wind aloft.
+  await expect(page.locator('.rain-motion-tip')).toHaveCount(1, { timeout: 10_000 });
+  await expect(page.locator('#rainRadarMotion')).toContainText('Wind aloft (≈3 km) toward W · 25 km/h');
 });
