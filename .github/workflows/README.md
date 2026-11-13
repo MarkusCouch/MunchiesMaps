@@ -28,7 +28,7 @@ If an input is left empty, the fetch script runs without that filter.
 - `dry_run`: `true`/`false` (skip data writes + PR creation when `true`)
 
 Country IDs are validated against `fetch_data/config.yml` and unknown IDs now fail fast with a clear error.
-Current short IDs that are still in use are: `al`, `gr`, `me`, `tr`.
+Current short IDs that are still in use are: `al`, `gr`, `me`, `tr`, `kg`.
 
 Supported aliases for manual `countries` input:
 - `de`, `deutschland` → `germany`
@@ -36,6 +36,7 @@ Supported aliases for manual `countries` input:
 - `greece` → `gr`
 - `montenegro` → `me`
 - `turkey` → `tr`
+- `kyrgyzstan` → `kg`
 
 Each matrix job writes and uploads:
 

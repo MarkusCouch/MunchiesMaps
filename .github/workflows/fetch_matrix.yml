@@ -67,6 +67,7 @@ jobs:
                   'greece': 'gr',
                   'montenegro': 'me',
                   'turkey': 'tr',
+                  'kyrgyzstan': 'kg',
               }
               normalized: list[str] = []
               for country in requested:
@@ -145,7 +146,8 @@ jobs:
             scripts/check_missing_json.py \
             fetch_data/fetch_overpass.py \
             fetch_data/fetch_missing_overpass.py \
-            scripts/check_geojson_integrity.py
+            scripts/check_geojson_integrity.py \
+            scripts/check_geojson_plausibility.py
 
       - name: Run filtered fetch for matrix country
         id: run_fetch
@@ -186,6 +188,15 @@ jobs:
           echo "exit_code=${exit_code}" >> "$GITHUB_OUTPUT"
           exit 0
 
+      - name: Plausibility check for matrix country
+        id: plausibility
+        if: steps.run_fetch.outputs.exit_code == '0' && github.event.inputs.dry_run != 'true'
+        run: |
+          set +e
+          python scripts/check_geojson_plausibility.py --countries "${{ matrix.country }}"
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+
       - name: Append compact job summary
         if: always()
         run: |
@@ -212,7 +223,7 @@ jobs:
             artifacts/fetch-failures/fetch-failures-${{ matrix.country }}.jsonl
 
       - name: Prepare GeoJSON artifact for matrix country
-        if: steps.run_fetch.outputs.exit_code == '0' && github.event.inputs.dry_run != 'true'
+        if: steps.run_fetch.outputs.exit_code == '0' && steps.plausibility.outputs.exit_code == '0' && github.event.inputs.dry_run != 'true'
         id: geojson_artifact
         run: |
           set -euo pipefail
@@ -235,6 +246,12 @@ jobs:
           name: geojson-changes-${{ matrix.country }}
           if-no-files-found: error
           path: artifacts/geojson-${{ matrix.country }}/
+
+      - name: Fail when plausibility check failed
+        if: steps.plausibility.outputs.exit_code != '' && steps.plausibility.outputs.exit_code != '0'
+        run: |
+          echo "::error::Plausibility check failed for ${{ matrix.country }}; its GeoJSON changes were left out of the combined PR. See the errors above."
+          exit 1
 
   retry_failed_fetches:
     name: Retry failed fetches

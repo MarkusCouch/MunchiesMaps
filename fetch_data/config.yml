@@ -587,7 +587,7 @@ countries:
       iso3166_2: ES-ML
   norway:
     label: Norway
-    iso3166_1: false
+    iso3166_1: "NO"
     country_admin_level: 2
     region_admin_level: 4
     region_boundary: administrative
@@ -2225,6 +2225,15 @@ countries:
       match_value: CH-ZH
       country_query_name: Switzerland
     country_query_name: Switzerland
+  kg:
+    label: Kyrgyzstan
+    iso3166_1: KG
+    country_admin_level: 2
+    country_scope_strategy: area-iso
+    path: kyrgyzstan
+    id: kg
+    region: kg
+    regions: []
 categories:
   fuel: fuel
   supermarkets: supermarkets

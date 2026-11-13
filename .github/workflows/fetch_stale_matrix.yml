@@ -384,6 +384,17 @@ jobs:
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
 
+      - uses: actions/setup-python@v5
+        if: steps.changes.outputs.has_changes == 'true'
+        with:
+          python-version: "3.11"
+
+      - name: GeoJSON plausibility check
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          pip install -r fetch_data/requirements.txt
+          python scripts/check_geojson_plausibility.py
+
       - uses: peter-evans/create-pull-request@v6
         if: steps.changes.outputs.has_changes == 'true'
         with:

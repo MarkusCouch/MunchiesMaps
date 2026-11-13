@@ -29,9 +29,12 @@ Live: <https://nightrides.cc/munchiesmaps/>
 - Feedback form and support link in the drawer (`Feedback & Support`)
 
 ## Country coverage
-32 countries are configured in [`fetch_data/config.yml`](fetch_data/config.yml), among them Germany, Austria,
+33 countries are configured in [`fetch_data/config.yml`](fetch_data/config.yml), among them Germany, Austria,
 Switzerland, Czechia, Poland, France, Italy, Spain, Portugal, the Benelux countries, Great Britain, Ireland,
-Scandinavia and most of the Balkans. Datasets are generated automatically via GitHub Actions from OpenStreetMap.
+Scandinavia, most of the Balkans and – as the first country outside Europe – Kyrgyzstan. Datasets are generated
+automatically via GitHub Actions from OpenStreetMap; a plausibility check (see
+[`fetch_data/README.md`](fetch_data/README.md#plausibility-check)) blocks data updates where a region came back empty
+or POIs fall outside their country.
 
 ## Alpha status & feedback
 Munchies Maps is currently in an **Alpha stage**. Features, data coverage and behavior may change at any time.

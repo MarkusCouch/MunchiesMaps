@@ -103,6 +103,18 @@ jobs:
           echo "Running command: ${cmd_pretty% }"
           "${cmd[@]}"
 
+      - name: GeoJSON plausibility check
+        # Blocks the commit/PR when a region came back empty or POIs fall outside their country.
+        env:
+          INPUT_COUNTRIES: ${{ steps.run_config.outputs.countries }}
+        run: |
+          set -euo pipefail
+          if [ -n "$INPUT_COUNTRIES" ]; then
+            python scripts/check_geojson_plausibility.py --countries "$INPUT_COUNTRIES"
+          else
+            python scripts/check_geojson_plausibility.py
+          fi
+
       - name: Check for geojson data changes
         id: geojson_changes
         run: |
