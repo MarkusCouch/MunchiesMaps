@@ -3,14 +3,24 @@
   "private": true,
   "version": "0.5",
   "scripts": {
-    "test": "node scripts/test_url_state.mjs && node scripts/test_poi_favorites_filter.mjs",
+    "test": "node scripts/test_url_state.mjs && node scripts/test_poi_favorites_filter.mjs && node scripts/test_route_modules.mjs",
+    "test:e2e": "playwright test",
+    "serve": "node scripts/serve-static.mjs 4173",
     "sync-vendor": "node scripts/sync-vendor-assets.mjs",
-    "check-vendor": "node scripts/check-vendor-assets.mjs"
+    "check-vendor": "node scripts/check-vendor-assets.mjs",
+    "bump-sw": "node scripts/sw-build-id.mjs",
+    "check-sw": "node scripts/sw-build-id.mjs --check",
+    "generate-seo": "node scripts/generate-seo-pages.mjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.5.2",
+    "i18next": "20.6.1",
     "leaflet": "1.9.4",
     "leaflet.markercluster": "1.5.3",
-    "opening_hours": "3.6.0"
+    "opening_hours": "3.6.0",
+    "suncalc": "1.9.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
   }
 }

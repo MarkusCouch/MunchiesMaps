@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- CSP: scripts are still inline, so 'unsafe-inline' is required until the main script is moved to js/. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
   <!-- iOS/Firefox homescreen icon fallbacks -->
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
@@ -55,979 +57,7 @@
   <link rel="stylesheet" href="./vendor/leaflet.markercluster/MarkerCluster.css" />
   <link rel="stylesheet" href="./vendor/leaflet.markercluster/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
-  <style>
-    :root {
-      --bg: #f6f7fb;
-      --panel: #ffffff;
-      --text: #111827;
-      --muted: #4b5563;
-      --border: rgba(0,0,0,0.12);
-      --icon-border: rgba(0,0,0,0.18);
-      --btn-bg: rgba(255,255,255,0.95);
-      --btn-text: #0f172a;
-      --btn-border: rgba(0,0,0,0.18);
-      --btn-shadow: 0 2px 10px rgba(0,0,0,0.18);
-      --overlay: rgba(0,0,0,0.35);
-      --action-bg: rgba(245,245,245,0.92);
-      --switch-bg: #e5e7eb;
-      --switch-thumb: #ffffff;
-      --control-bg: rgba(255,255,255,0.96);
-      --control-bg-hover: rgba(245,245,245,0.96);
-      --control-text: #0f172a;
-      --control-border: rgba(0,0,0,0.18);
-      --popup-bg: #ffffff;
-      --popup-text: #111827;
-      --popup-border: rgba(0,0,0,0.12);
-    }
-
-    .theme-dark {
-      --bg: #0f172a;
-      --panel: #111827;
-      --text: #e5e7eb;
-      --muted: #cbd5e1;
-      --border: rgba(255,255,255,0.14);
-      --icon-border: rgba(255,255,255,0.36);
-      --btn-bg: rgba(30,41,59,0.92);
-      --btn-text: #e5e7eb;
-      --btn-border: rgba(255,255,255,0.18);
-      --btn-shadow: 0 2px 12px rgba(0,0,0,0.45);
-      --overlay: rgba(0,0,0,0.55);
-      --action-bg: rgba(45,55,72,0.85);
-      --switch-bg: #1e293b;
-      --switch-thumb: #0ea5e9;
-      --control-bg: rgba(30,41,59,0.95);
-      --control-bg-hover: rgba(46,58,76,0.95);
-      --control-text: #e5e7eb;
-      --control-border: rgba(255,255,255,0.2);
-      --popup-bg: #0f172a;
-      --popup-text: #e5e7eb;
-      --popup-border: rgba(255,255,255,0.18);
-    }
-
-    html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); }
-    #map { height: 100%; width: 100%; }
-    .intro-backdrop {
-      position: fixed;
-      inset: 0;
-      background: var(--overlay);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      z-index: 1100;
-    }
-    .intro-modal {
-      width: min(92vw, 520px);
-      max-height: min(80vh, 720px);
-      background: var(--panel);
-      color: var(--text);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      box-shadow: 0 18px 50px rgba(0,0,0,0.35);
-      display: flex;
-      flex-direction: column;
-      font: 14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
-    .intro-modal h2 {
-      margin: 0;
-      padding: 20px 20px 8px;
-      font-size: 20px;
-    }
-    .intro-modal .intro-body {
-      padding: 0 20px 16px;
-      color: var(--text);
-      overflow: auto;
-    }
-    .intro-modal h3 {
-      margin: 12px 0 8px;
-      font-size: 16px;
-    }
-    .intro-modal p {
-      margin: 0 0 12px;
-      color: var(--muted);
-    }
-    .intro-modal ul {
-      margin: 0 0 12px 18px;
-      padding: 0;
-      color: var(--muted);
-    }
-    .intro-modal li {
-      margin-bottom: 6px;
-    }
-    .intro-modal .intro-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 20px 20px;
-      border-top: 1px solid var(--border);
-    }
-    .intro-modal .intro-actions label {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      color: var(--muted);
-    }
-    .intro-modal .intro-actions button {
-      padding: 10px 18px;
-      border-radius: 10px;
-      border: 1px solid var(--btn-border);
-      background: var(--btn-bg);
-      color: var(--btn-text);
-      font-weight: 700;
-      cursor: pointer;
-    }
-    .intro-modal .intro-actions button:focus,
-    .intro-modal .intro-actions input:focus {
-      outline: 2px solid #38bdf8;
-      outline-offset: 2px;
-    }
-    .intro-hidden {
-      display: none;
-    }
-    #mapTitleOverlay {
-      position: fixed;
-      left: 12px;
-      bottom: 32px;
-      z-index: 1020;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      font: 13px/1.25 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--muted);
-      opacity: 0.85;
-      pointer-events: none;
-      user-select: none;
-    }
-    #mapTitleOverlay .map-title { font-weight: 700; }
-    #mapTitleOverlay .map-subtitle { font-size: 11px; font-weight: 500; }
-
-    /* Drawer + overlay */
-    .map-controls-br {
-      position: fixed;
-      right: 14px;
-      bottom: 14px;
-      z-index: 1035;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    #layerDrawerToggle,
-    #locateButton,
-    #shareMainBtn,
-    #poiHideToggleBtn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      padding: 0;
-      border: 1px solid var(--btn-border);
-      border-radius: 12px;
-      background: var(--btn-bg);
-      box-shadow: var(--btn-shadow);
-      color: var(--btn-text);
-      font: 16px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    #layerDrawerToggle:active,
-    #locateButton:active,
-    #shareMainBtn:active,
-    #poiHideToggleBtn:active { transform: translateY(1px); }
-    #poiHideToggleBtn { display: none; }
-    #poiHideToggleBtn.is-visible { display: inline-flex; }
-    #poiHideToggleBtn:not(.is-visible) { display: none !important; }
-    #poiHideToggleBtn.is-active { outline: 2px solid #38bdf8; }
-    #poiHideMenu,
-    .poi-hide-menu { position: fixed; top: 14px; right: 14px; z-index: 1065; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; box-shadow: var(--btn-shadow); padding: 8px; display: none; gap: 6px; }
-    #poiHideMenu.is-visible { display: grid; }
-    #poiHideMenu:not(.is-visible),
-    .poi-hide-menu:not(.is-visible) { display: none !important; }
-    .poi-hide-menu button { border: 1px solid var(--btn-border); background: var(--action-bg); color: var(--text); border-radius: 8px; padding: 6px 8px; font-weight: 650; text-align: left; }
-    .poi-hide-menu button.is-active {
-      border-color: #38bdf8;
-      background: color-mix(in srgb, #38bdf8 16%, var(--action-bg));
-      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.35);
-      font-weight: 700;
-    }
-    .mm-marker--hidden {
-      filter: grayscale(1) saturate(0.35) contrast(0.85);
-      opacity: 0.92;
-      transform: scale(0.86);
-    }
-    .mm-marker--hidden .mm-marker {
-      border: 2px dashed rgba(255, 255, 255, 0.9) !important;
-      box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.65), 0 0 0 4px rgba(239, 68, 68, 0.45);
-    }
-    .popup-content { position: relative; }
-    #locateButton.is-loading {
-      opacity: 0.75;
-    }
-    .user-location-marker--stale {
-      opacity: 0.65;
-      filter: grayscale(0.25);
-    }
-    .map-controls-br i { font-size: 16px; }
-    .share-control {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .share-popover {
-      position: absolute;
-      right: 0;
-      bottom: calc(100% + 10px);
-      width: 220px;
-      padding: 16px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: var(--panel);
-      color: var(--text);
-      box-shadow: var(--btn-shadow);
-      font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      display: none;
-      z-index: 1060;
-    }
-    .share-popover.is-open { display: block; }
-    .share-popover-title {
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-    .share-popover-action {
-      width: 100%;
-      text-align: left;
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid var(--btn-border);
-      background: var(--action-bg);
-      color: var(--text);
-      font-weight: 650;
-      cursor: pointer;
-    }
-    .share-popover-action + .share-popover-action { margin-top: 10px; }
-    .share-popover-helper {
-      margin-top: 6px;
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.4;
-    }
-    .share-popover-helper.is-hidden { display: none; }
-    .share-popover-status {
-      margin-top: 6px;
-      margin-bottom: 4px;
-    }
-    .share-popover-status[data-status="error"] {
-      color: #ef4444;
-    }
-    .share-popover-status + .share-popover-action {
-      margin-top: 8px;
-    }
-    .map-toast {
-      position: fixed;
-      right: 14px;
-      bottom: 80px;
-      padding: 8px 12px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: var(--panel);
-      color: var(--text);
-      box-shadow: var(--btn-shadow);
-      font: 13px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      opacity: 0;
-      transform: translateY(6px);
-      transition: opacity 0.2s ease, transform 0.2s ease;
-      pointer-events: none;
-      z-index: 1065;
-    }
-    .map-toast.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    #layerDrawerBackdrop {
-      position: fixed;
-      inset: 0;
-      background: var(--overlay);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.25s ease;
-      z-index: 1040;
-    }
-    #layerDrawerBackdrop.open { opacity: 1; pointer-events: all; }
-
-    #layerDrawer {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100dvh;
-      width: auto;
-      max-width: min(92vw, 420px);
-      min-width: min(280px, 92vw);
-      background: var(--panel);
-      box-shadow: -2px 0 16px rgba(0,0,0,0.2);
-      transform: translateX(100%);
-      transition: transform 0.25s ease;
-      z-index: 1055;
-      font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--text);
-    }
-    .menu {
-      display: flex;
-      flex-direction: column;
-      max-height: 100dvh;
-    }
-    #layerDrawer.open { transform: translateX(0); }
-    .menu-header {
-      padding: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--border);
-      gap: 12px;
-      flex: 0 0 auto;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: var(--panel);
-    }
-    .menu-header h2 { margin: 0; font-size: 18px; }
-    .menu-header button {
-      border: none;
-      background: none;
-      cursor: pointer;
-      font-size: 20px;
-      line-height: 1;
-      padding: 6px;
-      color: var(--text);
-    }
-    .menu-content {
-      flex: 1 1 auto;
-      overflow-y: auto;
-      overscroll-behavior: contain;
-      -webkit-overflow-scrolling: touch;
-    }
-    #layerDrawer .drawer-body { padding: 0 16px 18px; }
-    #layerDrawer .section { border-bottom: 1px solid var(--border); }
-    #layerDrawer .section:last-of-type { border-bottom: none; }
-    .accordion-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 0;
-      cursor: pointer;
-      gap: 12px;
-      border: 0;
-      background: transparent;
-      color: var(--text);
-      font-family: inherit;
-      font-size: inherit;
-      line-height: inherit;
-      font-weight: 700;
-      text-align: left;
-      width: 100%;
-      box-sizing: border-box;
-      min-height: 48px;
-      position: relative;
-      z-index: 1;
-      touch-action: manipulation;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .accordion-header > span:first-child {
-      flex: 1 1 auto;
-      min-width: 0;
-    }
-    #feedbackSection .accordion-header > span:first-child {
-      white-space: nowrap;
-      flex-shrink: 1;
-    }
-    .accordion-header .chevron {
-      flex: 0 0 auto;
-      margin-left: auto;
-      transition: transform 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-      font-size: 16px;
-    }
-    .accordion-header[aria-expanded="false"] .chevron { transform: rotate(-90deg); }
-    .accordion-body { padding: 0 0 14px; display: none; color: var(--text); }
-    .accordion-body.open { display: block; }
-    .action-row { display: flex; gap: 10px; margin-bottom: 10px; }
-    .action-row button {
-      flex: 1;
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid var(--btn-border);
-      background: var(--action-bg);
-      cursor: pointer;
-      font-weight: 650;
-      color: var(--text);
-    }
-    .option-helper {
-      margin: 6px 0 12px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.4;
-    }
-    #offlineSaveProgress {
-      white-space: pre-line;
-    }
-    .checklist { display: flex; flex-direction: column; gap: 8px; }
-    .checklist .checkrow { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--text); }
-    .checklist input[type="checkbox"] { width: 16px; height: 16px; }
-    .country-group {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 4px 10px 8px;
-      background: color-mix(in srgb, var(--panel) 86%, transparent);
-    }
-    .country-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 0;
-    }
-    .country-header-toggle {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      border: none;
-      background: transparent;
-      color: var(--text);
-      cursor: pointer;
-      text-align: left;
-      font-size: 14px;
-      font-weight: 700;
-      padding: 0;
-    }
-    .country-header .chevron {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 16px;
-      height: 16px;
-      transition: transform 0.15s ease;
-      transform: rotate(0deg);
-    }
-    .country-header-toggle[aria-expanded="true"] .chevron {
-      transform: rotate(90deg);
-    }
-    .country-regions[hidden] {
-      display: none;
-    }
-    .country-regions {
-      margin-top: 6px;
-      margin-left: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .country-regions .checkrow {
-      font-weight: 400;
-    }
-    .region-ui-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .region-ui-group + .region-ui-group {
-      margin-top: 8px;
-    }
-    .region-ui-group-title {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--muted);
-      letter-spacing: 0.01em;
-      margin: 2px 0 0;
-    }
-    .region-ui-group-items {
-      margin-left: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .region-ui-group-title + .region-ui-group-items {
-      margin-left: 12px;
-    }
-    .cat-icon { display: inline-grid; place-items: center; border-radius: 999px; overflow: hidden; flex: 0 0 auto; background: transparent; border: 1px solid transparent; box-sizing: border-box; }
-    .cat-icon img { width: 100%; height: 100%; display: block; }
-    .cat-icon i { color: currentColor; line-height: 1; }
-    .cat-icon--list { width: 22px; height: 22px; }
-    .cat-icon--popup { width: 20px; height: 20px; }
-    .cat-icon--map { width: 34px; height: 34px; }
-    .cat-icon--cluster { width: 22px; height: 22px; }
-    .cat-icon--water { border-color: var(--icon-border); }
-    /* Custom controls */
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center;
-      gap: 8px;
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid var(--btn-border);
-      background: var(--btn-bg);
-      box-shadow: 0 1px 8px rgba(0,0,0,0.15);
-      cursor: pointer;
-      user-select: none;
-      font: 13px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--btn-text);
-    }
-    .btn:active { transform: translateY(1px); }
-
-    /* Drawer bottom */
-    .drawer-bottom {
-      border-top: 1px solid var(--border);
-      padding: 12px 16px 16px;
-      background: var(--panel);
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .drawer-about {
-      border-top: 1px solid var(--border);
-      padding: 12px 16px 16px;
-      background: var(--panel);
-      font-size: 12px;
-      color: var(--muted);
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .drawer-about h3 {
-      margin: 0;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--muted);
-    }
-    .drawer-about a {
-      color: inherit;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .drawer-about a:hover,
-    .drawer-about a:focus {
-      text-decoration: underline;
-    }
-    .theme-toggle {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      font-weight: 700;
-      color: var(--text);
-      user-select: none;
-    }
-    .theme-toggle input { display: none; }
-    .toggle-switch {
-      position: relative;
-      width: 48px;
-      height: 26px;
-      border-radius: 999px;
-      background: var(--switch-bg);
-      border: 1px solid var(--border);
-      transition: background 0.2s ease;
-      flex-shrink: 0;
-    }
-    .toggle-switch::after {
-      content: '';
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: var(--switch-thumb);
-      box-shadow: 0 1px 4px rgba(0,0,0,0.25);
-      transition: transform 0.2s ease;
-    }
-    .theme-toggle input:checked + .toggle-switch::after { transform: translateX(22px); }
-
-    .gpx-inputs { display: flex; flex-direction: column; gap: 10px; }
-    .gpx-cache-actions { display: none; flex-direction: column; gap: 8px; }
-    .gpx-cache-actions.is-visible { display: flex; }
-    .gpx-route-actions,
-    .gpx-cache-primary-actions { display: flex; flex-direction: column; gap: 10px; }
-    .gpx-route-action-group { display: flex; flex-direction: column; gap: 8px; }
-    .gpx-route-action-group + .gpx-route-action-group {
-      margin-top: 8px;
-      padding-top: 8px;
-      border-top: 1px solid var(--border);
-    }
-    .gpx-route-action-group.is-empty { display: none; }
-    .gpx-route-action-group button { width: 100%; justify-content: center; text-align: center; }
-    .gpx-import-menu { display: none; flex-direction: column; gap: 10px; }
-    .gpx-import-menu.is-visible { display: flex; }
-.route-backup-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
-    .gpx-row { display: flex; flex-direction: column; gap: 6px; }
-    .gpx-row label { font-weight: 650; color: var(--text); }
-    .gpx-row input[type="number"] { width: 120px; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel); color: var(--text); }
-    .gpx-row input[type="file"] { color: var(--text); }
-    .gpx-radius-apply-row { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 8px; }
-
-    .cluster-row { display: flex; flex-direction: column; gap: 6px; }
-    .cluster-row label { font-weight: 650; color: var(--text); }
-    .cluster-row input[type="number"] { width: 160px; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel); color: var(--text); }
-    .cluster-helper { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.4; }
-    .cluster-status { margin: 2px 0 0; color: var(--muted); font-size: 12px; line-height: 1.35; }
-    .zoom-row { display: flex; flex-direction: column; gap: 6px; }
-    .zoom-row label { font-weight: 650; color: var(--text); }
-    .zoom-row input[type="number"] { width: 100px; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel); color: var(--text); }
-    .zoom-helper { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.4; }
-    .gpx-apply { align-self: flex-start; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--btn-border); background: var(--action-bg); cursor: pointer; font-weight: 700; color: var(--text); }
-    .gpx-export { align-self: flex-start; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--btn-border); background: var(--action-bg); cursor: pointer; font-weight: 700; color: var(--text); display: none; }
-    .gpx-export.is-visible { display: inline-flex; }
-    .gpx-export:disabled { opacity: 0.6; cursor: not-allowed; }
-    .gpx-import-action { align-self: flex-start; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--btn-border); background: var(--action-bg); cursor: pointer; font-weight: 700; color: var(--text); display: none; }
-    .gpx-import-action.is-visible { display: inline-flex; }
-    .route-clear-action { color: #dc2626; }
-    .theme-dark .route-clear-action { color: #f87171; }
-    .gpx-error { color: #dc2626; font-size: 13px; }
-    .gpx-km-marker {
-      background: transparent;
-      border: none;
-    }
-    .gpx-km-marker-label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 18px;
-      height: 18px;
-      padding: 0 4px;
-      border-radius: 9px;
-      border: 1px solid rgba(255, 0, 0, 0.55);
-      background: rgba(255, 255, 255, 0.9);
-      color: #b91c1c;
-      font: 600 11px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height: 1;
-      text-align: center;
-      box-sizing: border-box;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
-    }
-
-    .feedback-form { display: flex; flex-direction: column; gap: 8px; position: relative; }
-    .feedback-label { font-weight: 700; color: var(--text); }
-    .feedback-textarea {
-      width: 100%;
-      min-height: 96px;
-      max-height: 140px;
-      resize: vertical;
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: var(--panel);
-      color: var(--text);
-      font: 13px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      box-sizing: border-box;
-    }
-    .feedback-send {
-      align-self: flex-start;
-      padding: 8px 14px;
-      border-radius: 10px;
-      border: 1px solid var(--btn-border);
-      background: var(--action-bg);
-      cursor: pointer;
-      font-weight: 700;
-      color: var(--text);
-    }
-    .feedback-send:disabled { opacity: 0.6; cursor: not-allowed; }
-    .feedback-helper { font-size: 12px; color: var(--muted); line-height: 1.4; }
-    .drawer-status {
-      margin: 0;
-      min-height: 16px;
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .feedback-status { font-size: 12px; color: var(--muted); display: none; }
-    .feedback-status.is-visible { display: block; }
-    .feedback-status[data-status="error"] { color: #dc2626; }
-    .feedback-status[data-status="success"] { color: #16a34a; }
-    .feedback-honeypot {
-      position: absolute;
-      left: -10000px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      opacity: 0;
-      pointer-events: none;
-    }
-    .support-text {
-      margin: 10px 0 8px;
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.4;
-    }
-    .donate-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px 12px;
-      border-radius: 12px;
-      border: 1px solid var(--btn-border);
-      background: var(--action-bg);
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .drawer-reset-btn { width: 100%; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--btn-border); background: var(--action-bg); cursor: pointer; font-weight: 750; color: var(--text); }
-
-    /* Cluster icon */
-    .cluster-icon-wrap {
-      background: transparent;
-      border: none;
-    }
-    .cluster-icon {
-      --cluster-size: 40px;
-      width: var(--cluster-size);
-      height: var(--cluster-size);
-      border-radius: 999px;
-      background: linear-gradient(135deg, #e5e7eb, #9ca3af);
-      border: 2px solid rgba(75, 85, 99, 0.85);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-    }
-    .cluster-icon--small { --cluster-size: 34px; }
-    .cluster-icon--medium { --cluster-size: 40px; }
-    .cluster-icon--large { --cluster-size: 48px; }
-    .cluster-icon span {
-      color: inherit;
-      font-weight: 800;
-      font-size: 14px;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-    }
-
-    /* Map controls */
-    .leaflet-bar a,
-    .leaflet-bar a:link,
-    .leaflet-bar a:visited {
-      background: var(--control-bg);
-      color: var(--control-text);
-      border-bottom: 1px solid var(--control-border);
-      box-shadow: none;
-    }
-    .leaflet-bar a:last-child { border-bottom: none; }
-    .leaflet-bar a:hover { background: var(--control-bg-hover); color: var(--control-text); }
-    .leaflet-bar,
-    .leaflet-control-zoom {
-      border: 1px solid var(--control-border);
-      box-shadow: 0 1px 6px rgba(0,0,0,0.18);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    .leaflet-touch .leaflet-bar a { color: var(--control-text); }
-
-    /* Popups */
-    .leaflet-popup-content-wrapper,
-    .leaflet-popup-tip {
-      background: var(--popup-bg);
-      color: var(--popup-text);
-      border: 1px solid var(--popup-border);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-    }
-    .leaflet-popup-content { color: var(--popup-text); }
-    .leaflet-popup-close-button { color: var(--popup-text); }
-    .leaflet-popup-content a { color: var(--btn-text); }
-
-    .popup-content { font: 13px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 320px; color: var(--popup-text); }
-    .popup-action-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
-    .popup-category-wrap { display: inline-flex; align-items: center; gap: 8px; flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
-    .popup-title { font-weight: 700; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-    .popup-title span { overflow-wrap: anywhere; }
-    .popup-title--full {
-      display: block;
-      width: 100%;
-      margin-top: 2px;
-    }
-    .popup-hide-pill {
-      flex: 0 0 auto;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      border: 1px solid var(--popup-border);
-      background: rgba(0,0,0,0.03);
-      color: var(--muted);
-      border-radius: 999px;
-      padding: 2px 8px;
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 1.2;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-    .theme-dark .popup-hide-pill { background: rgba(255,255,255,0.06); }
-    .popup-hide-pill:active { transform: translateY(1px); }
-    .popup-hide-pill i { font-size: 11px; }
-    .popup-favorite-toggle {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 28px;
-      height: 28px;
-      border: none;
-      background: transparent;
-      color: var(--muted);
-      border-radius: 8px;
-      padding: 0;
-      cursor: pointer;
-      margin: 0;
-      opacity: 0.95;
-    }
-    .popup-favorite-toggle i { font-size: 14px; }
-    .popup-favorite-toggle.is-active { color: #f59e0b; }
-    .popup-favorite-toggle:active { transform: translateY(1px); }
-    .popup-favorite-toggle .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-    .popup-cat { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: var(--muted); padding: 2px 8px; border-radius: 999px; border: 1px solid var(--popup-border); background: rgba(0,0,0,0.03); }
-    .theme-dark .popup-cat { background: rgba(255,255,255,0.06); }
-    .popup-desc { margin-bottom: 8px; }
-    .popup-extra { border-top: 1px solid var(--popup-border); padding-top: 8px; }
-    .popup-footer { border-top: 1px solid var(--popup-border); margin-top: 8px; padding-top: 8px; }
-    .popup-footer a { font-weight: 600; text-decoration: none; }
-    .popup-footer a:hover,
-    .popup-footer a:focus { text-decoration: underline; }
-    .checkrow-group { display: flex; flex-direction: column; gap: 4px; }
-    .checkrow-helper { font-size: 12px; color: var(--muted); margin-left: 26px; }
-    .checkrow--nested { margin-left: 22px; }
-    .checkrow.is-disabled { opacity: 0.55; cursor: not-allowed; }
-    .checkrow.is-disabled input { cursor: not-allowed; }
-
-    /* Minimalist layer markers */
-    .mm-marker-wrap { background: transparent; border: none; }
-    .mm-marker {
-      width: var(--marker-size, 30px);
-      height: var(--marker-size, 30px);
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      background: var(--marker-color, #6b7280);
-      border: 2px solid var(--marker-outline-color, rgba(255,255,255,0.25));
-      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-      box-sizing: border-box;
-      position: relative;
-    }
-    .mm-marker i {
-      color: #fff;
-      font-size: var(--marker-icon-size, 15px);
-      line-height: 1;
-    }
-    .app-fallback {
-      position: fixed;
-      inset: 0;
-      z-index: 1200;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      background: var(--overlay);
-    }
-    .app-fallback__card {
-      max-width: 480px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px;
-      color: var(--text);
-    }
-    .mm-marker:hover,
-    .mm-marker:focus {
-      background: var(--marker-hover-color, var(--marker-color, #6b7280));
-      transform: scale(1.05);
-      box-shadow: 0 3px 8px rgba(0,0,0,0.35);
-    }
-    .mm-marker--favorite .mm-marker-favorite-badge { display: inline-block; }
-    .mm-marker-favorite-badge {
-      position: absolute;
-      top: -3px;
-      left: -3px;
-      color: #f59e0b;
-      font-size: 11px;
-      display: none;
-      pointer-events: none;
-      z-index: 2;
-      line-height: 1;
-    }
-    .theme-dark .mm-marker-favorite-badge {
-      color: #facc15;
-    }
-    .mm-marker .mm-marker-favorite-badge,
-    .mm-marker .mm-marker-favorite-badge i {
-      color: #f59e0b;
-    }
-
-    .mm-marker .mm-marker-favorite-badge i {
-      -webkit-text-stroke: 0.35px rgba(0,0,0,0.9);
-      text-shadow: 0 0 1px rgba(0,0,0,0.35);
-    }
-
-    .theme-dark .mm-marker .mm-marker-favorite-badge,
-    .theme-dark .mm-marker .mm-marker-favorite-badge i {
-      color: #facc15;
-    }
-
-    .theme-dark .mm-marker .mm-marker-favorite-badge i {
-      -webkit-text-stroke: 0.35px rgba(0,0,0,0.95);
-      text-shadow: 0 0 1px rgba(0,0,0,0.45);
-    }
-    .mm-badge {
-      position: absolute;
-      top: -2px;
-      right: -2px;
-      width: 12px;
-      height: 12px;
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      font-size: 8px;
-      font-weight: 800;
-      background: #111827;
-      color: #ffffff;
-      border: 1px solid rgba(255,255,255,0.7);
-      box-shadow: 0 1px 2px rgba(0,0,0,0.35);
-      line-height: 1;
-    }
-    .mm-badge--moon {
-      font-size: 9px;
-    }
-    .mm-badge--247 {
-      width: 15px;
-      height: 15px;
-      font-size: 6.5px;
-      letter-spacing: -0.3px;
-    }
-
-    #offlineIndicator {
-      position: fixed;
-      right: 12px;
-      left: auto;
-      top: 12px;
-      z-index: 1020;
-      padding: 4px 8px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--panel);
-      color: var(--muted);
-      font: 12px/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      opacity: 0.9;
-      pointer-events: none;
-      user-select: none;
-      display: none;
-    }
-    #offlineIndicator.is-visible {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-  </style>
+  <link rel="stylesheet" href="./css/app.css" />
   <script>
     (function() {
       const storedTheme = localStorage.getItem('theme');
@@ -1038,18 +68,8 @@
       window.__isDarkTheme = isDark;
     })();
   </script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  if (navigator.onLine) {
-    const gaScript = document.createElement('script');
-    gaScript.async = true;
-    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-8SSC7BE5TP';
-    document.head.appendChild(gaScript);
-    gtag('js', new Date());
-    gtag('config', 'G-8SSC7BE5TP');
-  }
-</script>
+  <!-- Google Analytics is only loaded after explicit consent, see js/consent.js -->
+  <script src="./js/consent.js"></script>
 </head>
 <body>
 <script>
@@ -1205,7 +225,7 @@
                   <div class="gpx-route-action-group" data-route-action-group="offline-save">
                     <button type="button" class="gpx-export" id="gpxRefreshTilesBtn">Refresh offline map tiles</button>
                     <div id="offlineSaveProgress" class="option-helper" aria-live="polite"></div>
-                    <div class="gpx-row">
+                    <div class="gpx-row" id="offlineMapDetailRow">
                       <label for="offlineMapDetailSelect">Offline map detail</label>
                       <select id="offlineMapDetailSelect">
                         <option value="off">No map – route and POIs only</option>
@@ -1327,13 +347,23 @@
         <div>Version: <span id="appVersion"></span></div>
         <div>by nightrides.cc <a href="https://www.instagram.com/nightrides.cc/" target="_blank" rel="noopener noreferrer">@nightrides.cc</a></div>
         <div>maintained by Markus <a href="https://www.instagram.com/markuscoucho/" target="_blank" rel="noopener noreferrer">@markuscoucho</a></div>
+        <div class="about-links">
+          <a href="map/">Browse by country</a> ·
+          <a href="legal/imprint.html" target="_blank" rel="noopener">Imprint</a> ·
+          <a href="legal/privacy.html" target="_blank" rel="noopener">Privacy</a> ·
+          <button type="button" id="privacySettingsBtn">Privacy settings</button>
+        </div>
       </div>
     </div>
   </aside>
   <script src="./vendor/leaflet/leaflet.js"></script>
   <script src="./vendor/leaflet.markercluster/leaflet.markercluster.js"></script>
+  <script src="./vendor/i18next/i18next.min.js"></script>
+  <script src="./vendor/suncalc/suncalc.js"></script>
   <script src="./vendor/opening_hours/opening_hours.min.js"></script>
   <script src="./js/offline-route-store.js"></script>
+  <script src="./js/gpx-utils.js"></script>
+  <script src="./js/route-state.js"></script>
 
   <script>
     const qs = (selector, root = document) => root.querySelector(selector);
@@ -2028,8 +1058,18 @@
       if (!order.length) return null;
       const selected = activeRegions instanceof Set ? activeRegions : new Set(activeRegions || []);
       const bitString = order.map((regionId) => (selected.has(regionId) ? '1' : '0')).join('');
-      const value = parseInt(bitString, 2);
-      return Number.isFinite(value) ? value.toString(36) : null;
+      // BigInt: countries with more than 53 regions (e.g. Turkey, 81) exceed Number precision.
+      return BigInt(`0b${bitString}`).toString(36);
+    }
+
+    function parseBase36BigInt(token) {
+      let value = 0n;
+      for (const char of token) {
+        const digit = parseInt(char, 36);
+        if (!Number.isFinite(digit)) return null;
+        value = value * 36n + BigInt(digit);
+      }
+      return value;
     }
 
     function decodeActiveRegions(country, code) {
@@ -2037,8 +1077,8 @@
       if (!order.length) return null;
       const token = String(code || '').trim().toLowerCase();
       if (!/^[0-9a-z]+$/.test(token)) return null;
-      const value = parseInt(token, 36);
-      if (!Number.isFinite(value)) return null;
+      const value = parseBase36BigInt(token);
+      if (value === null) return null;
       const bits = value.toString(2);
       if (bits.length > order.length) return null;
       const normalizedBits = bits.padStart(order.length, '0');
@@ -2993,8 +2033,8 @@
       }
     };
     const GPX_KM_MARKER_INTERVAL_KM = 5;
-    const GPX_KM_MARKER_INTERVALS = [1, 5, 10, 25, 50, 100, 250, 500, 1000];
-    const GPX_MAX_KM_MARKERS = 120;
+    const GPX_KM_MARKER_INTERVALS = window.MunchiesGpx.KM_MARKER_INTERVALS;
+    const GPX_MAX_KM_MARKERS = window.MunchiesGpx.MAX_KM_MARKERS;
     const HIDDEN_POI_TAG_KEYS = new Set([
       'id',
       'osm_type',
@@ -3114,22 +2154,7 @@
     }
 
     function getPoiStableId(feature, datasetKey) {
-      if (!feature || !datasetKey) return null;
-      const props = feature.properties || {};
-      const osmType = String(props.osm_type || '').trim().toLowerCase();
-      const typePrefix = (osmType === 'node' || osmType === 'way' || osmType === 'relation') ? osmType[0] : 'u';
-      const categoryToken = String(props.categoryID || props.categoryId || props.category || 'uncat').trim();
-      const stableSource = [props.id, props.osm_id, feature.id, props['@id']].find((value) => value !== undefined && value !== null && String(value).trim() !== '');
-      if (stableSource != null) {
-        return `${datasetKey}-${categoryToken}-${typePrefix}-${String(stableSource)}`;
-      }
-      const coords = feature.geometry?.coordinates || [];
-      const lon = Number(coords[0]);
-      const lat = Number(coords[1]);
-      if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
-      const normLon = lon.toFixed(6);
-      const normLat = lat.toFixed(6);
-      return `${datasetKey}-${categoryToken}-${typePrefix}-${normLon}-${normLat}`;
+      return window.MunchiesRouteState.getPoiStableId(feature, datasetKey);
     }
     function isPoiFavorite(poiId) {
       return Boolean(poiId && poiVisibilityState.favoritePoiIds.has(poiId));
@@ -3911,117 +2936,12 @@
       });
     }
 
-    function getElementsByLocalName(xml, name) {
-      const byNs = xml.getElementsByTagNameNS ? xml.getElementsByTagNameNS('*', name) : [];
-      if (byNs && byNs.length) return Array.from(byNs);
-      return Array.from(xml.getElementsByTagName(name));
-    }
+    // GPX parsing lives in js/gpx-utils.js (unit-testable without the app).
+    const { getElementsByLocalName, parseGpxText, buildGpxGeoJson, getBaseKmMarkerIntervalForZoom, getKmMarkerIntervalForZoom } = window.MunchiesGpx;
 
-    function parseGpxText(text) {
-      try {
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(text, 'application/xml');
-        if (xml.getElementsByTagName('parsererror').length) {
-          return { points: [], xml: null };
-        }
 
-        const extractPoints = (tagName) => {
-          return getElementsByLocalName(xml, tagName)
-            .map((el) => {
-              const lat = parseFloat(el.getAttribute('lat'));
-              const lon = parseFloat(el.getAttribute('lon'));
-              if (Number.isFinite(lat) && Number.isFinite(lon)) {
-                return { lat, lon };
-              }
-              return null;
-            })
-            .filter(Boolean);
-        };
 
-        let pts = extractPoints('trkpt');
-        if (!pts.length) pts = extractPoints('rtept');
-        if (!pts.length) pts = extractPoints('wpt');
 
-        return { points: pts, xml };
-      } catch (err) {
-        console.error('GPX parse error', err);
-        return { points: [], xml: null };
-      }
-    }
-
-    function buildGpxGeoJson(xmlDoc) {
-      if (!xmlDoc) return null;
-
-      const lineFeatures = [];
-
-      const extractCoords = (nodeList) => {
-        return Array.from(nodeList)
-          .map((el) => {
-            const lat = parseFloat(el.getAttribute('lat'));
-            const lon = parseFloat(el.getAttribute('lon'));
-            if (Number.isFinite(lat) && Number.isFinite(lon)) {
-              return [lon, lat];
-            }
-            return null;
-          })
-          .filter(Boolean);
-      };
-
-      const trackSegments = getElementsByLocalName(xmlDoc, 'trkseg');
-      trackSegments.forEach((seg) => {
-        const coords = extractCoords(getElementsByLocalName(seg, 'trkpt'));
-        if (coords.length >= 2) {
-          lineFeatures.push({
-            type: 'Feature',
-            geometry: { type: 'LineString', coordinates: coords },
-            properties: {}
-          });
-        }
-      });
-
-      if (!lineFeatures.length) {
-        const rteCoords = extractCoords(getElementsByLocalName(xmlDoc, 'rtept'));
-        if (rteCoords.length >= 2) {
-          lineFeatures.push({
-            type: 'Feature',
-            geometry: { type: 'LineString', coordinates: rteCoords },
-            properties: {}
-          });
-        }
-      }
-
-      if (!lineFeatures.length) return { type: 'FeatureCollection', features: [] };
-
-      return {
-        type: 'FeatureCollection',
-        features: lineFeatures
-      };
-    }
-
-    function getBaseKmMarkerIntervalForZoom(zoom) {
-      const z = Number.isFinite(zoom) ? zoom : 12;
-
-      if (z >= 15) return 1;
-      if (z >= 13) return 5;
-      if (z >= 11) return 10;
-      if (z >= 9) return 25;
-      if (z >= 7) return 50;
-      return 100;
-    }
-
-    function getKmMarkerIntervalForZoom(zoom, visibleRouteLengthKm = 0) {
-      const baseInterval = getBaseKmMarkerIntervalForZoom(zoom);
-
-      for (const candidate of GPX_KM_MARKER_INTERVALS) {
-        if (candidate < baseInterval) continue;
-
-        if (!visibleRouteLengthKm || Math.ceil(visibleRouteLengthKm / candidate) <= GPX_MAX_KM_MARKERS) {
-          return candidate;
-        }
-      }
-
-      return GPX_KM_MARKER_INTERVALS[GPX_KM_MARKER_INTERVALS.length - 1] || 100;
-    }
 
     function computeRouteLengthKm(latlngs) {
       const points = (Array.isArray(latlngs) ? latlngs : [])
@@ -4533,6 +3453,12 @@
         offlineGroup.hidden = !hasRoute;
         offlineGroup.classList.toggle('is-empty', !hasRoute);
       }
+      // Once the route is saved (and unchanged), the detail picker is no longer relevant.
+      const routeIsSaved = (storageKind === 'offline-route-package' || storageKind === 'gpx-cache') && !unsavedChanges;
+      const detailRow = document.getElementById('offlineMapDetailRow');
+      const detailHint = document.getElementById('offlineMapDetailHint');
+      if (detailRow) detailRow.hidden = routeIsSaved;
+      if (detailHint) detailHint.hidden = routeIsSaved;
 
       if (loadSavedBtn) loadSavedBtn.classList.toggle('is-visible', hasSaved && !hasRoute);
 
@@ -5250,6 +4176,8 @@
         });
         activeOfflineRouteId = pkg.id;
         activeRouteSource = 'offline-route-package';
+        // Everything (route, hidden POIs, favorites) is persisted now.
+        poiVisibilityState.unsavedChanges = false;
         await listSavedOfflineRoutes();
         setGpxUiMode('cache-found');
         refreshGpxUiState();
@@ -5971,41 +4899,22 @@
     }
 
     function buildRouteBackupPayload() {
-      const rawRouteText = typeof gpxState.rawText === 'string' ? gpxState.rawText.trim() : '';
-      if (!rawRouteText) return null;
       const hiddenPoiIds = Array.from(poiVisibilityState.hiddenPoiIds || []);
-      const hiddenPoiSnapshots = hiddenPoiIds
-        .map((id) => {
-          const point = activePoints.find((entry) => String(entry?.id) === String(id));
-          if (!point || !Number.isFinite(point.lat) || !Number.isFinite(point.lng)) return null;
-          const props = point.propsRef || {};
-          return {
-            id: point.id,
-            lat: point.lat,
-            lng: point.lng,
-            categoryId: point.categoryId || null,
-            name: props.name || null,
-            osm_type: props.osm_type || null,
-            osm_id: props.osm_id || props.id || point.id || null,
-            properties: props
-          };
-        })
-        .filter(Boolean);
-      return {
-        schemaVersion: 1,
-        app: 'Munchies Maps',
-        type: 'munchies-route-backup',
-        createdAt: new Date().toISOString(),
-        routeHash: poiVisibilityState.routeHash || null,
-        gpxRaw: rawRouteText,
-        radiusMeters: gpxState.radiusMeters || null,
+      const hiddenPoiSnapshots = hiddenPoiIds.map((id) => {
+        const point = activePoints.find((entry) => String(entry?.id) === String(id));
+        return window.MunchiesRouteState.buildHiddenPoiSnapshot(point);
+      });
+      return window.MunchiesRouteState.createRouteBackup({
+        gpxRaw: gpxState.rawText,
+        routeHash: poiVisibilityState.routeHash,
+        radiusMeters: gpxState.radiusMeters,
         hiddenPoiIds,
         hiddenPoiSnapshots,
         selectedCategories: Array.from(filterState.kategorien || []),
         selectedRegions: Array.from(filterState.bundeslaender || []),
         favoritePoiIds: getCurrentFavoritePoiIdsArray(),
-        activeRouteSource: activeRouteSource || null
-      };
+        activeRouteSource
+      });
     }
 
     function setupGpxExportButton() {
@@ -6178,42 +5087,35 @@
             if (!file) return;
             try {
               const text = await readFileAsText(file);
-              const backup = JSON.parse(text);
-              if (!backup?.schemaVersion || (backup?.type && backup.type !== 'munchies-route-backup')) {
-                showMapToast('Invalid route backup file');
+              const parsed = window.MunchiesRouteState.parseRouteBackup(text);
+              if (!parsed.ok) {
+                showMapToast(parsed.error === 'missing-route' ? 'Backup is missing route data' : 'Invalid route backup file');
                 return;
               }
-              if (typeof backup.gpxRaw !== 'string' || !backup.gpxRaw.trim()) {
-                showMapToast('Backup is missing route data');
-                return;
-              }
-              const hiddenPoiIds = Array.isArray(backup.hiddenPoiIds) ? backup.hiddenPoiIds : [];
+              const { backup } = parsed;
+              const hiddenPoiIds = backup.hiddenPoiIds;
               await handleGpxApply({
                 rawGpxText: backup.gpxRaw,
                 routeSource: 'backup-import',
                 hiddenPoiIds,
-                favoritePoiIds: Array.isArray(backup.favoritePoiIds) ? backup.favoritePoiIds : [],
+                favoritePoiIds: backup.favoritePoiIds,
                 uiModeAfterApply: 'import-open',
                 skipFitToTrack: false,
                 autoSelectRegions: true
               });
-              if (Number.isFinite(Number(backup.radiusMeters)) && Number(backup.radiusMeters) > 0) {
-                const radiusKm = clampRadiusKm(Number(backup.radiusMeters) / 1000);
+              if (backup.radiusMeters) {
+                const radiusKm = clampRadiusKm(backup.radiusMeters / 1000);
                 gpxState.radiusMeters = radiusKm * 1000;
                 const radiusInput = document.getElementById('gpxRadiusKm');
                 if (radiusInput) radiusInput.value = radiusKm.toFixed(1);
               }
-              if (Array.isArray(backup.selectedCategories)) {
-                filterState.kategorien = new Set(backup.selectedCategories.filter((entry) => typeof entry === 'string' && entry.trim()));
-              }
-              if (Array.isArray(backup.selectedRegions)) {
-                filterState.bundeslaender = new Set(backup.selectedRegions.filter((entry) => typeof entry === 'string' && entry.trim()));
-              }
+              if (backup.selectedCategories) filterState.kategorien = new Set(backup.selectedCategories);
+              if (backup.selectedRegions) filterState.bundeslaender = new Set(backup.selectedRegions);
               poiVisibilityState.hiddenPoiIds = new Set(hiddenPoiIds);
               poiVisibilityState.hideModeActive = false;
               poiVisibilityState.hideMultipleActive = false;
               poiVisibilityState.showHiddenActive = false;
-              restoreFavoritePoiIds(Array.isArray(backup.favoritePoiIds) ? backup.favoritePoiIds : [], { refreshMap: false });
+              restoreFavoritePoiIds(backup.favoritePoiIds, { refreshMap: false });
               poiVisibilityState.unsavedChanges = false;
               updatePoiHideControlsVisibility();
               refreshGpxUiState();
@@ -7725,6 +6627,36 @@
       });
     }
 
+    // iOS reports kCLErrorLocationUnknown (code 2) immediately while GPS is still warming up,
+    // especially offline. watchPosition keeps listening and usually delivers a fix a few
+    // seconds later, so it is used as a last attempt before falling back to the last known position.
+    const LOCATION_WATCH_TIMEOUT_MS = Number(window.__mmLocationWatchTimeoutMs) || 30000;
+    function watchPositionOnceAsync(timeoutMs = LOCATION_WATCH_TIMEOUT_MS) {
+      return new Promise((resolve, reject) => {
+        if (!("geolocation" in navigator) || typeof navigator.geolocation.watchPosition !== 'function') {
+          reject({ code: "UNSUPPORTED", message: "Geolocation is not supported by this browser." });
+          return;
+        }
+        let lastError = null;
+        let watchId = null;
+        const finish = (fn, value) => {
+          clearTimeout(timer);
+          if (watchId !== null) navigator.geolocation.clearWatch(watchId);
+          fn(value);
+        };
+        const timer = setTimeout(() => finish(reject, lastError || { code: 3, message: 'Location watch timed out.' }), timeoutMs);
+        watchId = navigator.geolocation.watchPosition(
+          (position) => finish(resolve, position),
+          (error) => {
+            lastError = error;
+            // Permission denied will not recover – stop immediately. Other errors may be transient.
+            if (error?.code === 1) finish(reject, error);
+          },
+          { enableHighAccuracy: true, timeout: timeoutMs, maximumAge: 0 }
+        );
+      });
+    }
+
     function classifyLocationError(error) {
       const rawMessage = String(error?.message || '');
       const normalized = rawMessage.toLowerCase();
@@ -7739,7 +6671,6 @@
       }
       if (
         error?.code === 2
-        || normalized.includes('kclerrordomain')
         || normalized.includes('kclerrordomain')
         || normalized.includes('location unavailable')
       ) {
@@ -7843,6 +6774,16 @@
           position = await getCurrentPositionAsync(LOCATION_FALLBACK_OPTIONS);
         } catch (error) {
           console.warn('Fallback geolocation attempt failed:', error);
+          lastError = error;
+        }
+      }
+
+      if (!position && lastError?.code !== 1 && lastError?.code !== "UNSUPPORTED") {
+        try {
+          showMapToast('Waiting for GPS…');
+          position = await watchPositionOnceAsync();
+        } catch (error) {
+          console.warn('Watch geolocation attempt failed:', error);
           lastError = error;
         }
       }
@@ -8057,6 +6998,7 @@
       setupDrawer();
       setupDrawerWidthMeasurement();
       setAppVersion();
+      on(qs('#privacySettingsBtn'), 'click', () => window.munchiesConsent?.openSettings());
       setupThemeToggle();
       setupClusterThresholdControl();
       setupMinPoiZoomControl();

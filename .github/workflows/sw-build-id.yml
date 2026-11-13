@@ -1,0 +1,49 @@
+name: Update service worker BUILD_ID
+
+# Keeps sw.js BUILD_ID in sync with the app shell so returning visitors
+# always receive updated index.html / js / vendor files.
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - manifest.webmanifest
+      - css/**
+      - js/**
+      - legal/**
+      - vendor/**
+      - assets/icons/**
+      - resources/icons/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sw-build-id
+  cancel-in-progress: false
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Update BUILD_ID
+        run: node scripts/sw-build-id.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- sw.js; then
+            echo "BUILD_ID already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sw.js
+          git commit -m "Update service worker BUILD_ID"
+          git push

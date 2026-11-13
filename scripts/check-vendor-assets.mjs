@@ -148,6 +148,15 @@ async function main() {
     signatureName: 'MarkerCluster'
   });
 
+  await checkTextFile('vendor/i18next/i18next.min.js', {
+    signatures: ['i18next'],
+    signatureName: 'i18next'
+  });
+  await checkTextFile('vendor/suncalc/suncalc.js', {
+    signatures: ['SunCalc'],
+    signatureName: 'SunCalc'
+  });
+
   await checkTextFile('vendor/opening_hours/opening_hours.min.js', {
     signatures: openingHoursSignatures,
     signatureName: 'opening_hours'

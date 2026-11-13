@@ -1,4 +1,7 @@
-const STATIC_CACHE = 'munchiesmaps-static-v9';
+// BUILD_ID is a content hash of the app shell, maintained by `npm run bump-sw`
+// (CI fails when it is stale). Changing it invalidates the static cache.
+const BUILD_ID = 'cbad0e6ff0fd';
+const STATIC_CACHE = `munchiesmaps-static-${BUILD_ID}`;
 const GEOJSON_CACHE = 'munchiesmaps-geojson-v2';
 const OFFLINE_TILE_CACHE_NAME = 'munchiesmaps-offline-tiles-v1';
 
@@ -18,6 +21,8 @@ const VENDOR_ASSETS = [
   './vendor/leaflet.markercluster/MarkerCluster.css',
   './vendor/leaflet.markercluster/MarkerCluster.Default.css',
   './vendor/leaflet.markercluster/leaflet.markercluster.js',
+  './vendor/i18next/i18next.min.js',
+  './vendor/suncalc/suncalc.js',
   './vendor/opening_hours/opening_hours.min.js',
   './vendor/fontawesome/css/all.min.css',
   './vendor/fontawesome/webfonts/fa-solid-900.woff2',
@@ -28,7 +33,14 @@ const VENDOR_ASSETS = [
 const APP_SHELL_CANDIDATES = [
   './',
   './index.html',
+  './css/app.css',
   './js/offline-route-store.js',
+  './js/consent.js',
+  './js/gpx-utils.js',
+  './js/route-state.js',
+  './legal/imprint.html',
+  './legal/privacy.html',
+  './legal/legal.css',
   './manifest.webmanifest',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',

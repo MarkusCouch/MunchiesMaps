@@ -162,18 +162,23 @@ jobs:
           name: stale-prepare
           path: ${{ runner.temp }}/stale-prepare
 
-      - run: |
-          TARGETS_FILE="$RUNNER_TEMP/stale-prepare/${{ matrix.targets_file }}"
+      - env:
+          # Pass expressions via env instead of interpolating them into the script.
+          MATRIX_TARGETS_FILE: ${{ matrix.targets_file }}
+          MATRIX_COUNTRY: ${{ matrix.country }}
+          RETRY_ATTEMPTS: ${{ inputs.retry_attempts }}
+        run: |
+          TARGETS_FILE="$RUNNER_TEMP/stale-prepare/$MATRIX_TARGETS_FILE"
           export TARGETS_FILE
-          export MATRIX_COUNTRY="${{ matrix.country }}"
-          JOB_KEY="${{ matrix.country }}"
+          export MATRIX_COUNTRY
+          JOB_KEY="$MATRIX_COUNTRY"
           FETCHED_DIR="$RUNNER_TEMP/fetched/$JOB_KEY"
           FAILED_FILE="$RUNNER_TEMP/failed/$JOB_KEY.json"
           mkdir -p "$FETCHED_DIR" "$RUNNER_TEMP/failed"
 
           if [ ! -f "$TARGETS_FILE" ]; then
             echo "::error::Targets file not found: $TARGETS_FILE"
-            echo "Matrix targets_file was: ${{ matrix.targets_file }}"
+            echo "Matrix targets_file was: $MATRIX_TARGETS_FILE"
             find "$RUNNER_TEMP/stale-prepare" -maxdepth 4 -type f -print
             exit 1
           fi
@@ -188,7 +193,7 @@ jobs:
           print(sum(1 for i in all_t if i.get("country") == country))
           PY
           )
-          python fetch_data/fetch_stale_overpass.py --config fetch_data/config.yml --targets "$TARGETS_FILE" --retry-attempts "${{ inputs.retry_attempts }}" --retry-sleep 30 --output-dir "$FETCHED_DIR" --failed-output "$FAILED_FILE" --total-country-targets "$COUNTRY_TOTAL" --skip-smoke-test --skip-manifest --debug
+          python fetch_data/fetch_stale_overpass.py --config fetch_data/config.yml --targets "$TARGETS_FILE" --retry-attempts "$RETRY_ATTEMPTS" --retry-sleep 30 --output-dir "$FETCHED_DIR" --failed-output "$FAILED_FILE" --total-country-targets "$COUNTRY_TOTAL" --skip-smoke-test --skip-manifest --debug
           export FETCHED_DIR
           python - <<'PY'
           import os
