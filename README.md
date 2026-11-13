@@ -58,6 +58,8 @@ The accuracy, completeness and freshness of individual points of interest depend
 | `resources/icons/` | Category marker icons |
 | `fetch_data/` | Python Overpass fetch pipeline (see [`fetch_data/README.md`](fetch_data/README.md)) |
 | `scripts/` | Maintenance scripts, tests, SEO page generator |
+| `map/` | Generated SEO landing pages (do not edit) |
+| `legal/` | Imprint and privacy policy |
 | `tests/e2e/` | Playwright smoke tests |
 | `vendor/` | Local copies of Leaflet, MarkerCluster, opening_hours.js, Font Awesome |
 | `.github/workflows/` | Data fetch automation and CI (see [`.github/workflows/README.md`](.github/workflows/README.md)) |
@@ -87,12 +89,23 @@ npm run check-sw  # verify it is current
 
 ### SEO landing pages
 
-Static, crawlable landing pages per category and country (`/map/<category>/<country>/`) and `sitemap.xml`
-are generated from `fetch_data/config.yml` and `resources/geojson/manifest.json`:
+Static, crawlable landing pages per category and country (e.g. `map/drinking-water/slovenia/`), an overview
+page (`map/`) and `sitemap.xml` are generated from `resources/geojson/` – nothing is maintained by hand:
 
 ```bash
 npm run generate-seo
 ```
+
+Each page has a static H1, POI counts per region, the data date and a deep link that opens the filtered map
+directly. After data updates on `main`, `seo-pages.yml` regenerates them automatically.
+Submit `https://nightrides.cc/munchiesmaps/sitemap.xml` in Google Search Console (a `robots.txt` inside
+`/munchiesmaps/` is ignored by crawlers; only the domain root counts).
+
+### Privacy
+
+Google Analytics is only loaded after consent (`js/consent.js`). Imprint and privacy policy live in `legal/`
+– **fill in the placeholders in `legal/imprint.html` (and the hosting provider in `legal/privacy.html`)
+before deploying.**
 
 ### Vendor files
 

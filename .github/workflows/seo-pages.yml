@@ -1,0 +1,45 @@
+name: Regenerate SEO landing pages
+
+# Rebuilds map/**/index.html and sitemap.xml whenever POI data or the generator changes.
+on:
+  push:
+    branches: [main]
+    paths:
+      - resources/geojson/**
+      - scripts/generate-seo-pages.mjs
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-pages
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history so the generator can read per-country data dates from git.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate pages
+        run: node scripts/generate-seo-pages.mjs
+
+      - name: Commit if changed
+        run: |
+          if [ -z "$(git status --porcelain -- map sitemap.xml)" ]; then
+            echo "SEO pages already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add map sitemap.xml
+          git commit -m "Regenerate SEO landing pages"
+          git push

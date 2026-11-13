@@ -1,4 +1,6 @@
+# Note: crawlers only read robots.txt at the domain root (https://nightrides.cc/robots.txt).
+# Add the sitemap line below there as well, or submit the sitemap in Google Search Console.
 User-agent: *
 Allow: /
 
-Sitemap: https://nightrides.cc/sitemap.xml
+Sitemap: https://nightrides.cc/munchiesmaps/sitemap.xml
