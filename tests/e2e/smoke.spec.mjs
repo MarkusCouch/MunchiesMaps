@@ -30,6 +30,7 @@ test.describe('route tools', () => {
   test('GPX import renders the track, POIs near the route and fits the map', async ({ page }) => {
     await openApp(page);
     await importGpx(page);
+    await expect(page.locator('#offlineMapDetailRow')).toBeVisible();
     const state = await getRouteState(page);
     expect(state.trackOnMap).toBe(true);
     expect(state.routeSource).toBe('new-gpx-import');
@@ -69,6 +70,9 @@ test.describe('route tools', () => {
     await expect.poll(async () => (await getRouteState(page)).routeSource).toBe('offline-route-package');
     await expect(page.locator('#gpxSaveBtn')).toHaveText('Saved');
     expect((await getRouteState(page)).unsavedChanges).toBe(false);
+    // The offline detail picker is hidden once the route is saved.
+    await expect(page.locator('#offlineMapDetailRow')).toBeHidden();
+    await expect(page.locator('#offlineMapDetailHint')).toBeHidden();
 
     await page.reload();
     await expect(page.locator('#map .leaflet-pane').first()).toBeAttached();
