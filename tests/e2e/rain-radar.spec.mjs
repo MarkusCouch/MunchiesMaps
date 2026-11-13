@@ -257,3 +257,41 @@ test('no error text when wind data fails; the arrow appears once wind aloft is r
   await expect(page.locator('.rain-motion-tip')).toHaveCount(1, { timeout: 10_000 });
   await expect(page.locator('#rainRadarMotion')).toContainText('Wind aloft (≈3 km) toward W · 25 km/h');
 });
+
+test('rain mode does not leak its zoomed-out view into the URL or the next start', async ({ page }) => {
+  await mockGeolocation(page, 52.52, 13.405);
+  await mockRadarAndWind(page);
+  await openApp(page);
+  await expect.poll(() => page.evaluate(() => map.getZoom())).toBeGreaterThan(9);
+  const urlZoom = () => page.evaluate(() => Number(new URLSearchParams(location.search).get('z')));
+  await expect.poll(urlZoom).toBeGreaterThan(9);
+
+  await page.click('#rainRadarBtn');
+  await expect(page.locator('.rain-motion-tip')).toHaveCount(1);
+  await expect.poll(() => page.evaluate(() => map.getZoom())).toBeLessThan(10);
+  // The URL keeps the last normal view while rain mode is on.
+  await page.waitForTimeout(500);
+  expect(await urlZoom()).toBeGreaterThan(9);
+
+  // Reloading in rain mode starts normally again: zoomed in, POIs visible.
+  await page.reload();
+  await expect(page.locator('#map .leaflet-pane').first()).toBeAttached();
+  await expect.poll(() => page.evaluate(() => map.getZoom())).toBeGreaterThan(9);
+  await expect.poll(() => page.locator('.mm-marker-wrap, .cluster-icon-wrap').count()).toBeGreaterThan(0);
+});
+
+test('a stored URL with a zoom too low for POIs (old bookmark) is ignored on start', async ({ page }) => {
+  await mockGeolocation(page, 52.52, 13.405);
+  await openApp(page, { url: 'index.html?v=2&a=52.72&o=12.58&z=7' });
+  await expect.poll(() => page.evaluate(() => map.getZoom())).toBeGreaterThan(9);
+  const center = await page.evaluate(() => map.getCenter());
+  expect(Math.abs(center.lat - 52.52)).toBeLessThan(0.05);
+  await expect.poll(() => page.locator('.mm-marker-wrap, .cluster-icon-wrap').count()).toBeGreaterThan(0);
+});
+
+test('a deliberate shared view (zoom above the POI threshold) is still applied', async ({ page }) => {
+  await openApp(page, { url: 'index.html?v=2&a=51.05&o=13.74&z=12' });
+  await expect.poll(() => page.evaluate(() => map.getZoom())).toBe(12);
+  const center = await page.evaluate(() => map.getCenter());
+  expect(Math.abs(center.lat - 51.05)).toBeLessThan(0.01);
+});
