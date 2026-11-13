@@ -14,6 +14,7 @@ test.describe('app boot', () => {
     await page.waitForTimeout(500);
     expect(pageErrors).toEqual([]);
     expect(warnings.filter((w) => w.includes('self-check failed'))).toEqual([]);
+    expect(warnings.filter((w) => /Content Security Policy/i.test(w))).toEqual([]);
   });
 
   test('night badge logic uses opening_hours.js', async ({ page }) => {

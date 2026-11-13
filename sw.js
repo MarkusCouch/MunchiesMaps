@@ -1,6 +1,6 @@
 // BUILD_ID is a content hash of the app shell, maintained by `npm run bump-sw`
 // (CI fails when it is stale). Changing it invalidates the static cache.
-const BUILD_ID = '409afaa154fe';
+const BUILD_ID = 'cbad0e6ff0fd';
 const STATIC_CACHE = `munchiesmaps-static-${BUILD_ID}`;
 const GEOJSON_CACHE = 'munchiesmaps-geojson-v2';
 const OFFLINE_TILE_CACHE_NAME = 'munchiesmaps-offline-tiles-v1';
