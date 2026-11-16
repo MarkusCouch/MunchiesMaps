@@ -16,6 +16,12 @@ Encoding rules:
 4. Missing country entries in `s` mean default selection for that country.
 5. Generated URLs only write canonical short country codes (for example `de`, `cz`, `ch`, `at`, `gb`).
 6. Generated URLs omit countries whose bitmask is `0` or equal to the default selection.
+7. Only regions the user switched on/off in the region menu are written. Regions that are merely active
+   because they are inside the current viewport ("auto") are recomputed on load and never written, so a
+   reload or bookmark cannot freeze them.
+8. On read, only the countries present in `s` are forced on/off; all other regions stay automatic.
+9. German region ids are ISO 3166-2 (`de-bw` … `de-th`) in the same order as the former long ids, so old
+   `de:<mask>` links keep their meaning.
 
 ## Additional share-state params
 

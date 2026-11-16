@@ -57,7 +57,7 @@
   <link rel="stylesheet" href="./vendor/leaflet.markercluster/MarkerCluster.css" />
   <link rel="stylesheet" href="./vendor/leaflet.markercluster/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
-  <link rel="stylesheet" href="./css/app.css?v=0feb2c55fba2" />
+  <link rel="stylesheet" href="./css/app.css?v=070f9fc4ac83" />
   <script>
     (function() {
       const storedTheme = localStorage.getItem('theme');
@@ -69,7 +69,7 @@
     })();
   </script>
   <!-- Google Analytics is only loaded after explicit consent, see js/consent.js -->
-  <script src="./js/consent.js?v=0feb2c55fba2"></script>
+  <script src="./js/consent.js?v=070f9fc4ac83"></script>
 </head>
 <body>
 <script>
@@ -372,11 +372,11 @@
   <script src="./vendor/i18next/i18next.min.js"></script>
   <script src="./vendor/suncalc/suncalc.js"></script>
   <script src="./vendor/opening_hours/opening_hours.min.js"></script>
-  <script src="./js/offline-route-store.js?v=0feb2c55fba2"></script>
-  <script src="./js/gpx-utils.js?v=0feb2c55fba2"></script>
-  <script src="./js/route-state.js?v=0feb2c55fba2"></script>
-  <script src="./js/rain-radar.js?v=0feb2c55fba2"></script>
-  <script src="./js/rain-motion.js?v=0feb2c55fba2"></script>
+  <script src="./js/offline-route-store.js?v=070f9fc4ac83"></script>
+  <script src="./js/gpx-utils.js?v=070f9fc4ac83"></script>
+  <script src="./js/route-state.js?v=070f9fc4ac83"></script>
+  <script src="./js/rain-radar.js?v=070f9fc4ac83"></script>
+  <script src="./js/rain-motion.js?v=070f9fc4ac83"></script>
 
   <script>
     const qs = (selector, root = document) => root.querySelector(selector);
@@ -424,11 +424,11 @@
       TH: 'Thueringen'
     };
     let REGION_ORDER = {
+      // ISO 3166-2 ids as used in resources/geojson/manifest.json. Same order as the former long ids
+      // (de-baden-wuerttemberg … de-thueringen), so existing de:<mask> links keep their meaning.
       de: [
-        'de-baden-wuerttemberg', 'de-bayern', 'de-berlin', 'de-brandenburg', 'de-bremen', 'de-hamburg',
-        'de-hessen', 'de-mecklenburg-vorpommern', 'de-niedersachsen', 'de-nordrhein-westfalen',
-        'de-rheinland-pfalz', 'de-saarland', 'de-sachsen', 'de-sachsen-anhalt', 'de-schleswig-holstein',
-        'de-thueringen'
+        'de-bw', 'de-by', 'de-be', 'de-bb', 'de-hb', 'de-hh', 'de-he', 'de-mv',
+        'de-ni', 'de-nw', 'de-rp', 'de-sl', 'de-sn', 'de-st', 'de-sh', 'de-th'
       ],
       cz: [
         'cz-jihocesky', 'cz-jihomoravsky', 'cz-karlovarsky', 'cz-kralovehradecky', 'cz-liberecky', 'cz-moravskoslezsky',
@@ -1255,6 +1255,18 @@
       }
     }
 
+    // Region state for URLs: only countries where the user switched regions on/off in the menu.
+    // Regions that are merely active because they are in the viewport ("auto") are not written –
+    // otherwise a reload or bookmark would freeze them and force every other region off.
+    function getManualRegionStateByCountry() {
+      return REGION_COUNTRIES.reduce((acc, country) => {
+        const order = getRegionOrder(country);
+        if (!order.some((id) => regionManualModeById.has(id))) return acc;
+        acc[country] = new Set(order.filter((id) => regionManualModeById.get(id) !== 'forcedOff'));
+        return acc;
+      }, {});
+    }
+
     function getRegionStateByCountryFromSelectedStates(selectedStates) {
       const selected = selectedStates instanceof Set ? selectedStates : new Set(selectedStates || []);
       return REGION_COUNTRIES.reduce((acc, country) => {
@@ -1414,32 +1426,30 @@
 
       const regionSource = state.regionState || { source: 'default', regionStateByCountry: {}, shouldMigrate: false };
       if (regionSource.source !== 'default') {
+        // Only countries that are explicitly part of the URL state are forced on/off. All other
+        // regions stay in automatic (viewport) mode – previously every region missing from the URL
+        // was forced off, which hid e.g. all of Germany when a link only mentioned cz/pl.
         const validIds = allIds(data.regions);
-        const nextSet = new Set();
-        const defaultsByCountry = getDefaultRegionStateByCountry();
-        const defaultedCountries = [];
+        const scopedIds = new Set();
+        const selectedIds = new Set();
         REGION_COUNTRIES.forEach((country) => {
-          const hasCountryOverride = regionSource.regionStateByCountry?.[country] instanceof Set;
-          const sourceSet = hasCountryOverride
-            ? regionSource.regionStateByCountry[country]
-            : defaultsByCountry[country];
-          if (!hasCountryOverride) defaultedCountries.push(country);
-          sourceSet.forEach((id) => {
-            if (validIds.has(id)) nextSet.add(id);
-          });
+          const override = regionSource.regionStateByCountry?.[country];
+          if (!(override instanceof Set)) return;
+          getRegionOrder(country).forEach((id) => { if (validIds.has(id)) scopedIds.add(id); });
+          override.forEach((id) => { if (validIds.has(id)) { scopedIds.add(id); selectedIds.add(id); } });
         });
-        if (defaultedCountries.length > 0) {
-          console.debug('[url-region-state] defaults-used=%o', defaultedCountries);
-        }
-        if (nextSet.size > 0) {
-          filterState.bundeslaender = nextSet;
-          validIds.forEach((id) => {
-            if (nextSet.has(id)) {
+        if (scopedIds.size > 0) {
+          const nextSet = new Set(filterState.bundeslaender);
+          scopedIds.forEach((id) => {
+            if (selectedIds.has(id)) {
+              nextSet.add(id);
               regionManualModeById.set(id, 'forcedOn');
             } else {
+              nextSet.delete(id);
               regionManualModeById.set(id, 'forcedOff');
             }
           });
+          filterState.bundeslaender = nextSet;
         }
       }
 
@@ -1510,7 +1520,7 @@
       if (appState.includeMissingData !== false) params.set('m', boolTo01(appState.includeMissingData));
       if (minPoiZoom !== DEFAULT_MIN_POI_ZOOM) params.set('pz', String(minPoiZoom));
 
-      const regionStateByCountry = getRegionStateByCountryFromSelectedStates(filterState.bundeslaender);
+      const regionStateByCountry = getManualRegionStateByCountry();
       const compactState = serializeRegionStateByCountry(regionStateByCountry);
       if (compactState) params.set('s', compactState);
 

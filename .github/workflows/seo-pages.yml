@@ -42,4 +42,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add map sitemap.xml
           git commit -m "Regenerate SEO landing pages"
-          git push
+          # Other bot workflows may push to main at the same time: rebase and retry.
+          for attempt in 1 2 3 4; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            echo "Push attempt $attempt failed, retrying…"
+            sleep $((attempt * 5))
+          done
+          exit 1
