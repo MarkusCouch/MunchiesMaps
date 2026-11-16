@@ -41,6 +41,11 @@ jobs:
       - name: GeoJSON integrity check
         run: python scripts/check_geojson_integrity.py
 
+      - name: GeoJSON plausibility check
+        run: |
+          pip install -r fetch_data/requirements.txt
+          python scripts/check_geojson_plausibility.py
+
       - name: Service worker BUILD_ID check
         # Not blocking: sw-build-id.yml updates BUILD_ID automatically after merges to main.
         run: |

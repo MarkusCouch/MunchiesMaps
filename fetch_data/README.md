@@ -58,6 +58,50 @@ The script writes run artifacts to `artifacts/`:
 - `fetch_results.json`: successful updates with feature counts and output files
 - `fetch_summary.md`: compact summary for GitHub Actions job summaries
 
+## Adding a country without regions
+
+Small or data-sparse countries (Luxembourg, Kosovo, Montenegro, Kyrgyzstan) are fetched as one area selected by
+the ISO 3166-1 code. No region names or admin levels have to be looked up or verified:
+
+```yaml
+  kg:
+    label: Kyrgyzstan
+    iso3166_1: KG          # always quote codes YAML reads as booleans, e.g. "NO"
+    country_admin_level: 2
+    country_scope_strategy: area-iso
+    path: kyrgyzstan
+    id: kg
+    region: kg
+    regions: []
+```
+
+Then add the country's bounding box (see below), add the key to `COUNTRY_META` in
+`scripts/generate-seo-pages.mjs` and to `REGION_ORDER` / `COUNTRY_URL_ALIASES` in `index.html`, and start the fetch
+workflow with `countries: kg`. Large countries whose Overpass response would be too big need ISO 3166-2 regions
+(`region_identifier_strategy: iso3166-2`).
+
+## Plausibility check
+
+`scripts/check_geojson_plausibility.py` runs offline in CI and in every fetch workflow before a data PR or commit
+is created. For each configured country it fails when
+
+- `iso3166_1` is not a two-letter code,
+- the country has no bounding box in `fetch_data/country_bboxes.json`,
+- a fetched region has no POIs in any category (boundary matched an empty or wrong area),
+- a POI lies outside the country bounding box plus 0.1° (query matched an area in another country).
+
+Regions that have not been fetched yet are only reported. In `fetch_matrix.yml` a failing country is left out of the
+combined PR (its job turns red); the other countries are still updated.
+
+```bash
+python scripts/check_geojson_plausibility.py                  # all countries
+python scripts/check_geojson_plausibility.py --countries kg   # selected countries
+python scripts/check_geojson_plausibility.py --fetch-missing-bboxes   # add bboxes of new countries via Overpass
+```
+
+The bounding boxes come from Natural Earth (1:50m, incl. islands and overseas parts, widened for a few small islands
+missing at that scale); `--fetch-missing-bboxes` adds new countries from the OSM country relation.
+
 ## Administrative boundary resolution
 
 - Region lookups are now built via administrative **relations** and converted to queryable areas through `map_to_area`.

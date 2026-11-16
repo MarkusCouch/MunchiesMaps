@@ -81,6 +81,7 @@ jobs:
                   'greece': 'gr',
                   'montenegro': 'me',
                   'turkey': 'tr',
+                  'kyrgyzstan': 'kg',
               }
               normalized: list[str] = []
               for country in requested:
@@ -194,6 +195,10 @@ jobs:
           echo "changed=true" >> "$GITHUB_OUTPUT"
           echo "Changed files:"
           git diff --cached --name-only
+
+      - name: GeoJSON plausibility check
+        if: steps.country_changes.outputs.changed == 'true'
+        run: python scripts/check_geojson_plausibility.py --countries "${{ matrix.country }}"
 
       - name: Create pull request per country
         if: steps.country_changes.outputs.changed == 'true'

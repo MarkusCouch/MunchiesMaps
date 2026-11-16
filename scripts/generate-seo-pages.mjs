@@ -50,7 +50,7 @@ const COUNTRY_META = {
   poland: ['Poland', 'poland'], portugal: ['Portugal', 'portugal'], romania: ['Romania', 'romania'],
   serbia: ['Serbia', 'serbia'], slovenia: ['Slovenia', 'slovenia'], slowakei: ['Slovakia', 'slovakia'],
   spain: ['Spain', 'spain'], sweden: ['Sweden', 'sweden'], switzerland: ['Switzerland', 'switzerland'],
-  tr: ['Turkey', 'turkey']
+  tr: ['Turkey', 'turkey'], kg: ['Kyrgyzstan', 'kyrgyzstan']
 };
 
 const OPEN_24_7 = /24\s*\/\s*7|00:00\s*-\s*24:00/i;
