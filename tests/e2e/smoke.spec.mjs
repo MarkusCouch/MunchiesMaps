@@ -137,3 +137,37 @@ test.describe('share state', () => {
     expect(ok).toBe(true);
   });
 });
+
+test.describe('region state in URLs / bookmarks', () => {
+  test('a bookmark whose URL lists other countries (s=cz…;pl…) still shows POIs in Germany', async ({ page }) => {
+    await openApp(page, { url: 'index.html?v=2&a=52.52&o=13.405&z=15&s=cz%3A20s%3Bpl%3A35t' });
+    await expect.poll(() => page.locator('.mm-marker-wrap, .cluster-icon-wrap').count()).toBeGreaterThan(0);
+    const deModes = await page.evaluate(() => ['de-be', 'de-bb'].map((id) => regionManualModeById.get(id) || 'auto'));
+    expect(deModes).toEqual(['auto', 'auto']);
+  });
+
+  test('regions that are only active because of the viewport are not written to the URL', async ({ page }) => {
+    await openApp(page, { url: 'index.html?v=2&a=52.52&o=13.405&z=14' });
+    await expect.poll(() => page.locator('.mm-marker-wrap, .cluster-icon-wrap').count()).toBeGreaterThan(0);
+    await page.evaluate(() => map.setView([52.53, 13.41], 14, { animate: false }));
+    await expect.poll(() => page.evaluate(() => location.search)).toContain('a=52.53');
+    expect(await page.evaluate(() => new URLSearchParams(location.search).get('s'))).toBeNull();
+  });
+
+  test('a region switched off in the menu stays off after reload, others stay automatic', async ({ page }) => {
+    await openApp(page, { url: 'index.html?v=2&a=52.52&o=13.405&z=14' });
+    await expect.poll(() => page.locator('.mm-marker-wrap, .cluster-icon-wrap').count()).toBeGreaterThan(0);
+    await page.evaluate(() => {
+      setManualRegionMode('de-be', 'forcedOff');
+      refreshEffectiveRegionState({ triggerFilters: true, rerenderChecklist: true, updateUrl: true });
+    });
+    await expect.poll(() => page.evaluate(() => new URLSearchParams(location.search).get('s') || '')).toMatch(/^de:/);
+    await expect.poll(() => page.locator('.mm-marker-wrap, .cluster-icon-wrap').count()).toBe(0);
+
+    await page.reload();
+    await expect(page.locator('#map .leaflet-pane').first()).toBeAttached();
+    const modes = await page.evaluate(() => ({ be: regionManualModeById.get('de-be'), bb: regionManualModeById.get('de-bb') }));
+    expect(modes.be).toBe('forcedOff');
+    expect(modes.bb).not.toBe('forcedOff');
+  });
+});
