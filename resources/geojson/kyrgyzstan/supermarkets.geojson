@@ -1,0 +1,9028 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.590658,
+          42.8729386
+        ]
+      },
+      "properties": {
+        "id": 283552647,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5965121,
+          42.8747666
+        ]
+      },
+      "properties": {
+        "id": 435419536,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5844576,
+          42.875382
+        ]
+      },
+      "properties": {
+        "id": 435419537,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7",
+        "check_date": "2023-08-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6080046,
+          42.8718771
+        ]
+      },
+      "properties": {
+        "id": 435505265,
+        "osm_type": "node",
+        "name": "Колобок",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6224241,
+          42.886059
+        ]
+      },
+      "properties": {
+        "id": 612933186,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6076583,
+          42.8359799
+        ]
+      },
+      "properties": {
+        "id": 618282853,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6413858,
+          42.8882172
+        ]
+      },
+      "properties": {
+        "id": 622882638,
+        "osm_type": "node",
+        "name": "Globus",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5725991,
+          42.8440506
+        ]
+      },
+      "properties": {
+        "id": 623964241,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5954249,
+          42.8435273
+        ]
+      },
+      "properties": {
+        "id": 632184105,
+        "osm_type": "node",
+        "name": "Spar",
+        "brand": "Spar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6043636,
+          42.8428346
+        ]
+      },
+      "properties": {
+        "id": 632184292,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6097488,
+          42.8493341
+        ]
+      },
+      "properties": {
+        "id": 632184394,
+        "osm_type": "node",
+        "name": "Spar",
+        "brand": "Spar",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5776436,
+          42.8731554
+        ]
+      },
+      "properties": {
+        "id": 632184459,
+        "osm_type": "node",
+        "name": "Достор",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6176085,
+          42.868792
+        ]
+      },
+      "properties": {
+        "id": 632184479,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6148655,
+          42.8719206
+        ]
+      },
+      "properties": {
+        "id": 632184490,
+        "osm_type": "node",
+        "name": "Spar",
+        "brand": "Spar",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6180541,
+          42.8824153
+        ]
+      },
+      "properties": {
+        "id": 641862599,
+        "osm_type": "node",
+        "name": "Фрунзе (Достук)",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5970601,
+          42.8879761
+        ]
+      },
+      "properties": {
+        "id": 654216823,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5603442,
+          42.8782623
+        ]
+      },
+      "properties": {
+        "id": 660642710,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5592182,
+          42.8780618
+        ]
+      },
+      "properties": {
+        "id": 660645113,
+        "osm_type": "node",
+        "name": "Дордой Маркет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5717827,
+          42.8660001
+        ]
+      },
+      "properties": {
+        "id": 660713310,
+        "osm_type": "node",
+        "name": "Боорсок №1",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5661178,
+          42.8370066
+        ]
+      },
+      "properties": {
+        "id": 663131743,
+        "osm_type": "node",
+        "name": "7 дней"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5671048,
+          42.8434575
+        ]
+      },
+      "properties": {
+        "id": 663131763,
+        "osm_type": "node",
+        "name": "Глобус (Джал)",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6076282,
+          42.8849227
+        ]
+      },
+      "properties": {
+        "id": 792604920,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7",
+        "check_date": "2023-04-28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6233809,
+          42.8482377
+        ]
+      },
+      "properties": {
+        "id": 795906571,
+        "osm_type": "node",
+        "name": "SPAR (Юнусалиев)",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7375979,
+          41.0350324
+        ]
+      },
+      "properties": {
+        "id": 864671169,
+        "osm_type": "node",
+        "name": "Рынок Адилет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6212848,
+          42.8314214
+        ]
+      },
+      "properties": {
+        "id": 928117718,
+        "osm_type": "node",
+        "name": "Глобус",
+        "brand": "Глобус",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5587911,
+          42.8840854
+        ]
+      },
+      "properties": {
+        "id": 945000276,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6249356,
+          42.8178153
+        ]
+      },
+      "properties": {
+        "id": 1003123759,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6225047,
+          42.8357564
+        ]
+      },
+      "properties": {
+        "id": 1003123840,
+        "osm_type": "node",
+        "name": "Метро",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6354081,
+          42.8428408
+        ]
+      },
+      "properties": {
+        "id": 1003123855,
+        "osm_type": "node",
+        "name": "Народный (Улан)",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6329775,
+          42.8149233
+        ]
+      },
+      "properties": {
+        "id": 1003123858,
+        "osm_type": "node",
+        "name": "Глобус",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6331171,
+          42.8753416
+        ]
+      },
+      "properties": {
+        "id": 1003123974,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5866719,
+          42.8431826
+        ]
+      },
+      "properties": {
+        "id": 1003124106,
+        "osm_type": "node",
+        "name": "Spar",
+        "brand": "Spar",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5817402,
+          42.8840054
+        ]
+      },
+      "properties": {
+        "id": 1045096446,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5880218,
+          42.8700468
+        ]
+      },
+      "properties": {
+        "id": 1135987829,
+        "osm_type": "node",
+        "name": "Spar express",
+        "opening_hours": "Mo-Su 07:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6399328,
+          42.8143553
+        ]
+      },
+      "properties": {
+        "id": 1224375263,
+        "osm_type": "node",
+        "name": "Фрунзе Экспресс",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.544421,
+          42.8753013
+        ]
+      },
+      "properties": {
+        "id": 1286158925,
+        "osm_type": "node",
+        "name": "Пятёрочка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5386866,
+          42.8805603
+        ]
+      },
+      "properties": {
+        "id": 1286158939,
+        "osm_type": "node",
+        "name": "НуРус"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5484378,
+          42.8524831
+        ]
+      },
+      "properties": {
+        "id": 1326656103,
+        "osm_type": "node",
+        "name": "Достор",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5837192,
+          42.829881
+        ]
+      },
+      "properties": {
+        "id": 1370644738,
+        "osm_type": "node",
+        "name": "Наш Gourmet Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7568138,
+          42.2166334
+        ]
+      },
+      "properties": {
+        "id": 1462884751,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2930559,
+          42.8512852
+        ]
+      },
+      "properties": {
+        "id": 1685369351,
+        "osm_type": "node",
+        "name": "Центральный рынок"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3098285,
+          42.7872415
+        ]
+      },
+      "properties": {
+        "id": 1685727130,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7593195,
+          42.2174119
+        ]
+      },
+      "properties": {
+        "id": 1788695395,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5980485,
+          42.8468578
+        ]
+      },
+      "properties": {
+        "id": 1838362116,
+        "osm_type": "node",
+        "name": "Космос",
+        "opening_hours": "08:00-23:00",
+        "check_date": "2024-07-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6089816,
+          42.8666633
+        ]
+      },
+      "properties": {
+        "id": 1838583348,
+        "osm_type": "node",
+        "name": "Жанар"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8001113,
+          40.5371485
+        ]
+      },
+      "properties": {
+        "id": 1842427245,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.4935346,
+          41.3629809
+        ]
+      },
+      "properties": {
+        "id": 1856928310,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.638516,
+          41.3769627
+        ]
+      },
+      "properties": {
+        "id": 1856928325,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3719231,
+          41.3771374
+        ]
+      },
+      "properties": {
+        "id": 1856928328,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6570556,
+          42.0021373
+        ]
+      },
+      "properties": {
+        "id": 1856928800,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0462234,
+          42.784542
+        ]
+      },
+      "properties": {
+        "id": 1856929135,
+        "osm_type": "node",
+        "name": "Сыймык"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5908635,
+          41.0965689
+        ]
+      },
+      "properties": {
+        "id": 1857058765,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7269719,
+          41.1640937
+        ]
+      },
+      "properties": {
+        "id": 1857058780,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7531207,
+          41.1948161
+        ]
+      },
+      "properties": {
+        "id": 1857058821,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4393394,
+          42.1648169
+        ]
+      },
+      "properties": {
+        "id": 1857059031,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5442574,
+          42.8493186
+        ]
+      },
+      "properties": {
+        "id": 1915699428,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.8196482,
+          40.0610874
+        ]
+      },
+      "properties": {
+        "id": 1923370184,
+        "osm_type": "node",
+        "name": "Kurmanjan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8491918,
+          42.8903288
+        ]
+      },
+      "properties": {
+        "id": 1934731258,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.584967,
+          42.8727755
+        ]
+      },
+      "properties": {
+        "id": 1960315630,
+        "osm_type": "node",
+        "name": "Магазин \"Куликовские торты\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6297947,
+          42.817941
+        ]
+      },
+      "properties": {
+        "id": 1974885224,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5420919,
+          42.8518736
+        ]
+      },
+      "properties": {
+        "id": 1998293061,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8570779,
+          42.8918698
+        ]
+      },
+      "properties": {
+        "id": 2065203530,
+        "osm_type": "node",
+        "name": "Ак-Бата"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6344186,
+          42.8949992
+        ]
+      },
+      "properties": {
+        "id": 2278074924,
+        "osm_type": "node",
+        "name": "Народный (Алматинская)",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5446679,
+          42.8646904
+        ]
+      },
+      "properties": {
+        "id": 2278286867,
+        "osm_type": "node",
+        "name": "Народный (Льва Толстого)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.61263,
+          42.9037337
+        ]
+      },
+      "properties": {
+        "id": 2460629782,
+        "osm_type": "node",
+        "name": "Зайди"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8023393,
+          40.5417927
+        ]
+      },
+      "properties": {
+        "id": 2582554744,
+        "osm_type": "node",
+        "name": "Ырыскы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8433572,
+          42.8238172
+        ]
+      },
+      "properties": {
+        "id": 2605636095,
+        "osm_type": "node",
+        "name": "D-Link Technology - компьютерный магазин",
+        "opening_hours": "9:00-18:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8077855,
+          40.5118378
+        ]
+      },
+      "properties": {
+        "id": 2692522416,
+        "osm_type": "node",
+        "name": "Корзинка KG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6976385,
+          40.304391
+        ]
+      },
+      "properties": {
+        "id": 2736387422,
+        "osm_type": "node",
+        "name": "Азык Ордо"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6977453,
+          40.3038591
+        ]
+      },
+      "properties": {
+        "id": 2766802868,
+        "osm_type": "node",
+        "name": "Баргы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5840255,
+          42.829917
+        ]
+      },
+      "properties": {
+        "id": 2778784664,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.668671,
+          41.6313484
+        ]
+      },
+      "properties": {
+        "id": 2789857541,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6004148,
+          42.836157
+        ]
+      },
+      "properties": {
+        "id": 2794662395,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3830328,
+          42.5311824
+        ]
+      },
+      "properties": {
+        "id": 2852299259,
+        "osm_type": "node",
+        "name": "shop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7939602,
+          40.5284873
+        ]
+      },
+      "properties": {
+        "id": 2950824290,
+        "osm_type": "node",
+        "name": "Ош Маркет",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5128934,
+          41.9256379
+        ]
+      },
+      "properties": {
+        "id": 2997165302,
+        "osm_type": "node",
+        "name": "Магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.538904,
+          42.8804661
+        ]
+      },
+      "properties": {
+        "id": 3081237000,
+        "osm_type": "node",
+        "name": "Магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6317641,
+          42.8148619
+        ]
+      },
+      "properties": {
+        "id": 3192787809,
+        "osm_type": "node",
+        "name": "Народный",
+        "check_date": "2024-07-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6038272,
+          42.8366374
+        ]
+      },
+      "properties": {
+        "id": 3270679957,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6184555,
+          42.8453577
+        ]
+      },
+      "properties": {
+        "id": 3311297653,
+        "osm_type": "node",
+        "name": "Адик"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6142584,
+          42.8686652
+        ]
+      },
+      "properties": {
+        "id": 3337338383,
+        "osm_type": "node",
+        "name": "Torro",
+        "opening_hours": "9:00-20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5710254,
+          42.8741609
+        ]
+      },
+      "properties": {
+        "id": 3360871179,
+        "osm_type": "node",
+        "name": "Фрунзе 1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5809019,
+          42.8740113
+        ]
+      },
+      "properties": {
+        "id": 3367652350,
+        "osm_type": "node",
+        "name": "Корзина"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5538202,
+          42.8647247
+        ]
+      },
+      "properties": {
+        "id": 3409000071,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.63803,
+          42.8838427
+        ]
+      },
+      "properties": {
+        "id": 3448070876,
+        "osm_type": "node",
+        "name": "Гастроном"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6165858,
+          42.8237362
+        ]
+      },
+      "properties": {
+        "id": 3451903744,
+        "osm_type": "node",
+        "name": "Глобус",
+        "opening_hours": "Mo-Su 08:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7831627,
+          40.5215984
+        ]
+      },
+      "properties": {
+        "id": 3600625035,
+        "osm_type": "node",
+        "name": "Береке"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7837374,
+          40.5166873
+        ]
+      },
+      "properties": {
+        "id": 3600637058,
+        "osm_type": "node",
+        "name": "Азат"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7824433,
+          40.5210071
+        ]
+      },
+      "properties": {
+        "id": 3600637097,
+        "osm_type": "node",
+        "name": "У дома"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7812182,
+          40.5222274
+        ]
+      },
+      "properties": {
+        "id": 3600638950,
+        "osm_type": "node",
+        "name": "Апельсин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7813104,
+          40.5222274
+        ]
+      },
+      "properties": {
+        "id": 3600640434,
+        "osm_type": "node",
+        "name": "Час Пик"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7816676,
+          40.5225567
+        ]
+      },
+      "properties": {
+        "id": 3600668165,
+        "osm_type": "node",
+        "name": "Сыймык"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7809916,
+          40.5222177
+        ]
+      },
+      "properties": {
+        "id": 3600670216,
+        "osm_type": "node",
+        "name": "Черемушки"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5203254,
+          42.8518844
+        ]
+      },
+      "properties": {
+        "id": 3632616716,
+        "osm_type": "node",
+        "name": "Ак-Орго",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5163126,
+          42.8522408
+        ]
+      },
+      "properties": {
+        "id": 3632640268,
+        "osm_type": "node",
+        "name": "Алтынай"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7811035,
+          40.5195308
+        ]
+      },
+      "properties": {
+        "id": 3636819426,
+        "osm_type": "node",
+        "name": "Толгонай"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7807306,
+          40.5195268
+        ]
+      },
+      "properties": {
+        "id": 3636821390,
+        "osm_type": "node",
+        "name": "Маг. Бермет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7816062,
+          40.5244818
+        ]
+      },
+      "properties": {
+        "id": 3636823483,
+        "osm_type": "node",
+        "name": "Ош Нан"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7816673,
+          40.5245647
+        ]
+      },
+      "properties": {
+        "id": 3636823544,
+        "osm_type": "node",
+        "name": "Каныкей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.611589,
+          42.8991166
+        ]
+      },
+      "properties": {
+        "id": 3643579999,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7465155,
+          42.2111922
+        ]
+      },
+      "properties": {
+        "id": 3679029776,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.750041,
+          42.2145646
+        ]
+      },
+      "properties": {
+        "id": 3679089760,
+        "osm_type": "node",
+        "name": "KEN-SUU SHOP",
+        "opening_hours": "08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3904133,
+          42.4962719
+        ]
+      },
+      "properties": {
+        "id": 3691533377,
+        "osm_type": "node",
+        "name": "Караван"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3902103,
+          41.4658174
+        ]
+      },
+      "properties": {
+        "id": 3699748955,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8440089,
+          42.8234683
+        ]
+      },
+      "properties": {
+        "id": 3705429081,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2908297,
+          42.3083055
+        ]
+      },
+      "properties": {
+        "id": 3792770204,
+        "osm_type": "node",
+        "name": "Айтбек"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2951115,
+          42.3078035
+        ]
+      },
+      "properties": {
+        "id": 3792770205,
+        "osm_type": "node",
+        "name": "Ариет",
+        "check_date": "2023-04-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3010539,
+          42.3075168
+        ]
+      },
+      "properties": {
+        "id": 3797265630,
+        "osm_type": "node",
+        "name": "Бекжан"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5851065,
+          42.1251952
+        ]
+      },
+      "properties": {
+        "id": 3824381282,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5701453,
+          42.8299971
+        ]
+      },
+      "properties": {
+        "id": 3892010624,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5682915,
+          42.8387218
+        ]
+      },
+      "properties": {
+        "id": 3910381942,
+        "osm_type": "node",
+        "name": "Реалист"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6122302,
+          42.8846233
+        ]
+      },
+      "properties": {
+        "id": 3976456461,
+        "osm_type": "node",
+        "name": "Империя"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6089963,
+          42.8480858
+        ]
+      },
+      "properties": {
+        "id": 3984873145,
+        "osm_type": "node",
+        "name": "Наш"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2780222,
+          40.3134989
+        ]
+      },
+      "properties": {
+        "id": 4039485035,
+        "osm_type": "node",
+        "name": "\"Инаят\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.2447139,
+          42.7957924
+        ]
+      },
+      "properties": {
+        "id": 4066583677,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5685684,
+          42.8581687
+        ]
+      },
+      "properties": {
+        "id": 4068495433,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6030101,
+          42.8646774
+        ]
+      },
+      "properties": {
+        "id": 4072821929,
+        "osm_type": "node",
+        "name": "Фреш"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6058557,
+          42.8600017
+        ]
+      },
+      "properties": {
+        "id": 4072824817,
+        "osm_type": "node",
+        "name": "Millenium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5767889,
+          42.8554631
+        ]
+      },
+      "properties": {
+        "id": 4072824823,
+        "osm_type": "node",
+        "name": "Altyn-Ordo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6785663,
+          42.8589846
+        ]
+      },
+      "properties": {
+        "id": 4074509514,
+        "osm_type": "node",
+        "opening_hours": "09:00-18:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5827289,
+          42.8792693
+        ]
+      },
+      "properties": {
+        "id": 4109257092,
+        "osm_type": "node",
+        "name": "Кел-Кел",
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "check_date": "2023-09-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.001392,
+          40.9494039
+        ]
+      },
+      "properties": {
+        "id": 4124727994,
+        "osm_type": "node",
+        "name": "Дасторкон"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8812277,
+          42.8282211
+        ]
+      },
+      "properties": {
+        "id": 4127378089,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5491397,
+          42.8649174
+        ]
+      },
+      "properties": {
+        "id": 4164314989,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7578718,
+          42.2162818
+        ]
+      },
+      "properties": {
+        "id": 4175992390,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.996923,
+          42.1135804
+        ]
+      },
+      "properties": {
+        "id": 4176035389,
+        "osm_type": "node",
+        "name": "Азат дукону"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4012716,
+          42.4927577
+        ]
+      },
+      "properties": {
+        "id": 4176514589,
+        "osm_type": "node",
+        "name": "Москва",
+        "opening_hours": "Mo-Su 09:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5756498,
+          42.8917093
+        ]
+      },
+      "properties": {
+        "id": 4191860089,
+        "osm_type": "node",
+        "name": "Улай"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1349912,
+          40.2655181
+        ]
+      },
+      "properties": {
+        "id": 4219764891,
+        "osm_type": "node",
+        "name": "ТЦ \"АЙСУЛУУ\"",
+        "opening_hours": "Mo-Su 09:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2658546,
+          42.5224708
+        ]
+      },
+      "properties": {
+        "id": 4234039439,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.576687,
+          42.8735967
+        ]
+      },
+      "properties": {
+        "id": 4242268489,
+        "osm_type": "node",
+        "name": "Алма",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9843296,
+          40.8617685
+        ]
+      },
+      "properties": {
+        "id": 4243015689,
+        "osm_type": "node",
+        "name": "Караван"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2473208,
+          42.519252
+        ]
+      },
+      "properties": {
+        "id": 4243121262,
+        "osm_type": "node",
+        "name": "\"Эконом\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9970037,
+          40.9270632
+        ]
+      },
+      "properties": {
+        "id": 4243838190,
+        "osm_type": "node",
+        "name": "Каныкей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5766678,
+          42.8736222
+        ]
+      },
+      "properties": {
+        "id": 4249911693,
+        "osm_type": "node",
+        "name": "Боорсок №2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6192545,
+          42.835351
+        ]
+      },
+      "properties": {
+        "id": 4275976793,
+        "osm_type": "node",
+        "name": "e-posylka Товары на заказ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9889081,
+          40.9338158
+        ]
+      },
+      "properties": {
+        "id": 4292015689,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8008515,
+          40.563061
+        ]
+      },
+      "properties": {
+        "id": 4303626989,
+        "osm_type": "node",
+        "name": "Хлебный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.297669,
+          42.858085
+        ]
+      },
+      "properties": {
+        "id": 4316605289,
+        "osm_type": "node",
+        "name": "Глобус"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7880342,
+          40.5421996
+        ]
+      },
+      "properties": {
+        "id": 4321120193,
+        "osm_type": "node",
+        "name": "Корзинка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7765485,
+          40.5518974
+        ]
+      },
+      "properties": {
+        "id": 4321120299,
+        "osm_type": "node",
+        "name": "Долина"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7682185,
+          40.5632435
+        ]
+      },
+      "properties": {
+        "id": 4321169294,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4390938,
+          42.168953
+        ]
+      },
+      "properties": {
+        "id": 4322875201,
+        "osm_type": "node",
+        "name": "Ыйманбет ата"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4372069,
+          42.998916
+        ]
+      },
+      "properties": {
+        "id": 4332364224,
+        "osm_type": "node",
+        "name": "Манас Сити"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3945596,
+          42.4902427
+        ]
+      },
+      "properties": {
+        "id": 4367330091,
+        "osm_type": "node",
+        "name": "Макиш рынок"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4107804,
+          42.4965279
+        ]
+      },
+      "properties": {
+        "id": 4367351189,
+        "osm_type": "node",
+        "name": "Орукту"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8228018,
+          40.5014696
+        ]
+      },
+      "properties": {
+        "id": 4384770399,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.1522641,
+          43.0733241
+        ]
+      },
+      "properties": {
+        "id": 4385848992,
+        "osm_type": "node",
+        "name": "Магазин",
+        "opening_hours": "Mo-Su 07:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.1513207,
+          43.0729739
+        ]
+      },
+      "properties": {
+        "id": 4385889892,
+        "osm_type": "node",
+        "name": "Магазин",
+        "opening_hours": "Mo-Su 07:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6940861,
+          42.8755592
+        ]
+      },
+      "properties": {
+        "id": 4395766747,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6899524,
+          42.8767711
+        ]
+      },
+      "properties": {
+        "id": 4395766762,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8254502,
+          40.5016378
+        ]
+      },
+      "properties": {
+        "id": 4409465402,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5414383,
+          42.8221672
+        ]
+      },
+      "properties": {
+        "id": 4481264302,
+        "osm_type": "node",
+        "name": "Айдана магазин",
+        "opening_hours": "09:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.541243,
+          42.8246209
+        ]
+      },
+      "properties": {
+        "id": 4481264303,
+        "osm_type": "node",
+        "name": "Айнагул"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3829944,
+          42.4948518
+        ]
+      },
+      "properties": {
+        "id": 4490605989,
+        "osm_type": "node",
+        "name": "Эд-Эм2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6315555,
+          42.874492
+        ]
+      },
+      "properties": {
+        "id": 4499832904,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0312362,
+          41.4072263
+        ]
+      },
+      "properties": {
+        "id": 4507431300,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9462318,
+          41.879898
+        ]
+      },
+      "properties": {
+        "id": 4507651464,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8485434,
+          42.8902166
+        ]
+      },
+      "properties": {
+        "id": 4590243897,
+        "osm_type": "node",
+        "name": "AMEGA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5626401,
+          42.8443853
+        ]
+      },
+      "properties": {
+        "id": 4591984492,
+        "osm_type": "node",
+        "name": "Яр-Марка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7632151,
+          40.5185006
+        ]
+      },
+      "properties": {
+        "id": 4609763204,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7971829,
+          40.5392373
+        ]
+      },
+      "properties": {
+        "id": 4609880190,
+        "osm_type": "node",
+        "name": "торг центр саидмухтар"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6178903,
+          42.8819516
+        ]
+      },
+      "properties": {
+        "id": 4632584531,
+        "osm_type": "node",
+        "name": "продукты",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6814872,
+          42.8843057
+        ]
+      },
+      "properties": {
+        "id": 4634804289,
+        "osm_type": "node",
+        "name": "Бозуй юрта",
+        "opening_hours": "Mo-Su 09:00-18:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5731229,
+          42.916412
+        ]
+      },
+      "properties": {
+        "id": 4684510484,
+        "osm_type": "node",
+        "name": "Берёзка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7668866,
+          40.5202302
+        ]
+      },
+      "properties": {
+        "id": 4697747990,
+        "osm_type": "node",
+        "name": "Азык ордо"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7987504,
+          40.523162
+        ]
+      },
+      "properties": {
+        "id": 4712669191,
+        "osm_type": "node",
+        "name": "Акниет",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8057162,
+          40.5663651
+        ]
+      },
+      "properties": {
+        "id": 4713249089,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6210575,
+          42.890667
+        ]
+      },
+      "properties": {
+        "id": 4715952284,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6225753,
+          42.8862685
+        ]
+      },
+      "properties": {
+        "id": 4715952285,
+        "osm_type": "node",
+        "name": "Киоск",
+        "opening_hours": "07:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6226129,
+          42.8861918
+        ]
+      },
+      "properties": {
+        "id": 4715957724,
+        "osm_type": "node",
+        "name": "вечерка",
+        "opening_hours": "09:00-18:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6229535,
+          42.8901065
+        ]
+      },
+      "properties": {
+        "id": 4715958354,
+        "osm_type": "node",
+        "name": "Ажар",
+        "opening_hours": "09:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2434235,
+          42.519086
+        ]
+      },
+      "properties": {
+        "id": 4715970631,
+        "osm_type": "node",
+        "name": "Изюм"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0815857,
+          42.6462145
+        ]
+      },
+      "properties": {
+        "id": 4715974007,
+        "osm_type": "node",
+        "name": "\"Ырыскы\"",
+        "opening_hours": "09:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2089648,
+          42.5313036
+        ]
+      },
+      "properties": {
+        "id": 4715988982,
+        "osm_type": "node",
+        "name": "Алтын-Казык"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2459953,
+          42.5178538
+        ]
+      },
+      "properties": {
+        "id": 4715988984,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0863204,
+          42.6499836
+        ]
+      },
+      "properties": {
+        "id": 4725445515,
+        "osm_type": "node",
+        "name": "урсус"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0863935,
+          42.6499962
+        ]
+      },
+      "properties": {
+        "id": 4725445518,
+        "osm_type": "node",
+        "name": "дария"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0864372,
+          42.6500356
+        ]
+      },
+      "properties": {
+        "id": 4725445519,
+        "osm_type": "node",
+        "name": "Магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.086518,
+          42.6500501
+        ]
+      },
+      "properties": {
+        "id": 4725445520,
+        "osm_type": "node",
+        "name": "Магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.088159,
+          42.6505357
+        ]
+      },
+      "properties": {
+        "id": 4725445521,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6277022,
+          42.8874363
+        ]
+      },
+      "properties": {
+        "id": 4725558345,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6057364,
+          42.8873524
+        ]
+      },
+      "properties": {
+        "id": 4725558373,
+        "osm_type": "node",
+        "name": "7 дней"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6073338,
+          42.8897472
+        ]
+      },
+      "properties": {
+        "id": 4725558374,
+        "osm_type": "node",
+        "name": "24 часа"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5982164,
+          42.8915694
+        ]
+      },
+      "properties": {
+        "id": 4725558376,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6048576,
+          42.8825841
+        ]
+      },
+      "properties": {
+        "id": 4725558385,
+        "osm_type": "node",
+        "name": "7 дней"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5783925,
+          42.8859744
+        ]
+      },
+      "properties": {
+        "id": 4725558895,
+        "osm_type": "node",
+        "name": "24 free"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5681447,
+          42.8755675
+        ]
+      },
+      "properties": {
+        "id": 4725558900,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.642721,
+          42.8895929
+        ]
+      },
+      "properties": {
+        "id": 4725558905,
+        "osm_type": "node",
+        "name": "24 чфсф"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6497439,
+          42.8910198
+        ]
+      },
+      "properties": {
+        "id": 4725558907,
+        "osm_type": "node",
+        "name": "24 часа"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6512612,
+          42.8906696
+        ]
+      },
+      "properties": {
+        "id": 4725558911,
+        "osm_type": "node",
+        "name": "7 дней"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6603509,
+          42.8900805
+        ]
+      },
+      "properties": {
+        "id": 4725558914,
+        "osm_type": "node",
+        "name": "Free 24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6721366,
+          42.8887414
+        ]
+      },
+      "properties": {
+        "id": 4725558916,
+        "osm_type": "node",
+        "name": "7 дней"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6556242,
+          42.8896308
+        ]
+      },
+      "properties": {
+        "id": 4725558926,
+        "osm_type": "node",
+        "name": "24 часа"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8027261,
+          40.5577061
+        ]
+      },
+      "properties": {
+        "id": 4727580092,
+        "osm_type": "node",
+        "name": "Казына"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7998727,
+          40.548737
+        ]
+      },
+      "properties": {
+        "id": 4730451732,
+        "osm_type": "node",
+        "name": "Корзинка.kg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7634936,
+          40.5188428
+        ]
+      },
+      "properties": {
+        "id": 4732487222,
+        "osm_type": "node",
+        "name": "Ак-Ниет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6477973,
+          42.8026186
+        ]
+      },
+      "properties": {
+        "id": 4739316821,
+        "osm_type": "node",
+        "name": "Эконом"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.5871036,
+          42.742648
+        ]
+      },
+      "properties": {
+        "id": 4759184932,
+        "osm_type": "node",
+        "name": "Таалай"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.864471,
+          42.8787194
+        ]
+      },
+      "properties": {
+        "id": 4772541724,
+        "osm_type": "node",
+        "name": "Россия"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6035982,
+          42.8289532
+        ]
+      },
+      "properties": {
+        "id": 4814563521,
+        "osm_type": "node",
+        "name": "Айдай"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5710329,
+          42.8749902
+        ]
+      },
+      "properties": {
+        "id": 4817922521,
+        "osm_type": "node",
+        "name": "Все по 50"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5752381,
+          42.8818161
+        ]
+      },
+      "properties": {
+        "id": 4841382235,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8555025,
+          41.5668498
+        ]
+      },
+      "properties": {
+        "id": 4851145299,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2566699,
+          42.2041774
+        ]
+      },
+      "properties": {
+        "id": 4878153690,
+        "osm_type": "node",
+        "name": "Магазин",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6173268,
+          42.9287769
+        ]
+      },
+      "properties": {
+        "id": 4887090031,
+        "osm_type": "node",
+        "name": "шекер"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2418479,
+          41.4483608
+        ]
+      },
+      "properties": {
+        "id": 4932404318,
+        "osm_type": "node",
+        "name": "Магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8068706,
+          40.5010189
+        ]
+      },
+      "properties": {
+        "id": 4945193621,
+        "osm_type": "node",
+        "name": "Ширин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2909071,
+          42.8187672
+        ]
+      },
+      "properties": {
+        "id": 4957285889,
+        "osm_type": "node",
+        "name": "МИ-ЭЛЬ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7439391,
+          42.2344211
+        ]
+      },
+      "properties": {
+        "id": 5031844023,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0086602,
+          40.9346382
+        ]
+      },
+      "properties": {
+        "id": 5141101929,
+        "osm_type": "node",
+        "name": "Пятёрочка",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6015679,
+          42.8825734
+        ]
+      },
+      "properties": {
+        "id": 5141873534,
+        "osm_type": "node",
+        "name": "Магнат",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5321713,
+          42.8526454
+        ]
+      },
+      "properties": {
+        "id": 5232654822,
+        "osm_type": "node",
+        "name": "Globus",
+        "opening_hours": "Mo-Su 08:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6146163,
+          42.8746258
+        ]
+      },
+      "properties": {
+        "id": 5338581927,
+        "osm_type": "node",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6076119,
+          42.8718895
+        ]
+      },
+      "properties": {
+        "id": 5339124821,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6282113,
+          42.8899233
+        ]
+      },
+      "properties": {
+        "id": 5358153222,
+        "osm_type": "node",
+        "name": "Бум",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7583398,
+          42.216436
+        ]
+      },
+      "properties": {
+        "id": 5386526328,
+        "osm_type": "node",
+        "name": "Globus Кенч"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7551522,
+          42.2169005
+        ]
+      },
+      "properties": {
+        "id": 5386622328,
+        "osm_type": "node",
+        "name": "Дасторкон"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8462237,
+          42.8024588
+        ]
+      },
+      "properties": {
+        "id": 5407782639,
+        "osm_type": "node",
+        "name": "Березка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8438158,
+          42.8240886
+        ]
+      },
+      "properties": {
+        "id": 5407782642,
+        "osm_type": "node",
+        "name": "Элита"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8514313,
+          42.8021156
+        ]
+      },
+      "properties": {
+        "id": 5407846757,
+        "osm_type": "node",
+        "name": "Яр-Марка",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8508865,
+          42.8010078
+        ]
+      },
+      "properties": {
+        "id": 5407846759,
+        "osm_type": "node",
+        "name": "Почтовый"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2977029,
+          42.8581373
+        ]
+      },
+      "properties": {
+        "id": 5412087722,
+        "osm_type": "node",
+        "name": "Глобус",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7065182,
+          40.511062
+        ]
+      },
+      "properties": {
+        "id": 5415093122,
+        "osm_type": "node",
+        "name": "Деми",
+        "opening_hours": "Mo-Su 09:00-18:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8417697,
+          42.8237147
+        ]
+      },
+      "properties": {
+        "id": 5421056317,
+        "osm_type": "node",
+        "name": "Яр-Марка",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6099995,
+          42.872122
+        ]
+      },
+      "properties": {
+        "id": 5450713322,
+        "osm_type": "node",
+        "name": "Гренки"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6344554,
+          42.895629
+        ]
+      },
+      "properties": {
+        "id": 5549903822,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6324758,
+          42.9059
+        ]
+      },
+      "properties": {
+        "id": 5549905322,
+        "osm_type": "node",
+        "name": "ГЕС-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6771696,
+          42.9911366
+        ]
+      },
+      "properties": {
+        "id": 5549927422,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.6709567,
+          42.7965788
+        ]
+      },
+      "properties": {
+        "id": 5581729622,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7798711,
+          42.7677626
+        ]
+      },
+      "properties": {
+        "id": 5581729623,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4389432,
+          42.1645579
+        ]
+      },
+      "properties": {
+        "id": 5590684376,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5924653,
+          42.8698261
+        ]
+      },
+      "properties": {
+        "id": 5621194012,
+        "osm_type": "node",
+        "name": "FERMA market",
+        "opening_hours": "Mo-Su 10:00-19:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.6700584,
+          40.1218785
+        ]
+      },
+      "properties": {
+        "id": 5661638067,
+        "osm_type": "node",
+        "name": "Leylek Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.3120227,
+          41.0495197
+        ]
+      },
+      "properties": {
+        "id": 5672281540,
+        "osm_type": "node",
+        "name": "Supermarket"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4016272,
+          42.4929526
+        ]
+      },
+      "properties": {
+        "id": 5682329121,
+        "osm_type": "node",
+        "name": "Майка Дүкөнү"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8006343,
+          40.5569512
+        ]
+      },
+      "properties": {
+        "id": 5786058689,
+        "osm_type": "node",
+        "name": "Самат"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0113101,
+          40.9302027
+        ]
+      },
+      "properties": {
+        "id": 5793658173,
+        "osm_type": "node",
+        "name": "Алина"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.2887739,
+          41.1229316
+        ]
+      },
+      "properties": {
+        "id": 5795621953,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3085128,
+          41.1289967
+        ]
+      },
+      "properties": {
+        "id": 5806718572,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7889036,
+          42.2790252
+        ]
+      },
+      "properties": {
+        "id": 5814940104,
+        "osm_type": "node",
+        "name": "1000 Туркун"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.8696793,
+          42.3068675
+        ]
+      },
+      "properties": {
+        "id": 5818277575,
+        "osm_type": "node",
+        "name": "Даркан"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.8860429,
+          42.3126704
+        ]
+      },
+      "properties": {
+        "id": 5818277577,
+        "osm_type": "node",
+        "name": "Алсу"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.0430743,
+          42.6624803
+        ]
+      },
+      "properties": {
+        "id": 5819923754,
+        "osm_type": "node",
+        "name": "Мырзабек магазин",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3554921,
+          42.7300639
+        ]
+      },
+      "properties": {
+        "id": 5822050015,
+        "osm_type": "node",
+        "name": "Элита"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5795115,
+          43.1073917
+        ]
+      },
+      "properties": {
+        "id": 5838243385,
+        "osm_type": "node",
+        "name": "Центр",
+        "opening_hours": "Mo-Su 07:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1182771,
+          40.2642911
+        ]
+      },
+      "properties": {
+        "id": 5843487459,
+        "osm_type": "node",
+        "name": "Алтын Куз"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6204093,
+          42.8803462
+        ]
+      },
+      "properties": {
+        "id": 5855613444,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7830515,
+          42.2765562
+        ]
+      },
+      "properties": {
+        "id": 5856975492,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3976892,
+          42.4804611
+        ]
+      },
+      "properties": {
+        "id": 5890587848,
+        "osm_type": "node",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1858191,
+          42.4542597
+        ]
+      },
+      "properties": {
+        "id": 5918088085,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8997309,
+          42.6733455
+        ]
+      },
+      "properties": {
+        "id": 5948366386,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8642149,
+          42.8858445
+        ]
+      },
+      "properties": {
+        "id": 5959927486,
+        "osm_type": "node",
+        "name": "ТК Молдова",
+        "opening_hours": "Mo-Su 10:30-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9742371,
+          40.9253707
+        ]
+      },
+      "properties": {
+        "id": 5968196886,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6014568,
+          42.8720406
+        ]
+      },
+      "properties": {
+        "id": 5982537923,
+        "osm_type": "node",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.569965,
+          42.8051344
+        ]
+      },
+      "properties": {
+        "id": 6000965934,
+        "osm_type": "node",
+        "name": "Суйун",
+        "brand": "Globus",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6148046,
+          42.8750183
+        ]
+      },
+      "properties": {
+        "id": 6000967460,
+        "osm_type": "node",
+        "name": "Alma",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6187745,
+          42.8750328
+        ]
+      },
+      "properties": {
+        "id": 6041609589,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "check_date": "2023-03-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8384513,
+          41.450011
+        ]
+      },
+      "properties": {
+        "id": 6594422556,
+        "osm_type": "node",
+        "name": "small market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8270477,
+          41.4524248
+        ]
+      },
+      "properties": {
+        "id": 6594466743,
+        "osm_type": "node",
+        "name": "small shop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.2331119,
+          41.1043402
+        ]
+      },
+      "properties": {
+        "id": 6618384385,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.1850012,
+          41.0855805
+        ]
+      },
+      "properties": {
+        "id": 6618428385,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.2882932,
+          41.1231876
+        ]
+      },
+      "properties": {
+        "id": 6618706386,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8913442,
+          41.3954144
+        ]
+      },
+      "properties": {
+        "id": 6627607086,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8323916,
+          40.5018199
+        ]
+      },
+      "properties": {
+        "id": 6638872617,
+        "osm_type": "node",
+        "name": "Афганец"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8318453,
+          40.5018234
+        ]
+      },
+      "properties": {
+        "id": 6638872618,
+        "osm_type": "node",
+        "name": "Фирдавс"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0292338,
+          41.4073054
+        ]
+      },
+      "properties": {
+        "id": 6699715485,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9593061,
+          41.2694172
+        ]
+      },
+      "properties": {
+        "id": 6709322846,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9592739,
+          41.2688904
+        ]
+      },
+      "properties": {
+        "id": 6709322847,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9587594,
+          41.2689144
+        ]
+      },
+      "properties": {
+        "id": 6709322848,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9581767,
+          41.2688931
+        ]
+      },
+      "properties": {
+        "id": 6709322849,
+        "osm_type": "node",
+        "name": "Строительный магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2328667,
+          42.2598064
+        ]
+      },
+      "properties": {
+        "id": 6721039986,
+        "osm_type": "node",
+        "name": "Shop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3200369,
+          42.2364862
+        ]
+      },
+      "properties": {
+        "id": 6721039987,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.974896,
+          41.9183306
+        ]
+      },
+      "properties": {
+        "id": 6721040085,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5474651,
+          42.1509997
+        ]
+      },
+      "properties": {
+        "id": 6725592234,
+        "osm_type": "node",
+        "name": "магазин находка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5468142,
+          42.1473149
+        ]
+      },
+      "properties": {
+        "id": 6727436364,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.5030558,
+          42.7817524
+        ]
+      },
+      "properties": {
+        "id": 6735130085,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.6207443,
+          42.7678618
+        ]
+      },
+      "properties": {
+        "id": 6735130086,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.7013114,
+          42.7527588
+        ]
+      },
+      "properties": {
+        "id": 6735130088,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.6527945,
+          42.7608978
+        ]
+      },
+      "properties": {
+        "id": 6735130286,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.5072177,
+          42.7825021
+        ]
+      },
+      "properties": {
+        "id": 6735130385,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.6211514,
+          42.7681078
+        ]
+      },
+      "properties": {
+        "id": 6735130387,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.6948991,
+          42.7539846
+        ]
+      },
+      "properties": {
+        "id": 6735130388,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.7815253,
+          42.7243463
+        ]
+      },
+      "properties": {
+        "id": 6735215388,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6016071,
+          42.8647068
+        ]
+      },
+      "properties": {
+        "id": 6743520712,
+        "osm_type": "node",
+        "name": "Аяр",
+        "opening_hours": "Mo-Su 08:00-21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6045892,
+          42.8755259
+        ]
+      },
+      "properties": {
+        "id": 6749530685,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7538541,
+          42.2149352
+        ]
+      },
+      "properties": {
+        "id": 6751659288,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.5053044,
+          40.2690103
+        ]
+      },
+      "properties": {
+        "id": 6763083585,
+        "osm_type": "node",
+        "name": "Supermarkt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9364978,
+          41.8668511
+        ]
+      },
+      "properties": {
+        "id": 6771091588,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.2334129,
+          41.1040628
+        ]
+      },
+      "properties": {
+        "id": 6776964086,
+        "osm_type": "node",
+        "name": "кок-арт, кичи маркети"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5970398,
+          42.1536651
+        ]
+      },
+      "properties": {
+        "id": 6810768875,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5912041,
+          42.8084066
+        ]
+      },
+      "properties": {
+        "id": 6819116277,
+        "osm_type": "node",
+        "name": "Family Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6424106,
+          41.065776
+        ]
+      },
+      "properties": {
+        "id": 6836378987,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5819182,
+          42.8678289
+        ]
+      },
+      "properties": {
+        "id": 6907713687,
+        "osm_type": "node",
+        "name": "Народный",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6216319,
+          42.8279305
+        ]
+      },
+      "properties": {
+        "id": 7044707691,
+        "osm_type": "node",
+        "name": "EcoLife"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6472701,
+          42.8148194
+        ]
+      },
+      "properties": {
+        "id": 7049403194,
+        "osm_type": "node",
+        "name": "Сары-Челек"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5978004,
+          42.8604894
+        ]
+      },
+      "properties": {
+        "id": 7053124302,
+        "osm_type": "node",
+        "name": "ХАДИЯ Маркет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4870956,
+          42.8571273
+        ]
+      },
+      "properties": {
+        "id": 7162234185,
+        "osm_type": "node",
+        "name": "Береке"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.8250874,
+          40.0576263
+        ]
+      },
+      "properties": {
+        "id": 7529125663,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.591711,
+          42.8082268
+        ]
+      },
+      "properties": {
+        "id": 7680023857,
+        "osm_type": "node",
+        "name": "Фрунзе Экспресс"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2234421,
+          42.8541364
+        ]
+      },
+      "properties": {
+        "id": 7796028077,
+        "osm_type": "node",
+        "name": "Фрунзе"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6230146,
+          42.8772873
+        ]
+      },
+      "properties": {
+        "id": 8027777786,
+        "osm_type": "node",
+        "name": "Globus",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5599738,
+          42.8441683
+        ]
+      },
+      "properties": {
+        "id": 8082913643,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5961004,
+          42.8840579
+        ]
+      },
+      "properties": {
+        "id": 8138841108,
+        "osm_type": "node",
+        "name": "Глобус"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5905134,
+          42.8742972
+        ]
+      },
+      "properties": {
+        "id": 8171450140,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "check_date": "2022-11-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6213195,
+          42.8755914
+        ]
+      },
+      "properties": {
+        "id": 8550853603,
+        "osm_type": "node",
+        "name": "Fix Price",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5995371,
+          42.8822762
+        ]
+      },
+      "properties": {
+        "id": 8559427170,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4026406,
+          42.483502
+        ]
+      },
+      "properties": {
+        "id": 8887569818,
+        "osm_type": "node",
+        "name": "Ялд"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6183286,
+          40.265661
+        ]
+      },
+      "properties": {
+        "id": 8896471028,
+        "osm_type": "node",
+        "name": "''Al Brands'' Турецская одежда",
+        "brand": "''Al Brands''",
+        "opening_hours": "Mo-Su 09:00-18:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6375536,
+          42.8155459
+        ]
+      },
+      "properties": {
+        "id": 8897091017,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0462615,
+          42.1535993
+        ]
+      },
+      "properties": {
+        "id": 8962868517,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7406668,
+          41.061721
+        ]
+      },
+      "properties": {
+        "id": 9006356820,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5773327,
+          42.8760795
+        ]
+      },
+      "properties": {
+        "id": 9045325617,
+        "osm_type": "node",
+        "name": "Глобус",
+        "brand": "Глобус",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6155521,
+          42.8515049
+        ]
+      },
+      "properties": {
+        "id": 9050113917,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0236739,
+          41.4032317
+        ]
+      },
+      "properties": {
+        "id": 9079946420,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6160081,
+          42.8663734
+        ]
+      },
+      "properties": {
+        "id": 9123101138,
+        "osm_type": "node",
+        "name": "Infotech",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.1883356,
+          41.728948
+        ]
+      },
+      "properties": {
+        "id": 9177483559,
+        "osm_type": "node",
+        "name": "Small market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9823916,
+          42.0301632
+        ]
+      },
+      "properties": {
+        "id": 9177495213,
+        "osm_type": "node",
+        "name": "Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.888862,
+          41.3956363
+        ]
+      },
+      "properties": {
+        "id": 9177528793,
+        "osm_type": "node",
+        "name": "Small market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8457838,
+          41.6300391
+        ]
+      },
+      "properties": {
+        "id": 9177533231,
+        "osm_type": "node",
+        "name": "Supermarket"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.960303,
+          40.9221008
+        ]
+      },
+      "properties": {
+        "id": 9206875452,
+        "osm_type": "node",
+        "name": "Арзуу"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9678465,
+          40.9234684
+        ]
+      },
+      "properties": {
+        "id": 9206945937,
+        "osm_type": "node",
+        "name": "Азык ордо БАЙ ЭЛ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6098669,
+          42.8690881
+        ]
+      },
+      "properties": {
+        "id": 9233740135,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9703265,
+          40.9514611
+        ]
+      },
+      "properties": {
+        "id": 9593339798,
+        "osm_type": "node",
+        "name": "Капуста маркет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9721372,
+          40.9492035
+        ]
+      },
+      "properties": {
+        "id": 9593339813,
+        "osm_type": "node",
+        "name": "Көк-Арт магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.971885,
+          40.9477044
+        ]
+      },
+      "properties": {
+        "id": 9593339816,
+        "osm_type": "node",
+        "name": "Эл куту"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9704348,
+          40.9419821
+        ]
+      },
+      "properties": {
+        "id": 9609215988,
+        "osm_type": "node",
+        "name": "Лимон"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6186712,
+          42.8201018
+        ]
+      },
+      "properties": {
+        "id": 9717515438,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6241684,
+          42.8711771
+        ]
+      },
+      "properties": {
+        "id": 9830553017,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7388677,
+          41.0615129
+        ]
+      },
+      "properties": {
+        "id": 9870086915,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5853414,
+          40.6290233
+        ]
+      },
+      "properties": {
+        "id": 9870114273,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9894944,
+          42.1147675
+        ]
+      },
+      "properties": {
+        "id": 9899715319,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4346588,
+          42.1650998
+        ]
+      },
+      "properties": {
+        "id": 10017432217,
+        "osm_type": "node",
+        "name": "ТОСОР",
+        "check_date": "2026-09-07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.630587,
+          40.4805506
+        ]
+      },
+      "properties": {
+        "id": 10044690060,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4186577,
+          40.7577324
+        ]
+      },
+      "properties": {
+        "id": 10047294199,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.2871225,
+          40.9476241
+        ]
+      },
+      "properties": {
+        "id": 10050227221,
+        "osm_type": "node",
+        "name": "Mini-Markt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8550519,
+          41.3442889
+        ]
+      },
+      "properties": {
+        "id": 10060279583,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.8182264,
+          42.5747867
+        ]
+      },
+      "properties": {
+        "id": 10063964382,
+        "osm_type": "node",
+        "name": "Supermarché"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.8335632,
+          42.5695772
+        ]
+      },
+      "properties": {
+        "id": 10064033133,
+        "osm_type": "node",
+        "name": "Supermarché"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.946195,
+          42.5469348
+        ]
+      },
+      "properties": {
+        "id": 10064036962,
+        "osm_type": "node",
+        "name": "Hyper"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.0042862,
+          42.5382094
+        ]
+      },
+      "properties": {
+        "id": 10064037034,
+        "osm_type": "node",
+        "name": "Supermarket"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3999068,
+          42.4897059
+        ]
+      },
+      "properties": {
+        "id": 10069106600,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3926986,
+          42.4916215
+        ]
+      },
+      "properties": {
+        "id": 10081790851,
+        "osm_type": "node",
+        "name": "Globus",
+        "opening_hours": "24/7",
+        "check_date": "2025-06-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3918212,
+          42.5028558
+        ]
+      },
+      "properties": {
+        "id": 10081966570,
+        "osm_type": "node",
+        "name": "Элдик"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.699326,
+          42.8812218
+        ]
+      },
+      "properties": {
+        "id": 10804679343,
+        "osm_type": "node",
+        "name": "Достор"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5687734,
+          42.8455568
+        ]
+      },
+      "properties": {
+        "id": 10819159741,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "Mo-Su 08:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9813087,
+          40.9275296
+        ]
+      },
+      "properties": {
+        "id": 10819175881,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.647054,
+          42.876809
+        ]
+      },
+      "properties": {
+        "id": 10819175882,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.913143,
+          40.900263
+        ]
+      },
+      "properties": {
+        "id": 10819175883,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8340124,
+          42.8882991
+        ]
+      },
+      "properties": {
+        "id": 10819175884,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.797117,
+          40.569888
+        ]
+      },
+      "properties": {
+        "id": 10819175885,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 09:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5731166,
+          42.9008809
+        ]
+      },
+      "properties": {
+        "id": 10819175886,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5831924,
+          42.8766414
+        ]
+      },
+      "properties": {
+        "id": 10819175887,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 10:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0035925,
+          40.9281821
+        ]
+      },
+      "properties": {
+        "id": 10819175888,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2997003,
+          42.8584559
+        ]
+      },
+      "properties": {
+        "id": 10819175889,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.81403,
+          40.5064864
+        ]
+      },
+      "properties": {
+        "id": 10819175890,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5122599,
+          42.8533909
+        ]
+      },
+      "properties": {
+        "id": 10819175891,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3058988,
+          42.8214929
+        ]
+      },
+      "properties": {
+        "id": 10819175892,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.669506,
+          42.886585
+        ]
+      },
+      "properties": {
+        "id": 10819175893,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.43674,
+          42.999751
+        ]
+      },
+      "properties": {
+        "id": 10819175894,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5854467,
+          42.8423865
+        ]
+      },
+      "properties": {
+        "id": 10819175895,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5854467,
+          42.8558409
+        ]
+      },
+      "properties": {
+        "id": 10819175896,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 09:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.7409987,
+          42.8670474
+        ]
+      },
+      "properties": {
+        "id": 10819175897,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6093318,
+          42.8576598
+        ]
+      },
+      "properties": {
+        "id": 10819175898,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 09:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.591985,
+          42.8081493
+        ]
+      },
+      "properties": {
+        "id": 10819203291,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6146247,
+          42.8184484
+        ]
+      },
+      "properties": {
+        "id": 10819226372,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5707831,
+          42.8710487
+        ]
+      },
+      "properties": {
+        "id": 10823512705,
+        "osm_type": "node",
+        "name": "Пятёрочка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8339997,
+          42.8883759
+        ]
+      },
+      "properties": {
+        "id": 10866802205,
+        "osm_type": "node",
+        "name": "Фрунзе"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6482846,
+          42.8161981
+        ]
+      },
+      "properties": {
+        "id": 10907578089,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "Mo-Su 08:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9969356,
+          40.9242057
+        ]
+      },
+      "properties": {
+        "id": 10956925592,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8077377,
+          40.5319123
+        ]
+      },
+      "properties": {
+        "id": 11015713454,
+        "osm_type": "node",
+        "name": "Globus",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5934574,
+          42.8737194
+        ]
+      },
+      "properties": {
+        "id": 11017416925,
+        "osm_type": "node",
+        "name": "Магнит",
+        "brand": "Магнит"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5929677,
+          42.8739489
+        ]
+      },
+      "properties": {
+        "id": 11017416926,
+        "osm_type": "node",
+        "name": "КОРЗИНА"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9021889,
+          40.8961029
+        ]
+      },
+      "properties": {
+        "id": 11031901035,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0124328,
+          42.3452988
+        ]
+      },
+      "properties": {
+        "id": 11031901036,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4872832,
+          42.8757282
+        ]
+      },
+      "properties": {
+        "id": 11031901037,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9469412,
+          41.975914
+        ]
+      },
+      "properties": {
+        "id": 11046324105,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.015393,
+          42.8416273
+        ]
+      },
+      "properties": {
+        "id": 11052987005,
+        "osm_type": "node",
+        "name": "Нур",
+        "opening_hours": "Mo-Su 07:00-02:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2484293,
+          42.5167389
+        ]
+      },
+      "properties": {
+        "id": 11064329992,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3026715,
+          40.7704149
+        ]
+      },
+      "properties": {
+        "id": 11064330774,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7410457,
+          41.0334287
+        ]
+      },
+      "properties": {
+        "id": 11064340042,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5843584,
+          42.8374839
+        ]
+      },
+      "properties": {
+        "id": 11078879891,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3833288,
+          42.5303866
+        ]
+      },
+      "properties": {
+        "id": 11078892204,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5848363,
+          42.8820891
+        ]
+      },
+      "properties": {
+        "id": 11114436608,
+        "osm_type": "node",
+        "name": "Босого",
+        "check_date": "2023-08-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5914539,
+          42.8716678
+        ]
+      },
+      "properties": {
+        "id": 11136259863,
+        "osm_type": "node",
+        "name": "Матрёшка",
+        "check_date": "2023-08-22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2156173,
+          42.7523385
+        ]
+      },
+      "properties": {
+        "id": 11170040460,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5691456,
+          42.8049229
+        ]
+      },
+      "properties": {
+        "id": 11251858456,
+        "osm_type": "node",
+        "name": "Финик"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5626238,
+          42.829946
+        ]
+      },
+      "properties": {
+        "id": 11251858460,
+        "osm_type": "node",
+        "name": "Фрунзе"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.357079,
+          42.7322137
+        ]
+      },
+      "properties": {
+        "id": 11254735985,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.630257,
+          42.8144148
+        ]
+      },
+      "properties": {
+        "id": 11304467432,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5648627,
+          42.8519869
+        ]
+      },
+      "properties": {
+        "id": 11304467442,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8288679,
+          40.5141825
+        ]
+      },
+      "properties": {
+        "id": 11409316960,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.246469,
+          42.516417
+        ]
+      },
+      "properties": {
+        "id": 11409316961,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5917945,
+          42.8468787
+        ]
+      },
+      "properties": {
+        "id": 11409316962,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.207592,
+          42.53186
+        ]
+      },
+      "properties": {
+        "id": 11409316963,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.4783945,
+          41.0331397
+        ]
+      },
+      "properties": {
+        "id": 11409316964,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3934915,
+          42.4922102
+        ]
+      },
+      "properties": {
+        "id": 11409316965,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3902446,
+          42.489718
+        ]
+      },
+      "properties": {
+        "id": 11525051880,
+        "osm_type": "node",
+        "name": "Достор"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5846147,
+          42.8706337
+        ]
+      },
+      "properties": {
+        "id": 11586557983,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6066379,
+          42.8848094
+        ]
+      },
+      "properties": {
+        "id": 11586572421,
+        "osm_type": "node",
+        "name": "Азбука",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5675953,
+          42.7604845
+        ]
+      },
+      "properties": {
+        "id": 11630682927,
+        "osm_type": "node",
+        "name": "Глобус",
+        "opening_hours": "Mo-Su 07:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5451948,
+          42.8760496
+        ]
+      },
+      "properties": {
+        "id": 11666221790,
+        "osm_type": "node",
+        "name": "Глобус",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5437156,
+          42.8438773
+        ]
+      },
+      "properties": {
+        "id": 11893367869,
+        "osm_type": "node",
+        "name": "Санта-Рома"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5845809,
+          42.8716271
+        ]
+      },
+      "properties": {
+        "id": 11896926169,
+        "osm_type": "node",
+        "name": "Ярмарка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5747738,
+          42.9490348
+        ]
+      },
+      "properties": {
+        "id": 11898294869,
+        "osm_type": "node",
+        "name": "Калыс-Ордо"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.0061751,
+          42.6051054
+        ]
+      },
+      "properties": {
+        "id": 12014952469,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6316563,
+          42.815035
+        ]
+      },
+      "properties": {
+        "id": 12032990605,
+        "osm_type": "node",
+        "name": "Steak Dream",
+        "check_date": "2024-07-04"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5281441,
+          42.8508655
+        ]
+      },
+      "properties": {
+        "id": 12033496169,
+        "osm_type": "node",
+        "name": "Гранат",
+        "opening_hours": "Mo-Su 09:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9937335,
+          40.2949455
+        ]
+      },
+      "properties": {
+        "id": 12085530500,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9840321,
+          40.2640861
+        ]
+      },
+      "properties": {
+        "id": 12085610199,
+        "osm_type": "node",
+        "name": "Comparably big store!"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.9204623,
+          42.3217769
+        ]
+      },
+      "properties": {
+        "id": 12097407397,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.7405405,
+          42.5860617
+        ]
+      },
+      "properties": {
+        "id": 12107676200,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4559336,
+          40.305421
+        ]
+      },
+      "properties": {
+        "id": 12108098709,
+        "osm_type": "node",
+        "name": "Бекжаната"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6070364,
+          42.8723808
+        ]
+      },
+      "properties": {
+        "id": 12127920636,
+        "osm_type": "node",
+        "name": "Udoma",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6086646,
+          42.8707299
+        ]
+      },
+      "properties": {
+        "id": 12127920637,
+        "osm_type": "node",
+        "name": "Эрка гурме",
+        "opening_hours": "Mo-Su 08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6084498,
+          42.8672752
+        ]
+      },
+      "properties": {
+        "id": 12127920638,
+        "osm_type": "node",
+        "name": "Гастроном 101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5912807,
+          42.8697241
+        ]
+      },
+      "properties": {
+        "id": 12128131903,
+        "osm_type": "node",
+        "name": "Баевский",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5902678,
+          42.8728886
+        ]
+      },
+      "properties": {
+        "id": 12128131904,
+        "osm_type": "node",
+        "name": "Европа",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0773004,
+          40.8658714
+        ]
+      },
+      "properties": {
+        "id": 12134588984,
+        "osm_type": "node",
+        "name": "Надира"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0320503,
+          41.005281
+        ]
+      },
+      "properties": {
+        "id": 12149487001,
+        "osm_type": "node",
+        "name": "Globus",
+        "opening_hours": "Mo-Su 07:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3329383,
+          41.1638062
+        ]
+      },
+      "properties": {
+        "id": 12150892701,
+        "osm_type": "node",
+        "name": "Нурбол",
+        "opening_hours": "Mo-Su 09:00-20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9899329,
+          42.1144464
+        ]
+      },
+      "properties": {
+        "id": 12240716542,
+        "osm_type": "node",
+        "name": "Globus",
+        "check_date": "2026-09-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.8230054,
+          42.6224344
+        ]
+      },
+      "properties": {
+        "id": 12272745912,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.8210646,
+          42.6282545
+        ]
+      },
+      "properties": {
+        "id": 12272756707,
+        "osm_type": "node",
+        "name": "Mini market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.0391333,
+          42.4676192
+        ]
+      },
+      "properties": {
+        "id": 12552865461,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2344957,
+          42.5073264
+        ]
+      },
+      "properties": {
+        "id": 12552997139,
+        "osm_type": "node",
+        "name": "Аман Ата дукону",
+        "opening_hours": "08:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.792305,
+          42.701034
+        ]
+      },
+      "properties": {
+        "id": 12553259488,
+        "osm_type": "node",
+        "name": "Гулайым Дукону",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.7887565,
+          42.7022955
+        ]
+      },
+      "properties": {
+        "id": 12553259489,
+        "osm_type": "node",
+        "name": "Акбай Дукону",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.7946917,
+          42.7006091
+        ]
+      },
+      "properties": {
+        "id": 12553259491,
+        "osm_type": "node",
+        "name": "Мирайида Дукону",
+        "opening_hours": "Mo-Su 10:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.8010899,
+          42.6984506
+        ]
+      },
+      "properties": {
+        "id": 12553259492,
+        "osm_type": "node",
+        "name": "Супермаркет",
+        "opening_hours": "Mo-Su 10:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1266704,
+          40.2679606
+        ]
+      },
+      "properties": {
+        "id": 12566039318,
+        "osm_type": "node",
+        "name": "\"ХАЛИ\" Маркет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2281428,
+          42.5246866
+        ]
+      },
+      "properties": {
+        "id": 12578231495,
+        "osm_type": "node",
+        "name": "Магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6675132,
+          42.976162
+        ]
+      },
+      "properties": {
+        "id": 12698152171,
+        "osm_type": "node",
+        "name": "Globus Supermarket"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.4939945,
+          41.4048405
+        ]
+      },
+      "properties": {
+        "id": 12880350464,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.3663208,
+          41.9438799
+        ]
+      },
+      "properties": {
+        "id": 12888252009,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.5826544,
+          42.6012894
+        ]
+      },
+      "properties": {
+        "id": 12894389546,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.99344,
+          42.3366628
+        ]
+      },
+      "properties": {
+        "id": 13003826170,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0004996,
+          41.4279432
+        ]
+      },
+      "properties": {
+        "id": 13004365664,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.6926373,
+          42.7924902
+        ]
+      },
+      "properties": {
+        "id": 13004374868,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5995994,
+          42.1575585
+        ]
+      },
+      "properties": {
+        "id": 13004502701,
+        "osm_type": "node",
+        "name": "Белек Ата"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9538718,
+          41.9864424
+        ]
+      },
+      "properties": {
+        "id": 13027945696,
+        "osm_type": "node",
+        "name": "Azamat",
+        "opening_hours": "Mo-Su 09:00-17:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.1129136,
+          41.02616
+        ]
+      },
+      "properties": {
+        "id": 13062777235,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.2221545,
+          41.1013706
+        ]
+      },
+      "properties": {
+        "id": 13062855255,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.1924296,
+          41.0906598
+        ]
+      },
+      "properties": {
+        "id": 13062855941,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5611518,
+          42.2638926
+        ]
+      },
+      "properties": {
+        "id": 13081295416,
+        "osm_type": "node",
+        "name": "Булаак маркет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.7396197,
+          42.5859171
+        ]
+      },
+      "properties": {
+        "id": 13088466366,
+        "osm_type": "node",
+        "name": "K Line"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.7434237,
+          42.5880415
+        ]
+      },
+      "properties": {
+        "id": 13088511009,
+        "osm_type": "node",
+        "name": "Élite"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.993269,
+          42.1145258
+        ]
+      },
+      "properties": {
+        "id": 13116473802,
+        "osm_type": "node",
+        "name": "Рум"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6167187,
+          42.8763546
+        ]
+      },
+      "properties": {
+        "id": 13116485401,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9950755,
+          42.1142112
+        ]
+      },
+      "properties": {
+        "id": 13116486402,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9925599,
+          42.1143203
+        ]
+      },
+      "properties": {
+        "id": 13116486803,
+        "osm_type": "node",
+        "name": "Asia Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9925261,
+          42.1139231
+        ]
+      },
+      "properties": {
+        "id": 13140415203,
+        "osm_type": "node",
+        "name": "Asia Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.7400029,
+          42.8692082
+        ]
+      },
+      "properties": {
+        "id": 13140415206,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.7626792,
+          42.8725145
+        ]
+      },
+      "properties": {
+        "id": 13140415506,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7062025,
+          42.78767
+        ]
+      },
+      "properties": {
+        "id": 13140417301,
+        "osm_type": "node",
+        "name": "Асман"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.7146657,
+          42.8755248
+        ]
+      },
+      "properties": {
+        "id": 13140417304,
+        "osm_type": "node",
+        "name": "Турман"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6594449,
+          40.2947953
+        ]
+      },
+      "properties": {
+        "id": 13180123759,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6196488,
+          40.2629478
+        ]
+      },
+      "properties": {
+        "id": 13180338786,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6383933,
+          40.2654244
+        ]
+      },
+      "properties": {
+        "id": 13180364344,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6396297,
+          40.2654384
+        ]
+      },
+      "properties": {
+        "id": 13180693532,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6337612,
+          40.2762084
+        ]
+      },
+      "properties": {
+        "id": 13180694537,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6402443,
+          40.2653985
+        ]
+      },
+      "properties": {
+        "id": 13180698615,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6356554,
+          40.2705961
+        ]
+      },
+      "properties": {
+        "id": 13180716123,
+        "osm_type": "node",
+        "name": "КОНТИНЕР МАГАЗИН"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6365906,
+          40.2655501
+        ]
+      },
+      "properties": {
+        "id": 13183729891,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6257414,
+          40.2636177
+        ]
+      },
+      "properties": {
+        "id": 13183778626,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6097831,
+          42.8747759
+        ]
+      },
+      "properties": {
+        "id": 13201607711,
+        "osm_type": "node",
+        "name": "Измир"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6149287,
+          42.8771456
+        ]
+      },
+      "properties": {
+        "id": 13227582703,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5526934,
+          42.7220378
+        ]
+      },
+      "properties": {
+        "id": 13251206002,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5576948,
+          42.7229239
+        ]
+      },
+      "properties": {
+        "id": 13251206201,
+        "osm_type": "node",
+        "name": "Асман"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6041213,
+          42.8672608
+        ]
+      },
+      "properties": {
+        "id": 13839951202,
+        "osm_type": "node",
+        "name": "Hellomarket"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7983953,
+          40.51906
+        ]
+      },
+      "properties": {
+        "id": 13898224801,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.5392043,
+          39.9959261
+        ]
+      },
+      "properties": {
+        "id": 13925219501,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.4868557,
+          39.969807
+        ]
+      },
+      "properties": {
+        "id": 13925225103,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8829314,
+          39.6709645
+        ]
+      },
+      "properties": {
+        "id": 13938471706,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7942863,
+          40.5262276
+        ]
+      },
+      "properties": {
+        "id": 13963903140,
+        "osm_type": "node",
+        "name": "К-Маркет",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3138708,
+          42.7870854
+        ]
+      },
+      "properties": {
+        "id": 13980449102,
+        "osm_type": "node",
+        "name": "Глобус",
+        "opening_hours": "Mo-Su 07:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.5230819,
+          42.5022616
+        ]
+      },
+      "properties": {
+        "id": 14053858301,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1392313,
+          42.650878
+        ]
+      },
+      "properties": {
+        "id": 14074781201,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6176432,
+          42.8772589
+        ]
+      },
+      "properties": {
+        "id": 14105394702,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6138386,
+          42.8587351
+        ]
+      },
+      "properties": {
+        "id": 14118968569,
+        "osm_type": "node",
+        "name": "Континенталь",
+        "opening_hours": "Ежедневно с 07:30 до 24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6124301,
+          42.8566749
+        ]
+      },
+      "properties": {
+        "id": 14123789658,
+        "osm_type": "node",
+        "name": "Достор",
+        "opening_hours": "Пн — Вс 09:00–23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1396276,
+          42.6509004
+        ]
+      },
+      "properties": {
+        "id": 14137430301,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0125546,
+          42.3453514
+        ]
+      },
+      "properties": {
+        "id": 14156663314,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7",
+        "check_date": "2026-09-06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1790865,
+          41.1964406
+        ]
+      },
+      "properties": {
+        "id": 14280615767,
+        "osm_type": "node",
+        "name": "Арзан"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6685992,
+          39.6364738
+        ]
+      },
+      "properties": {
+        "id": 14301250061,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.471432,
+          41.0352565
+        ]
+      },
+      "properties": {
+        "id": 14365293673,
+        "osm_type": "node",
+        "name": "ЭЛ-АЗЫК"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0935862,
+          42.6510257
+        ]
+      },
+      "properties": {
+        "id": 14366456280,
+        "osm_type": "node",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5922822,
+          42.875952
+        ]
+      },
+      "properties": {
+        "id": 37346710,
+        "osm_type": "way",
+        "name": "Globus",
+        "brand": "Globus",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "check_date": "2023-08-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6344496,
+          42.8956222
+        ]
+      },
+      "properties": {
+        "id": 48214533,
+        "osm_type": "way",
+        "name": "Народный(Алма-Атинка)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6197013,
+          42.8758564
+        ]
+      },
+      "properties": {
+        "id": 52459744,
+        "osm_type": "way",
+        "name": "АВС"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7998671,
+          40.5487036
+        ]
+      },
+      "properties": {
+        "id": 74221427,
+        "osm_type": "way",
+        "name": "Корзинка.kg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5677443,
+          42.876876
+        ]
+      },
+      "properties": {
+        "id": 82206819,
+        "osm_type": "way",
+        "name": "Берекет Гранд"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6333223,
+          42.857183
+        ]
+      },
+      "properties": {
+        "id": 87054816,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6297096,
+          42.8178781
+        ]
+      },
+      "properties": {
+        "id": 87766418,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6043089,
+          42.8623628
+        ]
+      },
+      "properties": {
+        "id": 88392640,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "08:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.639932,
+          42.8143831
+        ]
+      },
+      "properties": {
+        "id": 106407508,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6645857,
+          42.887135
+        ]
+      },
+      "properties": {
+        "id": 129967664,
+        "osm_type": "way",
+        "name": "Супер арзан"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6076418,
+          42.8573139
+        ]
+      },
+      "properties": {
+        "id": 130503656,
+        "osm_type": "way",
+        "name": "Spar",
+        "brand": "Spar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6244119,
+          42.8641934
+        ]
+      },
+      "properties": {
+        "id": 133453144,
+        "osm_type": "way",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2923497,
+          42.8373809
+        ]
+      },
+      "properties": {
+        "id": 156918537,
+        "osm_type": "way",
+        "name": "Торговый центр Мега Сити"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.290776,
+          42.8285284
+        ]
+      },
+      "properties": {
+        "id": 157052635,
+        "osm_type": "way",
+        "name": "Магазин Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5593794,
+          42.8926206
+        ]
+      },
+      "properties": {
+        "id": 160723187,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2942788,
+          42.8511434
+        ]
+      },
+      "properties": {
+        "id": 162529778,
+        "osm_type": "way",
+        "name": "ТК \"Саквояж\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2939004,
+          42.8501327
+        ]
+      },
+      "properties": {
+        "id": 162529887,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2932958,
+          42.8510944
+        ]
+      },
+      "properties": {
+        "id": 162529892,
+        "osm_type": "way",
+        "name": "Магазин \"Акзам\""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.6957868,
+          42.7910005
+        ]
+      },
+      "properties": {
+        "id": 163684842,
+        "osm_type": "way",
+        "name": "вещевой рынок"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3044834,
+          42.8426647
+        ]
+      },
+      "properties": {
+        "id": 164178969,
+        "osm_type": "way",
+        "name": "Универсам",
+        "opening_hours": "Mo-Su 08:00-20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5924165,
+          42.8087306
+        ]
+      },
+      "properties": {
+        "id": 164285892,
+        "osm_type": "way",
+        "name": "Алтыным"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8699431,
+          42.827184
+        ]
+      },
+      "properties": {
+        "id": 174790325,
+        "osm_type": "way",
+        "name": "Яр-Марка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6189296,
+          42.8600958
+        ]
+      },
+      "properties": {
+        "id": 175180631,
+        "osm_type": "way",
+        "name": "GrandStone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5651188,
+          42.8849275
+        ]
+      },
+      "properties": {
+        "id": 177543405,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5768631,
+          42.8737981
+        ]
+      },
+      "properties": {
+        "id": 177638505,
+        "osm_type": "way",
+        "name": "Весна"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6915068,
+          42.8787774
+        ]
+      },
+      "properties": {
+        "id": 178744164,
+        "osm_type": "way",
+        "name": "Dostor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6088881,
+          42.8572233
+        ]
+      },
+      "properties": {
+        "id": 179959872,
+        "osm_type": "way",
+        "name": "Berlin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.7090283,
+          42.8775079
+        ]
+      },
+      "properties": {
+        "id": 180681377,
+        "osm_type": "way",
+        "name": "Каныкей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0037037,
+          40.9276637
+        ]
+      },
+      "properties": {
+        "id": 181233021,
+        "osm_type": "way",
+        "name": "Плаза"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9942466,
+          40.9271004
+        ]
+      },
+      "properties": {
+        "id": 181233030,
+        "osm_type": "way",
+        "name": "BREND-MIX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9743808,
+          40.9253807
+        ]
+      },
+      "properties": {
+        "id": 181724377,
+        "osm_type": "way",
+        "name": "Ак-Бата"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4962594,
+          42.8759231
+        ]
+      },
+      "properties": {
+        "id": 182014694,
+        "osm_type": "way",
+        "name": "Глобус",
+        "brand": "Глобус",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1630384,
+          42.4526974
+        ]
+      },
+      "properties": {
+        "id": 182078125,
+        "osm_type": "way",
+        "name": "Spar",
+        "brand": "Spar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9965179,
+          40.9353452
+        ]
+      },
+      "properties": {
+        "id": 182232743,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.988827,
+          40.9339869
+        ]
+      },
+      "properties": {
+        "id": 182232845,
+        "osm_type": "way",
+        "name": "Фрунзе"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9629788,
+          40.9378223
+        ]
+      },
+      "properties": {
+        "id": 182233019,
+        "osm_type": "way",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.850423,
+          42.8016486
+        ]
+      },
+      "properties": {
+        "id": 186782707,
+        "osm_type": "way",
+        "name": "рынок Береке"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5118648,
+          42.8450318
+        ]
+      },
+      "properties": {
+        "id": 189174504,
+        "osm_type": "way",
+        "name": "Гипермаркет Фрунзе"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9406108,
+          41.8695142
+        ]
+      },
+      "properties": {
+        "id": 191269309,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6686855,
+          41.631312
+        ]
+      },
+      "properties": {
+        "id": 193065439,
+        "osm_type": "way",
+        "name": "Ар-туркун"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6683604,
+          41.6314086
+        ]
+      },
+      "properties": {
+        "id": 193065479,
+        "osm_type": "way",
+        "name": "Ала-Тоо"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4885839,
+          42.9400182
+        ]
+      },
+      "properties": {
+        "id": 197770394,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5707455,
+          42.7263859
+        ]
+      },
+      "properties": {
+        "id": 204494767,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5704942,
+          42.7262042
+        ]
+      },
+      "properties": {
+        "id": 204494779,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5701474,
+          42.7259445
+        ]
+      },
+      "properties": {
+        "id": 204494789,
+        "osm_type": "way",
+        "name": "Алина"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.553358,
+          42.8293689
+        ]
+      },
+      "properties": {
+        "id": 206789937,
+        "osm_type": "way",
+        "name": "Солнышко супермаркет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5712889,
+          42.7257238
+        ]
+      },
+      "properties": {
+        "id": 208178015,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 08:00-00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2874248,
+          42.8689798
+        ]
+      },
+      "properties": {
+        "id": 209498673,
+        "osm_type": "way",
+        "name": "У.ГАНСА",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8671093,
+          42.8272262
+        ]
+      },
+      "properties": {
+        "id": 211416678,
+        "osm_type": "way",
+        "name": "Мээрим"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6312293,
+          42.8310843
+        ]
+      },
+      "properties": {
+        "id": 219913693,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6748471,
+          42.7915545
+        ]
+      },
+      "properties": {
+        "id": 232293995,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6781189,
+          42.7868507
+        ]
+      },
+      "properties": {
+        "id": 232294070,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2922043,
+          42.8405878
+        ]
+      },
+      "properties": {
+        "id": 235422406,
+        "osm_type": "way",
+        "name": "Арзан",
+        "opening_hours": "09:00-20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4035665,
+          42.483565
+        ]
+      },
+      "properties": {
+        "id": 243463512,
+        "osm_type": "way",
+        "name": "Duet Shop",
+        "opening_hours": "08:00-22:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7683433,
+          42.2216502
+        ]
+      },
+      "properties": {
+        "id": 244506239,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "Mo-Su 09:00-24:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8249502,
+          40.4978978
+        ]
+      },
+      "properties": {
+        "id": 251491580,
+        "osm_type": "way",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6976591,
+          40.3043744
+        ]
+      },
+      "properties": {
+        "id": 267936502,
+        "osm_type": "way",
+        "name": "Азык Ордо",
+        "opening_hours": "08:30-12:30,15:30-20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6977031,
+          40.30384
+        ]
+      },
+      "properties": {
+        "id": 271737806,
+        "osm_type": "way",
+        "name": "Bargy",
+        "opening_hours": "08:30-12:30,15:30-20:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6369009,
+          42.8800358
+        ]
+      },
+      "properties": {
+        "id": 272983295,
+        "osm_type": "way",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4800633,
+          42.7007973
+        ]
+      },
+      "properties": {
+        "id": 274215200,
+        "osm_type": "way",
+        "name": "Магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3880916,
+          42.5352081
+        ]
+      },
+      "properties": {
+        "id": 281250690,
+        "osm_type": "way",
+        "name": "small shop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.101976,
+          40.2685138
+        ]
+      },
+      "properties": {
+        "id": 286373997,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5705729,
+          42.7257449
+        ]
+      },
+      "properties": {
+        "id": 297683296,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0882408,
+          42.650633
+        ]
+      },
+      "properties": {
+        "id": 310140791,
+        "osm_type": "way",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.6472356,
+          39.8440634
+        ]
+      },
+      "properties": {
+        "id": 317783162,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.0830447,
+          42.8860224
+        ]
+      },
+      "properties": {
+        "id": 331780545,
+        "osm_type": "way",
+        "name": "Каныкей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7698704,
+          40.5218732
+        ]
+      },
+      "properties": {
+        "id": 333385953,
+        "osm_type": "way",
+        "name": "Million",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6166285,
+          42.8237599
+        ]
+      },
+      "properties": {
+        "id": 338123915,
+        "osm_type": "way",
+        "name": "Глобус",
+        "opening_hours": "Mo-Su,PH 08:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6452425,
+          42.8557677
+        ]
+      },
+      "properties": {
+        "id": 345326868,
+        "osm_type": "way",
+        "name": "Арзан"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9236506,
+          42.8381016
+        ]
+      },
+      "properties": {
+        "id": 347486896,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5144025,
+          42.8523473
+        ]
+      },
+      "properties": {
+        "id": 358322974,
+        "osm_type": "way",
+        "name": "Ак-Жол",
+        "opening_hours": "08:00-23:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8075573,
+          40.5242711
+        ]
+      },
+      "properties": {
+        "id": 361255266,
+        "osm_type": "way",
+        "name": "Салам"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5078983,
+          42.8748167
+        ]
+      },
+      "properties": {
+        "id": 404869177,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9932217,
+          41.4296628
+        ]
+      },
+      "properties": {
+        "id": 415217381,
+        "osm_type": "way",
+        "name": "Элдик"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4276604,
+          40.6339806
+        ]
+      },
+      "properties": {
+        "id": 419613410,
+        "osm_type": "way",
+        "name": "Магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2406709,
+          41.4480445
+        ]
+      },
+      "properties": {
+        "id": 437745093,
+        "osm_type": "way",
+        "name": "Grocery Outlet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6514922,
+          42.8756928
+        ]
+      },
+      "properties": {
+        "id": 491545074,
+        "osm_type": "way",
+        "name": "Globus",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7930009,
+          40.5361318
+        ]
+      },
+      "properties": {
+        "id": 518562475,
+        "osm_type": "way",
+        "name": "Ьереке"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6844836,
+          42.8551124
+        ]
+      },
+      "properties": {
+        "id": 529409880,
+        "osm_type": "way",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8461852,
+          42.8157106
+        ]
+      },
+      "properties": {
+        "id": 560780296,
+        "osm_type": "way",
+        "name": "Кут"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6369758,
+          42.841129
+        ]
+      },
+      "properties": {
+        "id": 635535031,
+        "osm_type": "way",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6481456,
+          42.8027697
+        ]
+      },
+      "properties": {
+        "id": 693681288,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.628027,
+          42.820081
+        ]
+      },
+      "properties": {
+        "id": 753900972,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.616353,
+          42.8257811
+        ]
+      },
+      "properties": {
+        "id": 754089740,
+        "osm_type": "way",
+        "name": "А-усон"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.8269858,
+          40.0447036
+        ]
+      },
+      "properties": {
+        "id": 802020519,
+        "osm_type": "way",
+        "name": "Мега-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.8263278,
+          40.0588211
+        ]
+      },
+      "properties": {
+        "id": 825877451,
+        "osm_type": "way",
+        "name": "Super C",
+        "brand": "Super C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.5225887,
+          39.8400585
+        ]
+      },
+      "properties": {
+        "id": 844646539,
+        "osm_type": "way",
+        "name": "Азия Плюс"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.1129989,
+          42.834873
+        ]
+      },
+      "properties": {
+        "id": 907938910,
+        "osm_type": "way",
+        "name": "Ярмарка",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6709192,
+          41.6319612
+        ]
+      },
+      "properties": {
+        "id": 992310567,
+        "osm_type": "way",
+        "name": "Марьям"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6635209,
+          41.6335031
+        ]
+      },
+      "properties": {
+        "id": 992310569,
+        "osm_type": "way",
+        "name": "Апельсин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9602545,
+          40.9221469
+        ]
+      },
+      "properties": {
+        "id": 997081286,
+        "osm_type": "way",
+        "name": "Арзуу"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.482739,
+          41.0330239
+        ]
+      },
+      "properties": {
+        "id": 1003838923,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9704957,
+          40.9419829
+        ]
+      },
+      "properties": {
+        "id": 1024422779,
+        "osm_type": "way",
+        "name": "Лимон"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.002703,
+          40.9504138
+        ]
+      },
+      "properties": {
+        "id": 1025164666,
+        "osm_type": "way",
+        "name": "Азия",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9188701,
+          40.9029784
+        ]
+      },
+      "properties": {
+        "id": 1026050401,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9132319,
+          40.8993162
+        ]
+      },
+      "properties": {
+        "id": 1026050402,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9726423,
+          40.9506092
+        ]
+      },
+      "properties": {
+        "id": 1042107199,
+        "osm_type": "way",
+        "name": "Ак-Бата маркет"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0070305,
+          40.9269721
+        ]
+      },
+      "properties": {
+        "id": 1042578300,
+        "osm_type": "way",
+        "name": "Глобус"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9974518,
+          40.9423759
+        ]
+      },
+      "properties": {
+        "id": 1047849692,
+        "osm_type": "way",
+        "name": "Бегимай магазин"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4896755,
+          42.8754255
+        ]
+      },
+      "properties": {
+        "id": 1059220037,
+        "osm_type": "way",
+        "name": "Гипермаркет Фрунзе"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1640447,
+          42.4519986
+        ]
+      },
+      "properties": {
+        "id": 1096063017,
+        "osm_type": "way",
+        "name": "Globus",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1957685,
+          42.6571814
+        ]
+      },
+      "properties": {
+        "id": 1103362345,
+        "osm_type": "way",
+        "name": "Народный"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0434767,
+          42.366706
+        ]
+      },
+      "properties": {
+        "id": 1142102587,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8085698,
+          40.5357865
+        ]
+      },
+      "properties": {
+        "id": 1185938418,
+        "osm_type": "way",
+        "name": "Азия"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.792959,
+          40.5288167
+        ]
+      },
+      "properties": {
+        "id": 1186461450,
+        "osm_type": "way",
+        "name": "Айдай"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.7285356,
+          42.87066
+        ]
+      },
+      "properties": {
+        "id": 1237319337,
+        "osm_type": "way",
+        "name": "Достор"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.0391243,
+          42.4676155
+        ]
+      },
+      "properties": {
+        "id": 1356307932,
+        "osm_type": "way",
+        "name": "Супермаркет",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1771467,
+          41.1966258
+        ]
+      },
+      "properties": {
+        "id": 1501459313,
+        "osm_type": "way",
+        "name": "Globus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7943349,
+          40.5261663
+        ]
+      },
+      "properties": {
+        "id": 1536474614,
+        "osm_type": "way"
+      }
+    }
+  ]
+}

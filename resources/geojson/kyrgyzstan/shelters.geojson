@@ -1,0 +1,229 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.5724391,
+          42.2824308
+        ]
+      },
+      "properties": {
+        "id": 5583618722,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3738523,
+          42.3505916
+        ]
+      },
+      "properties": {
+        "id": 5788074223,
+        "osm_type": "node",
+        "name": "Юрточный лагерь Сары-джаз"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.0914653,
+          42.5229761
+        ]
+      },
+      "properties": {
+        "id": 5969331287,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3845034,
+          42.5875666
+        ]
+      },
+      "properties": {
+        "id": 6496049085,
+        "osm_type": "node",
+        "name": "Ущелье Шамшы-Туюк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.3897329,
+          42.8387071
+        ]
+      },
+      "properties": {
+        "id": 10121140156,
+        "osm_type": "node",
+        "shelter_type": "basic_hut"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4249241,
+          42.3948796
+        ]
+      },
+      "properties": {
+        "id": 10277300909,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.4216819,
+          41.5950064
+        ]
+      },
+      "properties": {
+        "id": 10772855464,
+        "osm_type": "node"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9775527,
+          41.4031386
+        ]
+      },
+      "properties": {
+        "id": 13146600686,
+        "osm_type": "node",
+        "access": "permissive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4527232,
+          42.4435288
+        ]
+      },
+      "properties": {
+        "id": 256710919,
+        "osm_type": "way",
+        "name": "верхняя Ала-арча"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8828064,
+          42.1035531
+        ]
+      },
+      "properties": {
+        "id": 585429115,
+        "osm_type": "way",
+        "name": "Wearther shelter",
+        "shelter_type": "weather_shelter",
+        "bench": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.091483,
+          42.5229277
+        ]
+      },
+      "properties": {
+        "id": 690427265,
+        "osm_type": "way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4991188,
+          42.3254576
+        ]
+      },
+      "properties": {
+        "id": 1086761254,
+        "osm_type": "way",
+        "name": "сирота Котор",
+        "access": "yes",
+        "fee": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.9321121,
+          41.9163976
+        ]
+      },
+      "properties": {
+        "id": 1089392394,
+        "osm_type": "way",
+        "name": "Дом егерей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.005398,
+          42.7149591
+        ]
+      },
+      "properties": {
+        "id": 1103362349,
+        "osm_type": "way",
+        "shelter_type": "basic_hut"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0819841,
+          42.6476818
+        ]
+      },
+      "properties": {
+        "id": 1194830408,
+        "osm_type": "way",
+        "shelter_type": "weather_shelter"
+      }
+    }
+  ]
+}
