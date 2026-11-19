@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def load_tasks(failures_dir: Path) -> list[dict[str, str]]:
     tasks: dict[tuple[str, str, str], dict[str, str]] = {}
-    for file in sorted(failures_dir.glob("*.jsonl")):
+    for file in sorted(failures_dir.rglob("*.jsonl")):
         try:
             for line in file.read_text(encoding="utf-8").splitlines():
                 if not line.strip():

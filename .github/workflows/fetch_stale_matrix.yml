@@ -298,22 +298,7 @@ jobs:
           for round in $(seq 1 "$RECOVERY_ROUNDS"); do
             python fetch_data/fetch_stale_overpass.py --config fetch_data/config.yml --targets "$RUNNER_TEMP/recovery-current/targets.json" --retry-attempts "$RETRY_ATTEMPTS" --retry-sleep 30 --output-dir "$RUNNER_TEMP/recovery-round-${round}/fetched" --failed-output "$RUNNER_TEMP/recovery-round-${round}/failed/failed.json"
             cp "$RUNNER_TEMP/recovery-round-${round}/failed/failed.json" "$RUNNER_TEMP/recovery-current/targets.json"
-            count=$(python - <<'PY'
-            import json
-            import os
-            import sys
-            from pathlib import Path
-
-            path = Path(os.environ["RUNNER_TEMP"]) / "recovery-current" / "targets.json"
-            try:
-                data = json.loads(path.read_text(encoding="utf-8"))
-            except Exception:
-                print(f"Failed to parse recovery targets file: {path}", file=sys.stderr)
-                print(path.read_text(encoding="utf-8")[:500], file=sys.stderr)
-                raise
-            print(len(data))
-            PY
-            )
+            count=$(python -c 'import json, os, pathlib; p = pathlib.Path(os.environ["RUNNER_TEMP"]) / "recovery-current" / "targets.json"; print(len(json.loads(p.read_text(encoding="utf-8"))))')
             if [ "$count" = "0" ]; then
               echo "No targets left after recovery round $round"
               break
