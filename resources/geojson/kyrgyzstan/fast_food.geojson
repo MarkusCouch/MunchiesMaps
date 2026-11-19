@@ -1,0 +1,7159 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6112659,
+          42.8722868
+        ]
+      },
+      "properties": {
+        "id": 660621009,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5955669,
+          42.8751245
+        ]
+      },
+      "properties": {
+        "id": 660942056,
+        "osm_type": "node",
+        "name": "Гумма",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6148178,
+          42.8718872
+        ]
+      },
+      "properties": {
+        "id": 668007385,
+        "osm_type": "node",
+        "name": "Кофемания",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "phone": "996 550 920236",
+        "website": "https://www.instagram.com/kofemaniya.kg/",
+        "cuisine": "coffee_shop",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6494283,
+          42.8754153
+        ]
+      },
+      "properties": {
+        "id": 1036696603,
+        "osm_type": "node",
+        "name": "Империя пиццы",
+        "opening_hours": "24/7",
+        "operator": "Империя Пиццы",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6102465,
+          42.875567
+        ]
+      },
+      "properties": {
+        "id": 1086564001,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6305092,
+          42.8394072
+        ]
+      },
+      "properties": {
+        "id": 1440187769,
+        "osm_type": "node",
+        "name": "Перцик",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6077365,
+          42.8360295
+        ]
+      },
+      "properties": {
+        "id": 1449578388,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.575381,
+          42.8355719
+        ]
+      },
+      "properties": {
+        "id": 1675857881,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2897074,
+          42.8303599
+        ]
+      },
+      "properties": {
+        "id": 1685948800,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5967355,
+          42.8814736
+        ]
+      },
+      "properties": {
+        "id": 1726096581,
+        "osm_type": "node",
+        "name": "Бегимай",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5953142,
+          42.8815895
+        ]
+      },
+      "properties": {
+        "id": 1726096897,
+        "osm_type": "node",
+        "name": "Студенческая столовая",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5960489,
+          42.8826508
+        ]
+      },
+      "properties": {
+        "id": 1726096898,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6083333,
+          42.8426661
+        ]
+      },
+      "properties": {
+        "id": 1726151391,
+        "osm_type": "node",
+        "name": "Домино",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5684266,
+          42.8381056
+        ]
+      },
+      "properties": {
+        "id": 1727003023,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5877687,
+          42.8678451
+        ]
+      },
+      "properties": {
+        "id": 1728020031,
+        "osm_type": "node",
+        "name": "Buffet",
+        "opening_hours": "24/7",
+        "cuisine": "regional;international",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6115167,
+          42.8796143
+        ]
+      },
+      "properties": {
+        "id": 1846377429,
+        "osm_type": "node",
+        "name": "Underground",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5856193,
+          42.8437445
+        ]
+      },
+      "properties": {
+        "id": 1915616171,
+        "osm_type": "node",
+        "name": "Бегемот",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.585809,
+          42.8492609
+        ]
+      },
+      "properties": {
+        "id": 1915616173,
+        "osm_type": "node",
+        "name": "Столовая",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5952996,
+          42.8760007
+        ]
+      },
+      "properties": {
+        "id": 1915678826,
+        "osm_type": "node",
+        "name": "Карделен",
+        "cuisine": "turkish",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5433669,
+          42.8534991
+        ]
+      },
+      "properties": {
+        "id": 1915699444,
+        "osm_type": "node",
+        "name": "Пирожки/чай",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9389724,
+          40.9101942
+        ]
+      },
+      "properties": {
+        "id": 1916916972,
+        "osm_type": "node",
+        "name": "Мухаммед-Ажы",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9408601,
+          40.9093023
+        ]
+      },
+      "properties": {
+        "id": 1916917300,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9942134,
+          40.9386166
+        ]
+      },
+      "properties": {
+        "id": 1919802008,
+        "osm_type": "node",
+        "name": "Байчечекей",
+        "cuisine": "ice_cream",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6137354,
+          42.8764259
+        ]
+      },
+      "properties": {
+        "id": 1968042130,
+        "osm_type": "node",
+        "name": "Бегемот",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5865981,
+          42.8481433
+        ]
+      },
+      "properties": {
+        "id": 1969357688,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.617226,
+          41.6128872
+        ]
+      },
+      "properties": {
+        "id": 2110710906,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5851945,
+          42.8699749
+        ]
+      },
+      "properties": {
+        "id": 2155875437,
+        "osm_type": "node",
+        "name": "Столовая Фрунзе",
+        "opening_hours": "09:00-19:00",
+        "website": "http://chefs.kg/",
+        "operator": "Кыргыз общепит",
+        "cuisine": "international",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.591849,
+          42.8805895
+        ]
+      },
+      "properties": {
+        "id": 2202762728,
+        "osm_type": "node",
+        "name": "Даам-Дан",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.3457506,
+          42.8644967
+        ]
+      },
+      "properties": {
+        "id": 2533750485,
+        "osm_type": "node",
+        "name": "Ширин",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5794803,
+          42.8730735
+        ]
+      },
+      "properties": {
+        "id": 2613221228,
+        "osm_type": "node",
+        "name": "Laff express",
+        "cuisine": "hot_dog;sandwich;coffee_shop",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6276618,
+          42.874556
+        ]
+      },
+      "properties": {
+        "id": 2778779409,
+        "osm_type": "node",
+        "name": "Домашка",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5690068,
+          42.8644154
+        ]
+      },
+      "properties": {
+        "id": 2921766750,
+        "osm_type": "node",
+        "name": "Озгочо Тандыр Самсы",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6109132,
+          42.859782
+        ]
+      },
+      "properties": {
+        "id": 3168123161,
+        "osm_type": "node",
+        "name": "Буржуй",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.608799,
+          42.8455139
+        ]
+      },
+      "properties": {
+        "id": 3320331531,
+        "osm_type": "node",
+        "name": "Burrito",
+        "cuisine": "mexican",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6090152,
+          42.8485416
+        ]
+      },
+      "properties": {
+        "id": 3333794387,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6149293,
+          42.8766761
+        ]
+      },
+      "properties": {
+        "id": 3343108761,
+        "osm_type": "node",
+        "name": "САМБОС",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5737343,
+          42.8774954
+        ]
+      },
+      "properties": {
+        "id": 3439379586,
+        "osm_type": "node",
+        "name": "Хилал",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8582259,
+          42.8013924
+        ]
+      },
+      "properties": {
+        "id": 3705428880,
+        "osm_type": "node",
+        "name": "Saffran",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8450585,
+          42.8137037
+        ]
+      },
+      "properties": {
+        "id": 3705429031,
+        "osm_type": "node",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4081155,
+          42.8721283
+        ]
+      },
+      "properties": {
+        "id": 3707983787,
+        "osm_type": "node",
+        "name": "KFC",
+        "brand": "KFC",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6805668,
+          41.6306079
+        ]
+      },
+      "properties": {
+        "id": 3920745941,
+        "osm_type": "node",
+        "cuisine": "pizza;burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6114984,
+          42.8851056
+        ]
+      },
+      "properties": {
+        "id": 3976456478,
+        "osm_type": "node",
+        "name": "Тез таатым",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6028334,
+          42.8732886
+        ]
+      },
+      "properties": {
+        "id": 4041305222,
+        "osm_type": "node",
+        "name": "Ugoløk",
+        "phone": "+996 222 125 835",
+        "cuisine": "burger;fine_dining;georgian",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6055824,
+          42.837882
+        ]
+      },
+      "properties": {
+        "id": 4085338191,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6016598,
+          42.8433118
+        ]
+      },
+      "properties": {
+        "id": 4102400477,
+        "osm_type": "node",
+        "name": "Бегемот",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6077953,
+          42.8431522
+        ]
+      },
+      "properties": {
+        "id": 4102400478,
+        "osm_type": "node",
+        "name": "Бегемот",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6064296,
+          42.8377422
+        ]
+      },
+      "properties": {
+        "id": 4102400479,
+        "osm_type": "node",
+        "name": "Антошка",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6090875,
+          42.8424395
+        ]
+      },
+      "properties": {
+        "id": 4105493142,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1763748,
+          41.1964737
+        ]
+      },
+      "properties": {
+        "id": 4142164493,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5966953,
+          42.8794266
+        ]
+      },
+      "properties": {
+        "id": 4155516103,
+        "osm_type": "node",
+        "name": "Антошка",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6119575,
+          42.8857372
+        ]
+      },
+      "properties": {
+        "id": 4184986498,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6121024,
+          42.9037718
+        ]
+      },
+      "properties": {
+        "id": 4185135560,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6323615,
+          42.9241173
+        ]
+      },
+      "properties": {
+        "id": 4185385997,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.62965,
+          42.9195852
+        ]
+      },
+      "properties": {
+        "id": 4185386040,
+        "osm_type": "node",
+        "name": "Самсы",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6280614,
+          42.9075331
+        ]
+      },
+      "properties": {
+        "id": 4185386041,
+        "osm_type": "node",
+        "name": "Столовая",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6244071,
+          42.9401853
+        ]
+      },
+      "properties": {
+        "id": 4186814325,
+        "osm_type": "node",
+        "name": "Самсы",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5970908,
+          42.8886775
+        ]
+      },
+      "properties": {
+        "id": 4191627695,
+        "osm_type": "node",
+        "name": "Самсы",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5971164,
+          42.888777
+        ]
+      },
+      "properties": {
+        "id": 4191627697,
+        "osm_type": "node",
+        "name": "Супер хошаны",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5965909,
+          42.8885319
+        ]
+      },
+      "properties": {
+        "id": 4191627700,
+        "osm_type": "node",
+        "name": "Евразия",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5748177,
+          42.8958491
+        ]
+      },
+      "properties": {
+        "id": 4191948606,
+        "osm_type": "node",
+        "name": "Самсы",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5741371,
+          42.9003535
+        ]
+      },
+      "properties": {
+        "id": 4191948607,
+        "osm_type": "node",
+        "name": "Самсы",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5964068,
+          42.8843356
+        ]
+      },
+      "properties": {
+        "id": 4215727191,
+        "osm_type": "node",
+        "name": "Супер Смак",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2240442,
+          42.5290704
+        ]
+      },
+      "properties": {
+        "id": 4234031261,
+        "osm_type": "node",
+        "name": "Fast food",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2484047,
+          42.521139
+        ]
+      },
+      "properties": {
+        "id": 4242991515,
+        "osm_type": "node",
+        "name": "Гриль",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.246656,
+          42.5182614
+        ]
+      },
+      "properties": {
+        "id": 4243121278,
+        "osm_type": "node",
+        "name": "Мандар",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9234009,
+          41.7490399
+        ]
+      },
+      "properties": {
+        "id": 4264585375,
+        "osm_type": "node",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.616891,
+          41.6125614
+        ]
+      },
+      "properties": {
+        "id": 4273819517,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6170745,
+          41.6126076
+        ]
+      },
+      "properties": {
+        "id": 4273819520,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6172612,
+          41.6126622
+        ]
+      },
+      "properties": {
+        "id": 4273819521,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6173814,
+          41.6126901
+        ]
+      },
+      "properties": {
+        "id": 4273819522,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6169153,
+          41.6128091
+        ]
+      },
+      "properties": {
+        "id": 4273819524,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.617167,
+          41.6126294
+        ]
+      },
+      "properties": {
+        "id": 4273819569,
+        "osm_type": "node",
+        "name": "Минутка",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.611155,
+          42.8721577
+        ]
+      },
+      "properties": {
+        "id": 4298039816,
+        "osm_type": "node",
+        "name": "Hamburger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3035193,
+          42.8333813
+        ]
+      },
+      "properties": {
+        "id": 4414391689,
+        "osm_type": "node",
+        "name": "Вкусняшка",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6017545,
+          42.8630591
+        ]
+      },
+      "properties": {
+        "id": 4431139089,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.607814,
+          42.8296192
+        ]
+      },
+      "properties": {
+        "id": 4510155468,
+        "osm_type": "node",
+        "name": "Острые крылышки",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9979662,
+          40.9299298
+        ]
+      },
+      "properties": {
+        "id": 4599961889,
+        "osm_type": "node",
+        "name": "Стар Бургер",
+        "opening_hours": "Mo-Su 09:00-19:00",
+        "phone": "0557607009",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2891945,
+          42.8213124
+        ]
+      },
+      "properties": {
+        "id": 4611669490,
+        "osm_type": "node",
+        "cuisine": "sandwich",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2019873,
+          41.3369661
+        ]
+      },
+      "properties": {
+        "id": 4663403602,
+        "osm_type": "node",
+        "name": "Базар",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5640034,
+          42.8842564
+        ]
+      },
+      "properties": {
+        "id": 4715972298,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0051639,
+          41.4249796
+        ]
+      },
+      "properties": {
+        "id": 4715998694,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.0042398,
+          41.4255362
+        ]
+      },
+      "properties": {
+        "id": 4715998708,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6236017,
+          42.8763564
+        ]
+      },
+      "properties": {
+        "id": 4716001772,
+        "osm_type": "node",
+        "name": "Шаурма по Нарынски",
+        "opening_hours": "24/7",
+        "cuisine": "burger",
+        "check_date": "2023-07-06",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6236051,
+          42.8762702
+        ]
+      },
+      "properties": {
+        "id": 4716001773,
+        "osm_type": "node",
+        "name": "Донер Центр",
+        "opening_hours": "24/7",
+        "cuisine": "burger",
+        "check_date": "2023-07-06",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6236073,
+          42.8761892
+        ]
+      },
+      "properties": {
+        "id": 4716001774,
+        "osm_type": "node",
+        "name": "Кебаб",
+        "opening_hours": "24/7",
+        "cuisine": "burger",
+        "check_date": "2023-07-06",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6236119,
+          42.8761413
+        ]
+      },
+      "properties": {
+        "id": 4716001775,
+        "osm_type": "node",
+        "name": "Хошаны",
+        "opening_hours": "24/7",
+        "cuisine": "burger",
+        "check_date": "2023-07-06",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5900813,
+          42.8748175
+        ]
+      },
+      "properties": {
+        "id": 4724287349,
+        "osm_type": "node",
+        "name": "Burger House",
+        "opening_hours": "10:00-22:00",
+        "website": "www.burgerhouse.kg",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5905945,
+          42.8745919
+        ]
+      },
+      "properties": {
+        "id": 4724298317,
+        "osm_type": "node",
+        "name": "Nathan`s",
+        "phone": "+996 770-10-01-00",
+        "cuisine": "burger;hot_dog;american",
+        "check_date": "2022-11-11",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6324414,
+          42.890793
+        ]
+      },
+      "properties": {
+        "id": 4725558348,
+        "osm_type": "node",
+        "name": "free wi-fi",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6286409,
+          42.8896751
+        ]
+      },
+      "properties": {
+        "id": 4725558351,
+        "osm_type": "node",
+        "name": "самса 1+1",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.631844,
+          42.8881538
+        ]
+      },
+      "properties": {
+        "id": 4725558360,
+        "osm_type": "node",
+        "name": "begemot",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.622039,
+          42.8887951
+        ]
+      },
+      "properties": {
+        "id": 4725558361,
+        "osm_type": "node",
+        "name": "toibos",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6207856,
+          42.8932374
+        ]
+      },
+      "properties": {
+        "id": 4725558366,
+        "osm_type": "node",
+        "name": "begemot",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6018863,
+          42.8893282
+        ]
+      },
+      "properties": {
+        "id": 4725558370,
+        "osm_type": "node",
+        "name": "begemot",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6104983,
+          42.8903432
+        ]
+      },
+      "properties": {
+        "id": 4725558377,
+        "osm_type": "node",
+        "name": "Тойбос",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.579165,
+          42.8675708
+        ]
+      },
+      "properties": {
+        "id": 4725558902,
+        "osm_type": "node",
+        "name": "Begemot",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6526975,
+          42.8912512
+        ]
+      },
+      "properties": {
+        "id": 4725558906,
+        "osm_type": "node",
+        "name": "Хашан",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6454694,
+          42.8898798
+        ]
+      },
+      "properties": {
+        "id": 4725558913,
+        "osm_type": "node",
+        "name": "Btgemot",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6844771,
+          42.8824485
+        ]
+      },
+      "properties": {
+        "id": 4725558918,
+        "osm_type": "node",
+        "name": "Super Hashan",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6612372,
+          42.8857657
+        ]
+      },
+      "properties": {
+        "id": 4725558924,
+        "osm_type": "node",
+        "name": "Супер хашан",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6688664,
+          42.8848627
+        ]
+      },
+      "properties": {
+        "id": 4725558928,
+        "osm_type": "node",
+        "name": "Супер хашан",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5181414,
+          41.9270323
+        ]
+      },
+      "properties": {
+        "id": 4728674787,
+        "osm_type": "node",
+        "name": "Фаст-фуд",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8000595,
+          40.5487397
+        ]
+      },
+      "properties": {
+        "id": 4730452160,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.393997,
+          42.4908392
+        ]
+      },
+      "properties": {
+        "id": 4774305634,
+        "osm_type": "node",
+        "name": "Гриль",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "+996777008805",
+        "operator": "Дядя Саша",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0968041,
+          42.8339999
+        ]
+      },
+      "properties": {
+        "id": 4808975856,
+        "osm_type": "node",
+        "name": "Гриль",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3938765,
+          42.4906719
+        ]
+      },
+      "properties": {
+        "id": 4873866626,
+        "osm_type": "node",
+        "name": "Грильня",
+        "phone": "+996777008805",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9953269,
+          40.9275497
+        ]
+      },
+      "properties": {
+        "id": 4959318121,
+        "osm_type": "node",
+        "name": "тахмина",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5932679,
+          42.8760414
+        ]
+      },
+      "properties": {
+        "id": 4986969824,
+        "osm_type": "node",
+        "name": "BFC - Bish fried chicken",
+        "phone": "0707749091",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6144468,
+          42.8752604
+        ]
+      },
+      "properties": {
+        "id": 5016596251,
+        "osm_type": "node",
+        "name": "KFC",
+        "brand": "KFC",
+        "opening_hours": "Mo-Su 09:00-02:00",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9679962,
+          40.9322377
+        ]
+      },
+      "properties": {
+        "id": 5112197621,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8071218,
+          40.5121435
+        ]
+      },
+      "properties": {
+        "id": 5116839184,
+        "osm_type": "node",
+        "name": "Max Donner",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "phone": "0550330077",
+        "cuisine": "burger;pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7975403,
+          40.5415274
+        ]
+      },
+      "properties": {
+        "id": 5144480922,
+        "osm_type": "node",
+        "cuisine": "asian;turkish",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5127192,
+          41.9255402
+        ]
+      },
+      "properties": {
+        "id": 5190565810,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5854538,
+          42.8437591
+        ]
+      },
+      "properties": {
+        "id": 5303213721,
+        "osm_type": "node",
+        "cuisine": "kebab;barbecue",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9071617,
+          42.5990757
+        ]
+      },
+      "properties": {
+        "id": 5311525221,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6029866,
+          42.8743427
+        ]
+      },
+      "properties": {
+        "id": 5334699521,
+        "osm_type": "node",
+        "name": "Buffet",
+        "opening_hours": "24/7",
+        "website": "https://buffet.kg",
+        "cuisine": "local",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.757966,
+          42.2161124
+        ]
+      },
+      "properties": {
+        "id": 5386526330,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7551531,
+          42.2167695
+        ]
+      },
+      "properties": {
+        "id": 5386621526,
+        "osm_type": "node",
+        "name": "Cafe \"Yntymak\"",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8437049,
+          42.8233531
+        ]
+      },
+      "properties": {
+        "id": 5407782643,
+        "osm_type": "node",
+        "name": "Begemot",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8810394,
+          42.8282975
+        ]
+      },
+      "properties": {
+        "id": 5421056956,
+        "osm_type": "node",
+        "name": "Begemot",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5885577,
+          42.8703762
+        ]
+      },
+      "properties": {
+        "id": 5475740721,
+        "osm_type": "node",
+        "name": "Madfood",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5983431,
+          42.867164
+        ]
+      },
+      "properties": {
+        "id": 5541996621,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7672269,
+          40.5612499
+        ]
+      },
+      "properties": {
+        "id": 5564369239,
+        "osm_type": "node",
+        "name": "Афган Самса",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6121826,
+          42.8726462
+        ]
+      },
+      "properties": {
+        "id": 5647577821,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6068788,
+          42.8705675
+        ]
+      },
+      "properties": {
+        "id": 5721754489,
+        "osm_type": "node",
+        "name": "Очак кебаб",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "phone": "+996708030503",
+        "cuisine": "kebab;regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5889531,
+          42.8762539
+        ]
+      },
+      "properties": {
+        "id": 5809735354,
+        "osm_type": "node",
+        "name": "Азия",
+        "opening_hours": "24/7",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3559827,
+          42.7300396
+        ]
+      },
+      "properties": {
+        "id": 5822050013,
+        "osm_type": "node",
+        "name": "Чайхана",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3562754,
+          42.7300381
+        ]
+      },
+      "properties": {
+        "id": 5822050014,
+        "osm_type": "node",
+        "name": "Чайхана",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3837801,
+          42.4931147
+        ]
+      },
+      "properties": {
+        "id": 5835737986,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6104521,
+          42.0200399
+        ]
+      },
+      "properties": {
+        "id": 5843984985,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5771916,
+          42.8736381
+        ]
+      },
+      "properties": {
+        "id": 5853799885,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8034995,
+          40.5629457
+        ]
+      },
+      "properties": {
+        "id": 5864780396,
+        "osm_type": "node",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7951166,
+          40.5289119
+        ]
+      },
+      "properties": {
+        "id": 5887912586,
+        "osm_type": "node",
+        "name": "Оазис",
+        "cuisine": "kebab;pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6202385,
+          42.8357838
+        ]
+      },
+      "properties": {
+        "id": 5891928098,
+        "osm_type": "node",
+        "name": "Антошка",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7939134,
+          40.5329163
+        ]
+      },
+      "properties": {
+        "id": 5906299185,
+        "osm_type": "node",
+        "opening_hours": "Mo-Su 09:30-22:30",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7951066,
+          40.5287591
+        ]
+      },
+      "properties": {
+        "id": 5929185686,
+        "osm_type": "node",
+        "name": "Бургер Плюс",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "cuisine": "burger;kebab;chicken;breakfast;noodle",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6337746,
+          42.8498146
+        ]
+      },
+      "properties": {
+        "id": 5933158369,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5866001,
+          42.8467091
+        ]
+      },
+      "properties": {
+        "id": 6000967458,
+        "osm_type": "node",
+        "name": "Разливной",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5961849,
+          42.8829209
+        ]
+      },
+      "properties": {
+        "id": 6033522616,
+        "osm_type": "node",
+        "name": "Шаурма",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0105688,
+          40.9461568
+        ]
+      },
+      "properties": {
+        "id": 6271954585,
+        "osm_type": "node",
+        "name": "Шаурма-1",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1346873,
+          40.2650792
+        ]
+      },
+      "properties": {
+        "id": 6459325685,
+        "osm_type": "node",
+        "name": "ПАНДА",
+        "opening_hours": "Mo-Sa 08:30-20:00",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.8195635,
+          40.0610059
+        ]
+      },
+      "properties": {
+        "id": 6463973485,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5965121,
+          42.8409289
+        ]
+      },
+      "properties": {
+        "id": 6510666185,
+        "osm_type": "node",
+        "name": "Ledo ice-cream",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5902577,
+          42.8746735
+        ]
+      },
+      "properties": {
+        "id": 6676211953,
+        "osm_type": "node",
+        "name": "Coffee Like",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "operator": "МРТ Групп",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.609702,
+          42.857428
+        ]
+      },
+      "properties": {
+        "id": 6676211954,
+        "osm_type": "node",
+        "name": "Coffee Like",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "operator": "Чайка Н.Ч.",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.614472,
+          42.874919
+        ]
+      },
+      "properties": {
+        "id": 6676211955,
+        "osm_type": "node",
+        "name": "Coffee Like",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "operator": "«МРТ Групп»",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.2807283,
+          42.4715829
+        ]
+      },
+      "properties": {
+        "id": 6688241693,
+        "osm_type": "node",
+        "name": "Ашлянфу",
+        "cuisine": "noodle",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.95671,
+          42.8439819
+        ]
+      },
+      "properties": {
+        "id": 6694774084,
+        "osm_type": "node",
+        "name": "Ислам",
+        "cuisine": "столовая",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.000906,
+          41.4283562
+        ]
+      },
+      "properties": {
+        "id": 6703703790,
+        "osm_type": "node",
+        "cuisine": "burger;kebab;sandwich",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4404852,
+          42.1722155
+        ]
+      },
+      "properties": {
+        "id": 6725545646,
+        "osm_type": "node",
+        "name": "Home restaurant",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.9933423,
+          41.4301084
+        ]
+      },
+      "properties": {
+        "id": 6782172685,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6096027,
+          42.8572389
+        ]
+      },
+      "properties": {
+        "id": 6812226937,
+        "osm_type": "node",
+        "name": "Coffee Like",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "operator": "«МРТ Групп»",
+        "cuisine": "coffee_shop",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6767253,
+          42.861858
+        ]
+      },
+      "properties": {
+        "id": 7113029451,
+        "osm_type": "node",
+        "name": "Бибигон",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5882663,
+          42.8734682
+        ]
+      },
+      "properties": {
+        "id": 7158732953,
+        "osm_type": "node",
+        "name": "Pasha Kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.610675,
+          42.8695185
+        ]
+      },
+      "properties": {
+        "id": 7308497832,
+        "osm_type": "node",
+        "name": "KFC",
+        "brand": "KFC",
+        "opening_hours": "Mo-Su 09:00-04:00",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6152725,
+          42.8369716
+        ]
+      },
+      "properties": {
+        "id": 7414268014,
+        "osm_type": "node",
+        "name": "Гурманика",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7982348,
+          40.5232296
+        ]
+      },
+      "properties": {
+        "id": 7782977485,
+        "osm_type": "node",
+        "name": "Мантыкана",
+        "opening_hours": "Mo-Sa 06:00-18:00",
+        "phone": "+996 3222 76523",
+        "cuisine": "regional;dumplings",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0810396,
+          40.6433104
+        ]
+      },
+      "properties": {
+        "id": 7786228286,
+        "osm_type": "node",
+        "name": "Ырыкыс",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4703288,
+          43.0542959
+        ]
+      },
+      "properties": {
+        "id": 7855635885,
+        "osm_type": "node",
+        "name": "Кафе 312",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6133832,
+          42.8244347
+        ]
+      },
+      "properties": {
+        "id": 7896632685,
+        "osm_type": "node",
+        "name": "KFC",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.536593,
+          42.8640396
+        ]
+      },
+      "properties": {
+        "id": 8082891885,
+        "osm_type": "node",
+        "name": "Ашкана",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2660494,
+          42.1922292
+        ]
+      },
+      "properties": {
+        "id": 8163844676,
+        "osm_type": "node",
+        "name": "Тынычтык",
+        "opening_hours": "24/7",
+        "phone": "+996705028802",
+        "operator": "Тынычтык",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5953876,
+          42.8751358
+        ]
+      },
+      "properties": {
+        "id": 8874923317,
+        "osm_type": "node",
+        "name": "lagman",
+        "cuisine": "asian",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6318171,
+          42.8742577
+        ]
+      },
+      "properties": {
+        "id": 9403480717,
+        "osm_type": "node",
+        "cuisine": "burger;international;kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6317259,
+          42.8742655
+        ]
+      },
+      "properties": {
+        "id": 9403480718,
+        "osm_type": "node",
+        "cuisine": "grill",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9917575,
+          40.927389
+        ]
+      },
+      "properties": {
+        "id": 9622791711,
+        "osm_type": "node",
+        "name": "Ай лов бургер",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6190145,
+          42.8756483
+        ]
+      },
+      "properties": {
+        "id": 9644994917,
+        "osm_type": "node",
+        "name": "KFC",
+        "brand": "KFC",
+        "opening_hours": "PH,Mo-Su 09:00-02:00",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6336753,
+          42.8753165
+        ]
+      },
+      "properties": {
+        "id": 9719948617,
+        "osm_type": "node",
+        "name": "Daamduu",
+        "brand": "Daamduu",
+        "opening_hours": "24/7",
+        "cuisine": "burger;kebab;pancake;fried_food",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6321924,
+          42.8746249
+        ]
+      },
+      "properties": {
+        "id": 9735558418,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6312892,
+          42.8746222
+        ]
+      },
+      "properties": {
+        "id": 9735558419,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9693341,
+          40.9501748
+        ]
+      },
+      "properties": {
+        "id": 9760841860,
+        "osm_type": "node",
+        "name": "Час пик",
+        "phone": "+996557996699",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6220719,
+          42.8755452
+        ]
+      },
+      "properties": {
+        "id": 9761677723,
+        "osm_type": "node",
+        "name": "Papa John's",
+        "brand": "Papa John's",
+        "opening_hours": "Mo-Su 10:00-24:00",
+        "phone": "+996770004967",
+        "website": "https://papajohns.kg",
+        "brand:wikidata": "Q2759586",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6362612,
+          42.8867451
+        ]
+      },
+      "properties": {
+        "id": 9774391452,
+        "osm_type": "node",
+        "name": "KFC",
+        "brand": "KFC",
+        "opening_hours": "Mo-Su 09:00-02:00",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.591921,
+          42.8760855
+        ]
+      },
+      "properties": {
+        "id": 9778959346,
+        "osm_type": "node",
+        "name": "Wok Lagman",
+        "cuisine": "regional;chinese",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.621569,
+          42.8332781
+        ]
+      },
+      "properties": {
+        "id": 9780850581,
+        "osm_type": "node",
+        "name": "Dodo Pizza",
+        "brand": "Dodo Pizza",
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "website": "https://dodopizza.kg",
+        "operator": "Dodo Pizza",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5843417,
+          42.8286469
+        ]
+      },
+      "properties": {
+        "id": 9780850584,
+        "osm_type": "node",
+        "name": "Dodo Pizza",
+        "brand": "Dodo Pizza",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "website": "https://dodopizza.kg",
+        "brand:wikidata": "Q61949318",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6099941,
+          42.8566148
+        ]
+      },
+      "properties": {
+        "id": 9780850585,
+        "osm_type": "node",
+        "name": "Dodo Pizza",
+        "brand": "Dodo Pizza",
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "website": "https://dodopizza.kg",
+        "brand:wikidata": "Q61949318",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6166938,
+          42.8753692
+        ]
+      },
+      "properties": {
+        "id": 9787426180,
+        "osm_type": "node",
+        "cuisine": "pancake",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6240262,
+          42.8714394
+        ]
+      },
+      "properties": {
+        "id": 9830552817,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9737842,
+          40.9254502
+        ]
+      },
+      "properties": {
+        "id": 9878411744,
+        "osm_type": "node",
+        "name": "Сузак №1",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8810395,
+          42.8282861
+        ]
+      },
+      "properties": {
+        "id": 9905403217,
+        "osm_type": "node",
+        "name": "Фастфуд, Шаурма",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8584137,
+          42.528447
+        ]
+      },
+      "properties": {
+        "id": 10055089648,
+        "osm_type": "node",
+        "name": "Тай куурдак",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.928298,
+          42.558679
+        ]
+      },
+      "properties": {
+        "id": 10064008779,
+        "osm_type": "node",
+        "name": "Café - shawarma",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3945453,
+          42.4907589
+        ]
+      },
+      "properties": {
+        "id": 10077543042,
+        "osm_type": "node",
+        "name": "Эки Дос",
+        "opening_hours": "Mo-Su 09:00-00:00",
+        "phone": "+996 502 128 756",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3940211,
+          42.4907488
+        ]
+      },
+      "properties": {
+        "id": 10077543052,
+        "osm_type": "node",
+        "name": "Big Burger",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4009804,
+          42.4933828
+        ]
+      },
+      "properties": {
+        "id": 10090054225,
+        "osm_type": "node",
+        "name": "Даамдуу",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.623615,
+          42.8760781
+        ]
+      },
+      "properties": {
+        "id": 10090110092,
+        "osm_type": "node",
+        "name": "Besh Lavash",
+        "opening_hours": "24/7",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.616763,
+          42.8229016
+        ]
+      },
+      "properties": {
+        "id": 10103282095,
+        "osm_type": "node",
+        "name": "Бургеры",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5902586,
+          42.8747552
+        ]
+      },
+      "properties": {
+        "id": 10108011164,
+        "osm_type": "node",
+        "name": "Lanzhou",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "cuisine": "chinese",
+        "check_date": "2022-11-11",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6223946,
+          42.8427127
+        ]
+      },
+      "properties": {
+        "id": 10113560380,
+        "osm_type": "node",
+        "name": "Адиш-Ата",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5961976,
+          42.8726641
+        ]
+      },
+      "properties": {
+        "id": 10121789731,
+        "osm_type": "node",
+        "name": "Papa John's",
+        "brand": "Papa John's",
+        "brand:wikidata": "Q2759586",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2906458,
+          42.8359843
+        ]
+      },
+      "properties": {
+        "id": 10144705269,
+        "osm_type": "node",
+        "name": "Chef Kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2935617,
+          42.8378255
+        ]
+      },
+      "properties": {
+        "id": 10152137839,
+        "osm_type": "node",
+        "name": "Обжорка",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2932801,
+          42.8377589
+        ]
+      },
+      "properties": {
+        "id": 10152137872,
+        "osm_type": "node",
+        "name": "Бургерная",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6305042,
+          42.8316827
+        ]
+      },
+      "properties": {
+        "id": 10174479182,
+        "osm_type": "node",
+        "name": "Sushi Bat",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6917616,
+          42.9295573
+        ]
+      },
+      "properties": {
+        "id": 10182502490,
+        "osm_type": "node",
+        "name": "KFC Авто",
+        "opening_hours": "00:00-04:00,05:00-24:00",
+        "check_date": "2026-09-01",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6113253,
+          42.8740633
+        ]
+      },
+      "properties": {
+        "id": 10224393327,
+        "osm_type": "node",
+        "name": "Эки Дос",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0567446,
+          42.6403582
+        ]
+      },
+      "properties": {
+        "id": 10239460703,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6148022,
+          42.8745017
+        ]
+      },
+      "properties": {
+        "id": 10703958328,
+        "osm_type": "node",
+        "opening_hours": "08:00-22:00",
+        "cuisine": "regional",
+        "check_date": "2023-03-13",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5887897,
+          42.8675259
+        ]
+      },
+      "properties": {
+        "id": 10728174149,
+        "osm_type": "node",
+        "check_date": "2023-03-11",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5889255,
+          42.8673806
+        ]
+      },
+      "properties": {
+        "id": 10732366716,
+        "osm_type": "node",
+        "name": "Столовая",
+        "check_date": "2026-06-13",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6120393,
+          42.8742173
+        ]
+      },
+      "properties": {
+        "id": 10848258605,
+        "osm_type": "node",
+        "name": "Эки дос",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8575326,
+          42.8911781
+        ]
+      },
+      "properties": {
+        "id": 10855814647,
+        "osm_type": "node",
+        "name": "Каракольский ашлям фу",
+        "cuisine": "kyrgyz",
+        "check_date": "2023-04-29",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6085513,
+          42.8436701
+        ]
+      },
+      "properties": {
+        "id": 10905729024,
+        "osm_type": "node",
+        "name": "Kim's ramen",
+        "cuisine": "korean",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6083767,
+          42.8436404
+        ]
+      },
+      "properties": {
+        "id": 10905729025,
+        "osm_type": "node",
+        "name": "Wok lagman",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6084048,
+          42.8435848
+        ]
+      },
+      "properties": {
+        "id": 10905729026,
+        "osm_type": "node",
+        "name": "Saffran",
+        "cuisine": "burger;pizza;kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6085368,
+          42.8435795
+        ]
+      },
+      "properties": {
+        "id": 10905729027,
+        "osm_type": "node",
+        "name": "Майда Манты",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6084122,
+          42.8436803
+        ]
+      },
+      "properties": {
+        "id": 10905729028,
+        "osm_type": "node",
+        "name": "SushiMe",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6086136,
+          42.8436712
+        ]
+      },
+      "properties": {
+        "id": 10905729030,
+        "osm_type": "node",
+        "name": "Блины",
+        "cuisine": "pancake",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6086049,
+          42.8435668
+        ]
+      },
+      "properties": {
+        "id": 10905729032,
+        "osm_type": "node",
+        "name": "Barista",
+        "cuisine": "coffee_shop;ice_cream",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6020515,
+          42.8707665
+        ]
+      },
+      "properties": {
+        "id": 10942120900,
+        "osm_type": "node",
+        "name": "Столовая",
+        "check_date": "2023-05-31",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8569122,
+          42.9000515
+        ]
+      },
+      "properties": {
+        "id": 10978123987,
+        "osm_type": "node",
+        "check_date": "2023-06-15",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1006714,
+          42.6514045
+        ]
+      },
+      "properties": {
+        "id": 11089437251,
+        "osm_type": "node",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1002118,
+          42.6514582
+        ]
+      },
+      "properties": {
+        "id": 11089437262,
+        "osm_type": "node",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1000015,
+          42.6514781
+        ]
+      },
+      "properties": {
+        "id": 11089437274,
+        "osm_type": "node",
+        "name": "Ням-ням",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0995558,
+          42.6515149
+        ]
+      },
+      "properties": {
+        "id": 11089437294,
+        "osm_type": "node",
+        "name": "Салтанат",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5851135,
+          42.882141
+        ]
+      },
+      "properties": {
+        "id": 11109175943,
+        "osm_type": "node",
+        "name": "Beef burger",
+        "cuisine": "burger",
+        "check_date": "2023-08-12",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5845853,
+          42.8821081
+        ]
+      },
+      "properties": {
+        "id": 11109535593,
+        "osm_type": "node",
+        "name": "Big bite",
+        "check_date": "2023-08-12",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5850273,
+          42.8805111
+        ]
+      },
+      "properties": {
+        "id": 11122123399,
+        "osm_type": "node",
+        "name": "Doner house",
+        "phone": "+996 502 770 977",
+        "check_date": "2023-09-13",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5918781,
+          42.8758618
+        ]
+      },
+      "properties": {
+        "id": 11141095288,
+        "osm_type": "node",
+        "name": "Эки Дос",
+        "check_date": "2023-08-24",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5815434,
+          42.8803017
+        ]
+      },
+      "properties": {
+        "id": 11183415725,
+        "osm_type": "node",
+        "name": "Fast Питер",
+        "check_date": "2023-09-11",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.585524,
+          42.8798669
+        ]
+      },
+      "properties": {
+        "id": 11215178711,
+        "osm_type": "node",
+        "name": "Нектар",
+        "check_date": "2023-09-13",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6229976,
+          42.8775071
+        ]
+      },
+      "properties": {
+        "id": 11251858529,
+        "osm_type": "node",
+        "name": "Хурма",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.629612,
+          42.8872525
+        ]
+      },
+      "properties": {
+        "id": 11391368127,
+        "osm_type": "node",
+        "name": "Современная столовая",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.621749,
+          42.8352461
+        ]
+      },
+      "properties": {
+        "id": 11492259283,
+        "osm_type": "node",
+        "name": "Малик",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6086938,
+          42.8486347
+        ]
+      },
+      "properties": {
+        "id": 11510593406,
+        "osm_type": "node",
+        "name": "ЧебурекМи",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8484883,
+          42.8907397
+        ]
+      },
+      "properties": {
+        "id": 11601387812,
+        "osm_type": "node",
+        "name": "Лимон",
+        "cuisine": "international",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6228013,
+          42.835788
+        ]
+      },
+      "properties": {
+        "id": 11615987200,
+        "osm_type": "node",
+        "name": "S/\\.A,M,S,A land",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6034169,
+          42.8380456
+        ]
+      },
+      "properties": {
+        "id": 11830483618,
+        "osm_type": "node",
+        "name": "Ложка",
+        "opening_hours": "24/7",
+        "check_date": "2024-04-19",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5870141,
+          42.8466518
+        ]
+      },
+      "properties": {
+        "id": 11830780009,
+        "osm_type": "node",
+        "check_date": "2024-04-19",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5868773,
+          42.8466501
+        ]
+      },
+      "properties": {
+        "id": 11830780010,
+        "osm_type": "node",
+        "name": "Сухомлинка",
+        "check_date": "2024-04-19",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5432761,
+          42.8481599
+        ]
+      },
+      "properties": {
+        "id": 11893144069,
+        "osm_type": "node",
+        "name": "Оомат Бургер",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5429254,
+          42.8487517
+        ]
+      },
+      "properties": {
+        "id": 11893151869,
+        "osm_type": "node",
+        "name": "Папин Бургер",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5430119,
+          42.8487503
+        ]
+      },
+      "properties": {
+        "id": 11893153069,
+        "osm_type": "node",
+        "name": "Гриль",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5439633,
+          42.8491137
+        ]
+      },
+      "properties": {
+        "id": 11896789169,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6223056,
+          42.8337369
+        ]
+      },
+      "properties": {
+        "id": 12017440952,
+        "osm_type": "node",
+        "name": "Wok lagman",
+        "check_date": "2024-06-28",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6216647,
+          42.8309609
+        ]
+      },
+      "properties": {
+        "id": 12020097608,
+        "osm_type": "node",
+        "name": "Wasabi",
+        "cuisine": "sushi",
+        "check_date": "2024-06-29",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5854443,
+          42.8555187
+        ]
+      },
+      "properties": {
+        "id": 12032612956,
+        "osm_type": "node",
+        "name": "Stars burger",
+        "cuisine": "burger",
+        "check_date": "2024-07-04",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5853135,
+          42.8555367
+        ]
+      },
+      "properties": {
+        "id": 12032970753,
+        "osm_type": "node",
+        "name": "My sushi",
+        "cuisine": "sushi",
+        "check_date": "2024-07-04",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6036918,
+          42.8833801
+        ]
+      },
+      "properties": {
+        "id": 12049684806,
+        "osm_type": "node",
+        "name": "Графин",
+        "check_date": "2024-07-05",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4470962,
+          40.3107713
+        ]
+      },
+      "properties": {
+        "id": 12108019555,
+        "osm_type": "node",
+        "name": "В гостях у Даян",
+        "opening_hours": "24/7",
+        "phone": "+996221621905",
+        "cuisine": "kebab;burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4345362,
+          40.3130553
+        ]
+      },
+      "properties": {
+        "id": 12108019564,
+        "osm_type": "node",
+        "name": "Гулчо Бургер",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.445333,
+          40.3090556
+        ]
+      },
+      "properties": {
+        "id": 12108019568,
+        "osm_type": "node",
+        "name": "Терек Суу",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4357549,
+          40.3124268
+        ]
+      },
+      "properties": {
+        "id": 12108019572,
+        "osm_type": "node",
+        "name": "Аппетит Бургер",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4459825,
+          40.310967
+        ]
+      },
+      "properties": {
+        "id": 12108019573,
+        "osm_type": "node",
+        "phone": "+996 504 995 888",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.437229,
+          40.3116059
+        ]
+      },
+      "properties": {
+        "id": 12108019584,
+        "osm_type": "node",
+        "name": "Food House",
+        "cuisine": "pizza;burger;chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4344692,
+          40.3131309
+        ]
+      },
+      "properties": {
+        "id": 12108019585,
+        "osm_type": "node",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4369823,
+          40.3117406
+        ]
+      },
+      "properties": {
+        "id": 12108019595,
+        "osm_type": "node",
+        "name": "Артык",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4484889,
+          40.3108332
+        ]
+      },
+      "properties": {
+        "id": 12108019600,
+        "osm_type": "node",
+        "name": "Пизза Суши",
+        "phone": "+996 707 959 395",
+        "cuisine": "pizza;sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7969647,
+          40.5302253
+        ]
+      },
+      "properties": {
+        "id": 12112854298,
+        "osm_type": "node",
+        "name": "Mack Burger",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7951118,
+          40.5287236
+        ]
+      },
+      "properties": {
+        "id": 12112862504,
+        "osm_type": "node",
+        "name": "Dine",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7960356,
+          40.5290126
+        ]
+      },
+      "properties": {
+        "id": 12112862524,
+        "osm_type": "node",
+        "name": "Устукан",
+        "cuisine": "burger;kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7967502,
+          40.530539
+        ]
+      },
+      "properties": {
+        "id": 12112862527,
+        "osm_type": "node",
+        "name": "Pizzburg",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.795173,
+          40.5284177
+        ]
+      },
+      "properties": {
+        "id": 12112862528,
+        "osm_type": "node",
+        "name": "Rma Burger",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7951319,
+          40.5286281
+        ]
+      },
+      "properties": {
+        "id": 12112862533,
+        "osm_type": "node",
+        "name": "Гренки",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8050268,
+          40.5142045
+        ]
+      },
+      "properties": {
+        "id": 12114293389,
+        "osm_type": "node",
+        "name": "Масаго",
+        "cuisine": "sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.805614,
+          40.5147644
+        ]
+      },
+      "properties": {
+        "id": 12114299703,
+        "osm_type": "node",
+        "name": "Шашлычная Баку",
+        "cuisine": "salad;pizza;noodle;kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7968581,
+          40.5247992
+        ]
+      },
+      "properties": {
+        "id": 12115524587,
+        "osm_type": "node",
+        "name": "Устукан",
+        "opening_hours": "Mo-Su 09:00-06:00",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7960785,
+          40.5262804
+        ]
+      },
+      "properties": {
+        "id": 12115526709,
+        "osm_type": "node",
+        "name": "Friends",
+        "opening_hours": "24/7",
+        "phone": "+996997018018",
+        "cuisine": "burger;pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7983515,
+          40.5230326
+        ]
+      },
+      "properties": {
+        "id": 12116618526,
+        "osm_type": "node",
+        "name": "Акрам",
+        "cuisine": "dumplings;regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.797617,
+          40.5240196
+        ]
+      },
+      "properties": {
+        "id": 12116618537,
+        "osm_type": "node",
+        "name": "Ибрагим Ата",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7922795,
+          40.5187135
+        ]
+      },
+      "properties": {
+        "id": 12116618540,
+        "osm_type": "node",
+        "name": "Суши Маки",
+        "cuisine": "sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7920243,
+          40.5227009
+        ]
+      },
+      "properties": {
+        "id": 12116618543,
+        "osm_type": "node",
+        "name": "Сакура",
+        "phone": "+996 551 350 202",
+        "cuisine": "kebab;sushi;pizza;burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7942388,
+          40.5132969
+        ]
+      },
+      "properties": {
+        "id": 12116618559,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7941598,
+          40.5128759
+        ]
+      },
+      "properties": {
+        "id": 12116618567,
+        "osm_type": "node",
+        "name": "Лаваш Сити",
+        "opening_hours": "24/7",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7979739,
+          40.525421
+        ]
+      },
+      "properties": {
+        "id": 12117204378,
+        "osm_type": "node",
+        "name": "Токоч",
+        "cuisine": "burger;kebab;chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8006551,
+          40.5232795
+        ]
+      },
+      "properties": {
+        "id": 12117204380,
+        "osm_type": "node",
+        "name": "Малик",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7995815,
+          40.5180514
+        ]
+      },
+      "properties": {
+        "id": 12118645373,
+        "osm_type": "node",
+        "name": "Суши бар",
+        "cuisine": "sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7980829,
+          40.5197918
+        ]
+      },
+      "properties": {
+        "id": 12120032147,
+        "osm_type": "node",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5773949,
+          42.8767381
+        ]
+      },
+      "properties": {
+        "id": 12134494756,
+        "osm_type": "node",
+        "name": "KFC",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8084504,
+          40.5353173
+        ]
+      },
+      "properties": {
+        "id": 12134558176,
+        "osm_type": "node",
+        "name": "American Pizza",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8069163,
+          40.5344948
+        ]
+      },
+      "properties": {
+        "id": 12134558179,
+        "osm_type": "node",
+        "name": "Суши тайм",
+        "cuisine": "sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8083266,
+          40.5353063
+        ]
+      },
+      "properties": {
+        "id": 12134558186,
+        "osm_type": "node",
+        "name": "Doner House",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6247326,
+          42.8419853
+        ]
+      },
+      "properties": {
+        "id": 12135693033,
+        "osm_type": "node",
+        "name": "Ширин самса",
+        "cuisine": "regional;dumplings",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6215536,
+          42.834385
+        ]
+      },
+      "properties": {
+        "id": 12136451752,
+        "osm_type": "node",
+        "name": "Nathan's Famous",
+        "cuisine": "burger;hot_dog",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6215526,
+          42.8342872
+        ]
+      },
+      "properties": {
+        "id": 12137243676,
+        "osm_type": "node",
+        "name": "Social Pizza",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6217399,
+          42.8351056
+        ]
+      },
+      "properties": {
+        "id": 12137243682,
+        "osm_type": "node",
+        "name": "Али бургер",
+        "opening_hours": "24/7",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.624037,
+          42.8356821
+        ]
+      },
+      "properties": {
+        "id": 12137243683,
+        "osm_type": "node",
+        "name": "Мамины рецепты",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6217553,
+          42.8354557
+        ]
+      },
+      "properties": {
+        "id": 12139147867,
+        "osm_type": "node",
+        "name": "Fen",
+        "cuisine": "kebab;burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6215177,
+          42.832381
+        ]
+      },
+      "properties": {
+        "id": 12144525125,
+        "osm_type": "node",
+        "name": "Тантуни",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6215518,
+          42.8314475
+        ]
+      },
+      "properties": {
+        "id": 12146262223,
+        "osm_type": "node",
+        "name": "Эки Дос",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6215603,
+          42.8313459
+        ]
+      },
+      "properties": {
+        "id": 12146262229,
+        "osm_type": "node",
+        "name": "Fresh Box Sushi",
+        "opening_hours": "24/7",
+        "cuisine": "sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6184354,
+          42.8361816
+        ]
+      },
+      "properties": {
+        "id": 12146262242,
+        "osm_type": "node",
+        "name": "Арман",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6217304,
+          42.830552
+        ]
+      },
+      "properties": {
+        "id": 12146262267,
+        "osm_type": "node",
+        "name": "Mermer",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6214447,
+          42.8310396
+        ]
+      },
+      "properties": {
+        "id": 12146262271,
+        "osm_type": "node",
+        "name": "Sushi Bar",
+        "cuisine": "sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4688932,
+          43.0538589
+        ]
+      },
+      "properties": {
+        "id": 12149154664,
+        "osm_type": "node",
+        "name": "135",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5431026,
+          42.8485237
+        ]
+      },
+      "properties": {
+        "id": 12202843701,
+        "osm_type": "node",
+        "name": "Бодрый гриль",
+        "opening_hours": "Mo-Su 09:00-19:00",
+        "phone": "0501102060",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5431053,
+          42.8485519
+        ]
+      },
+      "properties": {
+        "id": 12202844701,
+        "osm_type": "node",
+        "name": "Халал FS",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5924089,
+          42.8485673
+        ]
+      },
+      "properties": {
+        "id": 12530594601,
+        "osm_type": "node",
+        "name": "Хачапурная №1",
+        "opening_hours": "24/7",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.2493632,
+          42.5146771
+        ]
+      },
+      "properties": {
+        "id": 12552983906,
+        "osm_type": "node",
+        "name": "Хошан",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.7208783,
+          40.1308261
+        ]
+      },
+      "properties": {
+        "id": 12573756186,
+        "osm_type": "node",
+        "name": "Центр Шаурма",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7283396,
+          40.3448265
+        ]
+      },
+      "properties": {
+        "id": 12575985755,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6115117,
+          42.885553
+        ]
+      },
+      "properties": {
+        "id": 12648043902,
+        "osm_type": "node",
+        "name": "MCдонер",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.1821131,
+          42.4603458
+        ]
+      },
+      "properties": {
+        "id": 12749935221,
+        "osm_type": "node",
+        "name": "Казан шаверма",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8310853,
+          41.98123
+        ]
+      },
+      "properties": {
+        "id": 12963699551,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0979248,
+          41.0368812
+        ]
+      },
+      "properties": {
+        "id": 13062629394,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0035229,
+          40.9503649
+        ]
+      },
+      "properties": {
+        "id": 13062658195,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0964678,
+          41.0359715
+        ]
+      },
+      "properties": {
+        "id": 13062718716,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.1830055,
+          41.0842412
+        ]
+      },
+      "properties": {
+        "id": 13062822635,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.582913,
+          42.8766382
+        ]
+      },
+      "properties": {
+        "id": 13116485201,
+        "osm_type": "node",
+        "name": "Buffet",
+        "opening_hours": "Mo-Su 00:00-12:00",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.996932,
+          42.1137739
+        ]
+      },
+      "properties": {
+        "id": 13116486003,
+        "osm_type": "node",
+        "name": "Казан шаверма",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.989851,
+          42.1148655
+        ]
+      },
+      "properties": {
+        "id": 13116486404,
+        "osm_type": "node",
+        "name": "Meat Room",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1660322,
+          42.1649697
+        ]
+      },
+      "properties": {
+        "id": 13116841201,
+        "osm_type": "node",
+        "name": "Боз Салкын",
+        "opening_hours": "08:30-23:00",
+        "cuisine": "grill",
+        "check_date": "2026-09-09",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.7297767,
+          42.8698603
+        ]
+      },
+      "properties": {
+        "id": 13140415306,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9827487,
+          42.1153728
+        ]
+      },
+      "properties": {
+        "id": 13140415503,
+        "osm_type": "node",
+        "name": "Шашлык",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6916861,
+          42.8804893
+        ]
+      },
+      "properties": {
+        "id": 13140416506,
+        "osm_type": "node",
+        "name": "Alibaba Food",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.691709,
+          42.88056
+        ]
+      },
+      "properties": {
+        "id": 13140416902,
+        "osm_type": "node",
+        "name": "ТанДыР",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.7049478,
+          42.8794567
+        ]
+      },
+      "properties": {
+        "id": 13140417008,
+        "osm_type": "node",
+        "name": "Djigit Food",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6171816,
+          40.2646317
+        ]
+      },
+      "properties": {
+        "id": 13180293771,
+        "osm_type": "node",
+        "name": "Бургер цент",
+        "cuisine": "sushi;pizza;burger;shawarma",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.623742,
+          40.2649218
+        ]
+      },
+      "properties": {
+        "id": 13180318148,
+        "osm_type": "node",
+        "name": "Султан-Сарай",
+        "cuisine": "regional;kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6208461,
+          40.2640373
+        ]
+      },
+      "properties": {
+        "id": 13180318835,
+        "osm_type": "node",
+        "name": "СУШИ МАК",
+        "cuisine": "burger;sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6204576,
+          40.2632807
+        ]
+      },
+      "properties": {
+        "id": 13180330784,
+        "osm_type": "node",
+        "name": "ЖОРОЛОР Чайханасы",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6260975,
+          40.2635556
+        ]
+      },
+      "properties": {
+        "id": 13183732273,
+        "osm_type": "node",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6240813,
+          40.2567174
+        ]
+      },
+      "properties": {
+        "id": 13183770455,
+        "osm_type": "node",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6232482,
+          40.264224
+        ]
+      },
+      "properties": {
+        "id": 13183786145,
+        "osm_type": "node",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.61808,
+          40.2679265
+        ]
+      },
+      "properties": {
+        "id": 13183789805,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6093877,
+          40.2644758
+        ]
+      },
+      "properties": {
+        "id": 13183860949,
+        "osm_type": "node",
+        "cuisine": "regional;pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6471312,
+          40.2534687
+        ]
+      },
+      "properties": {
+        "id": 13190911902,
+        "osm_type": "node",
+        "name": "Ашым Ата чай кана",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5928476,
+          42.8766429
+        ]
+      },
+      "properties": {
+        "id": 13201607715,
+        "osm_type": "node",
+        "name": "Ташкент самсы",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6120711,
+          42.9168229
+        ]
+      },
+      "properties": {
+        "id": 13201640712,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6222369,
+          42.9361834
+        ]
+      },
+      "properties": {
+        "id": 13201640902,
+        "osm_type": "node",
+        "name": "Жума",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1855132,
+          42.6559372
+        ]
+      },
+      "properties": {
+        "id": 13251206502,
+        "osm_type": "node",
+        "name": "Pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.147724,
+          42.8750541
+        ]
+      },
+      "properties": {
+        "id": 13257391401,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.940475,
+          41.87681
+        ]
+      },
+      "properties": {
+        "id": 13923267204,
+        "osm_type": "node",
+        "name": "Уют",
+        "opening_hours": "Mo-Sa 10:00-23:00",
+        "check_date": "2026-06-09",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.7182612,
+          40.128547
+        ]
+      },
+      "properties": {
+        "id": 14023759201,
+        "osm_type": "node",
+        "name": "Фуд Микс",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6106734,
+          42.8755144
+        ]
+      },
+      "properties": {
+        "id": 14028385601,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3947072,
+          42.4906386
+        ]
+      },
+      "properties": {
+        "id": 14062898601,
+        "osm_type": "node",
+        "name": "БЛПНЪI (selling crepes)",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8019446,
+          40.5176906
+        ]
+      },
+      "properties": {
+        "id": 14074810201,
+        "osm_type": "node",
+        "name": "Zhyldyz",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.58562,
+          42.8453466
+        ]
+      },
+      "properties": {
+        "id": 14076282901,
+        "osm_type": "node",
+        "name": "Столовая",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3998062,
+          42.4812619
+        ]
+      },
+      "properties": {
+        "id": 14094055001,
+        "osm_type": "node",
+        "name": "Жибек Shelk burger",
+        "check_date": "2026-09-04",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.3990708,
+          42.4812159
+        ]
+      },
+      "properties": {
+        "id": 14094122901,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.7241745,
+          42.2559386
+        ]
+      },
+      "properties": {
+        "id": 14098858801,
+        "osm_type": "node",
+        "name": "Ray.kg",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.2877007,
+          42.8570997
+        ]
+      },
+      "properties": {
+        "id": 14138753635,
+        "osm_type": "node",
+        "name": "KFC Авто",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "check_date": "2026-09-01",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6902176,
+          42.8777285
+        ]
+      },
+      "properties": {
+        "id": 14162799788,
+        "osm_type": "node",
+        "name": "KFC",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6073624,
+          42.837945
+        ]
+      },
+      "properties": {
+        "id": 14191306784,
+        "osm_type": "node",
+        "name": "KFC",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6144208,
+          42.8689796
+        ]
+      },
+      "properties": {
+        "id": 14200611730,
+        "osm_type": "node",
+        "name": "Begemot",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6145238,
+          42.8689357
+        ]
+      },
+      "properties": {
+        "id": 14200611731,
+        "osm_type": "node",
+        "name": "Oasis",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6207963,
+          42.8659312
+        ]
+      },
+      "properties": {
+        "id": 14201444214,
+        "osm_type": "node",
+        "name": "Тез Татым",
+        "phone": "+996 772 487 479",
+        "cuisine": "kyrgyz",
+        "check_date": "2026-09-20",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6908434,
+          42.8791985
+        ]
+      },
+      "properties": {
+        "id": 14208084628,
+        "osm_type": "node",
+        "name": "Oasis",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5920181,
+          42.8761312
+        ]
+      },
+      "properties": {
+        "id": 14222074206,
+        "osm_type": "node",
+        "name": "KFC",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6381595,
+          42.8886357
+        ]
+      },
+      "properties": {
+        "id": 14235873066,
+        "osm_type": "node",
+        "name": "Wok Lagman",
+        "cuisine": "chinese",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5858307,
+          42.8493937
+        ]
+      },
+      "properties": {
+        "id": 14247272494,
+        "osm_type": "node",
+        "name": "Эки Дос",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6092072,
+          42.8514719
+        ]
+      },
+      "properties": {
+        "id": 14247393265,
+        "osm_type": "node",
+        "name": "Майда Манты",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6907072,
+          42.8766684
+        ]
+      },
+      "properties": {
+        "id": 14250904994,
+        "osm_type": "node",
+        "name": "ILIS",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6907072,
+          42.8769626
+        ]
+      },
+      "properties": {
+        "id": 14250904995,
+        "osm_type": "node",
+        "name": "Wok Lagman",
+        "cuisine": "chinese",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6188478,
+          42.8746261
+        ]
+      },
+      "properties": {
+        "id": 14251069873,
+        "osm_type": "node",
+        "name": "Fresh Box Sushi",
+        "cuisine": "sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6185322,
+          42.8691652
+        ]
+      },
+      "properties": {
+        "id": 14272220125,
+        "osm_type": "node",
+        "name": "M Food / Muslim Food",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6909675,
+          42.8791672
+        ]
+      },
+      "properties": {
+        "id": 14275882634,
+        "osm_type": "node",
+        "name": "Begemot",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6142764,
+          42.8767131
+        ]
+      },
+      "properties": {
+        "id": 14275964071,
+        "osm_type": "node",
+        "name": "Domino",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6774383,
+          42.8775646
+        ]
+      },
+      "properties": {
+        "id": 14277858596,
+        "osm_type": "node",
+        "name": "Wok Lagman",
+        "cuisine": "chinese",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8412611,
+          42.8254627
+        ]
+      },
+      "properties": {
+        "id": 14283407487,
+        "osm_type": "node",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6432293,
+          42.8418
+        ]
+      },
+      "properties": {
+        "id": 14318124182,
+        "osm_type": "node",
+        "name": "Суши жейм",
+        "cuisine": "sushi",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5995447,
+          42.8573743
+        ]
+      },
+      "properties": {
+        "id": 14323223953,
+        "osm_type": "node",
+        "name": "Beef Burgers",
+        "cuisine": "burger",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8494099,
+          42.8911567
+        ]
+      },
+      "properties": {
+        "id": 132503824,
+        "osm_type": "way",
+        "name": "KFC",
+        "brand": "KFC",
+        "opening_hours": "09:00-02:00",
+        "phone": "+996 550‒07‒88‒88",
+        "website": "https://kfc.kg",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5846877,
+          42.8785881
+        ]
+      },
+      "properties": {
+        "id": 160556712,
+        "osm_type": "way",
+        "name": "Казан",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5684019,
+          42.9058248
+        ]
+      },
+      "properties": {
+        "id": 162538423,
+        "osm_type": "way",
+        "name": "Тандырные Самсы",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3034096,
+          42.8381203
+        ]
+      },
+      "properties": {
+        "id": 163525466,
+        "osm_type": "way",
+        "name": "Березки",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.621595,
+          42.8346625
+        ]
+      },
+      "properties": {
+        "id": 167707466,
+        "osm_type": "way",
+        "name": "KFC",
+        "brand": "KFC",
+        "opening_hours": "Mo-Su 09:00-02:00",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6191453,
+          42.8357535
+        ]
+      },
+      "properties": {
+        "id": 167709511,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6364497,
+          42.8747759
+        ]
+      },
+      "properties": {
+        "id": 175888586,
+        "osm_type": "way",
+        "name": "Boso Lagman",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6912262,
+          42.8796924
+        ]
+      },
+      "properties": {
+        "id": 181219901,
+        "osm_type": "way",
+        "name": "Муслим",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6610091,
+          42.8875362
+        ]
+      },
+      "properties": {
+        "id": 181222376,
+        "osm_type": "way",
+        "name": "Дияр",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.677173,
+          42.8614472
+        ]
+      },
+      "properties": {
+        "id": 206623740,
+        "osm_type": "way",
+        "name": "Вкусняшка",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.7132002,
+          40.0886922
+        ]
+      },
+      "properties": {
+        "id": 213993474,
+        "osm_type": "way",
+        "name": "Ашим Ата",
+        "opening_hours": "Sa-Su 00:00-24:00",
+        "cuisine": "asian",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0251243,
+          42.6035122
+        ]
+      },
+      "properties": {
+        "id": 237175552,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0239907,
+          42.6028614
+        ]
+      },
+      "properties": {
+        "id": 237175559,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.0774756,
+          41.2608588
+        ]
+      },
+      "properties": {
+        "id": 264889783,
+        "osm_type": "way",
+        "name": "Столовая",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0824609,
+          42.6316681
+        ]
+      },
+      "properties": {
+        "id": 314609706,
+        "osm_type": "way",
+        "name": "Столовая",
+        "opening_hours": "08:30-12:30,15:30-20:00",
+        "cuisine": "regional",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6228509,
+          42.8562807
+        ]
+      },
+      "properties": {
+        "id": 328518205,
+        "osm_type": "way",
+        "name": "Плов сити",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6089162,
+          42.8373985
+        ]
+      },
+      "properties": {
+        "id": 336945510,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6678066,
+          41.6312824
+        ]
+      },
+      "properties": {
+        "id": 386916432,
+        "osm_type": "way",
+        "name": "Столовка",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "cuisine": "asian",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7925689,
+          40.5258561
+        ]
+      },
+      "properties": {
+        "id": 623149075,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.7128011,
+          40.0863416
+        ]
+      },
+      "properties": {
+        "id": 647749520,
+        "osm_type": "way",
+        "name": "Амантур",
+        "opening_hours": "Sa-Su 00:00-24:00",
+        "cuisine": "asian",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6233145,
+          42.8271939
+        ]
+      },
+      "properties": {
+        "id": 671951180,
+        "osm_type": "way",
+        "name": "Papa John's",
+        "brand": "Papa John's",
+        "brand:wikidata": "Q2759586",
+        "cuisine": "pizza",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.7924923,
+          40.5256407
+        ]
+      },
+      "properties": {
+        "id": 674235080,
+        "osm_type": "way",
+        "name": "Палван ата",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9652598,
+          40.9346024
+        ]
+      },
+      "properties": {
+        "id": 698686217,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6320532,
+          42.8144841
+        ]
+      },
+      "properties": {
+        "id": 753885837,
+        "osm_type": "way",
+        "name": "Oasis",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6219791,
+          42.8296748
+        ]
+      },
+      "properties": {
+        "id": 754072306,
+        "osm_type": "way",
+        "name": "Анс бургерс",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.60529,
+          42.8379223
+        ]
+      },
+      "properties": {
+        "id": 754264690,
+        "osm_type": "way",
+        "name": "Береке food",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6002855,
+          42.841328
+        ]
+      },
+      "properties": {
+        "id": 754264711,
+        "osm_type": "way",
+        "name": "Сытный куш",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6018765,
+          42.8429264
+        ]
+      },
+      "properties": {
+        "id": 754264716,
+        "osm_type": "way",
+        "name": "Бибигон",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6025646,
+          42.8422704
+        ]
+      },
+      "properties": {
+        "id": 754264723,
+        "osm_type": "way",
+        "name": "BuBo",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6077832,
+          42.8358551
+        ]
+      },
+      "properties": {
+        "id": 754533498,
+        "osm_type": "way",
+        "name": "Киоск по продаже фастфудной продукции",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6104104,
+          42.8524405
+        ]
+      },
+      "properties": {
+        "id": 755154606,
+        "osm_type": "way",
+        "name": "Шаурма на мангале",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8640286,
+          42.8908335
+        ]
+      },
+      "properties": {
+        "id": 919749778,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8640797,
+          42.8907144
+        ]
+      },
+      "properties": {
+        "id": 919749784,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0539609,
+          41.0189522
+        ]
+      },
+      "properties": {
+        "id": 954481492,
+        "osm_type": "way",
+        "name": "17",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0023068,
+          40.9274524
+        ]
+      },
+      "properties": {
+        "id": 995863691,
+        "osm_type": "way",
+        "name": "Бек бургер",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9684354,
+          40.9377199
+        ]
+      },
+      "properties": {
+        "id": 997067670,
+        "osm_type": "way",
+        "name": "Колобок",
+        "phone": "+996557996699",
+        "operator": "БИПИ курьер",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.6682213,
+          41.6309849
+        ]
+      },
+      "properties": {
+        "id": 1016929834,
+        "osm_type": "way",
+        "name": "Шаурмен",
+        "opening_hours": "Mo-Sa 07:00-20:00",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9679471,
+          40.9374445
+        ]
+      },
+      "properties": {
+        "id": 1024255175,
+        "osm_type": "way",
+        "name": "Латесто",
+        "phone": "+996557996699",
+        "operator": "БИПИ курьер",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9917621,
+          40.9273462
+        ]
+      },
+      "properties": {
+        "id": 1024543151,
+        "osm_type": "way",
+        "name": "Ай лов бургер",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.002852,
+          40.9252519
+        ]
+      },
+      "properties": {
+        "id": 1024588576,
+        "osm_type": "way",
+        "name": "Панда",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9192309,
+          40.9029683
+        ]
+      },
+      "properties": {
+        "id": 1026050400,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9737742,
+          40.9254246
+        ]
+      },
+      "properties": {
+        "id": 1030716903,
+        "osm_type": "way",
+        "name": "Сузак 1",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9920944,
+          40.9392632
+        ]
+      },
+      "properties": {
+        "id": 1038751796,
+        "osm_type": "way",
+        "name": "ДОНС ЧИККЕН",
+        "cuisine": "burger;coffee_shop;chicken;sandwich;ice_cream",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9641446,
+          40.9370628
+        ]
+      },
+      "properties": {
+        "id": 1039811071,
+        "osm_type": "way",
+        "name": "БИПИ ПИЦА",
+        "phone": "+996557996699",
+        "operator": "БИПИ курьер",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9718378,
+          40.9510778
+        ]
+      },
+      "properties": {
+        "id": 1042107198,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9233632,
+          40.9031084
+        ]
+      },
+      "properties": {
+        "id": 1066025975,
+        "osm_type": "way",
+        "name": "Барбекю",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9585669,
+          40.9333741
+        ]
+      },
+      "properties": {
+        "id": 1066877160,
+        "osm_type": "way",
+        "name": "Сакура",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9687038,
+          40.9376163
+        ]
+      },
+      "properties": {
+        "id": 1073015409,
+        "osm_type": "way",
+        "name": "Айти самса",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0074711,
+          40.9280315
+        ]
+      },
+      "properties": {
+        "id": 1078985162,
+        "osm_type": "way",
+        "name": "САФАРИ",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0814076,
+          42.6478765
+        ]
+      },
+      "properties": {
+        "id": 1119514969,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.2352802,
+          42.6505414
+        ]
+      },
+      "properties": {
+        "id": 1193302174,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.2354653,
+          42.6504334
+        ]
+      },
+      "properties": {
+        "id": 1193302175,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1036545,
+          42.6419278
+        ]
+      },
+      "properties": {
+        "id": 1194736642,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.592068,
+          42.9252355
+        ]
+      },
+      "properties": {
+        "id": 1415183716,
+        "osm_type": "way",
+        "name": "Lev",
+        "cuisine": "shawarma",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5921473,
+          42.9252891
+        ]
+      },
+      "properties": {
+        "id": 1415183717,
+        "osm_type": "way",
+        "name": "Мой кофе",
+        "cuisine": "pancake;crepe",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.5506548,
+          42.9433212
+        ]
+      },
+      "properties": {
+        "id": 1425517457,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8504255,
+          40.5635548
+        ]
+      },
+      "properties": {
+        "id": 1428511313,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1807257,
+          41.1964983
+        ]
+      },
+      "properties": {
+        "id": 1501404345,
+        "osm_type": "way",
+        "name": "NUR КАФЕ",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1798885,
+          41.1965052
+        ]
+      },
+      "properties": {
+        "id": 1501404353,
+        "osm_type": "way",
+        "name": "Двойняшки",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6105761,
+          42.8576605
+        ]
+      },
+      "properties": {
+        "id": 1552698264,
+        "osm_type": "way",
+        "name": "Киоск блинов",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1723926,
+          41.1960127
+        ]
+      },
+      "properties": {
+        "id": 1557722693,
+        "osm_type": "way",
+        "name": "Салкын-төр",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6268037,
+          42.8734287
+        ]
+      },
+      "properties": {
+        "id": 1558187343,
+        "osm_type": "way",
+        "name": "Doner na Chue",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1798656,
+          41.1962221
+        ]
+      },
+      "properties": {
+        "id": 1558373243,
+        "osm_type": "way",
+        "name": "Адеми",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1800737,
+          41.1961874
+        ]
+      },
+      "properties": {
+        "id": 1558373244,
+        "osm_type": "way",
+        "name": "Адеми",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1881118,
+          41.182907
+        ]
+      },
+      "properties": {
+        "id": 1559175617,
+        "osm_type": "way",
+        "name": "Жумабек-Ата",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.188037,
+          41.1703147
+        ]
+      },
+      "properties": {
+        "id": 1561087255,
+        "osm_type": "way",
+        "name": "Ырыскы",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1825019,
+          41.196186
+        ]
+      },
+      "properties": {
+        "id": 1561788151,
+        "osm_type": "way",
+        "name": "НУРБЕК",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1769455,
+          41.1965378
+        ]
+      },
+      "properties": {
+        "id": 1561788158,
+        "osm_type": "way",
+        "name": "УМАР",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6340389,
+          42.8564614
+        ]
+      },
+      "properties": {
+        "id": 1561940167,
+        "osm_type": "way",
+        "name": "Lanzhou",
+        "cuisine": "chinese",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6343836,
+          42.8564612
+        ]
+      },
+      "properties": {
+        "id": 1561940169,
+        "osm_type": "way",
+        "name": "Wok Lagman",
+        "cuisine": "chinese",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6333287,
+          42.8565093
+        ]
+      },
+      "properties": {
+        "id": 1561940170,
+        "osm_type": "way",
+        "name": "KFC",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6384297,
+          42.874807
+        ]
+      },
+      "properties": {
+        "id": 1563639249,
+        "osm_type": "way",
+        "name": "Китай Чинхай кесмеси",
+        "cuisine": "chinese",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.656386,
+          42.8559396
+        ]
+      },
+      "properties": {
+        "id": 1563868534,
+        "osm_type": "way",
+        "name": "Chef",
+        "cuisine": "kebab",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.102032,
+          42.6495213
+        ]
+      },
+      "properties": {
+        "id": 1566548075,
+        "osm_type": "way",
+        "name": "Шашлычная Иссык-Куль №1",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1787465,
+          41.1965326
+        ]
+      },
+      "properties": {
+        "id": 1567982687,
+        "osm_type": "way",
+        "name": "ШИРИН",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1887535,
+          41.1822923
+        ]
+      },
+      "properties": {
+        "id": 1569624122,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.4713637,
+          41.0317893
+        ]
+      },
+      "properties": {
+        "id": 1570456985,
+        "osm_type": "way",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.1776997,
+          41.1956384
+        ]
+      },
+      "properties": {
+        "id": 1575292032,
+        "osm_type": "way",
+        "name": "Ассорти",
+        "chain": "unknown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.4712544,
+          41.0352678
+        ]
+      },
+      "properties": {
+        "id": 1577519318,
+        "osm_type": "way",
+        "name": "Кел Дос",
+        "chain": "unknown"
+      }
+    }
+  ]
+}
