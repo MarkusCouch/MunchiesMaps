@@ -228,14 +228,19 @@ jobs:
         run: |
           set -euo pipefail
           git add resources/geojson
-          if git diff --cached --quiet; then
+          # Only the GeoJSON files this job changed: a full copy would let this country's
+          # unchanged (old) files overwrite other countries' fresh ones when artifacts are merged.
+          # manifest.json is regenerated in the combined PR job.
+          changed_files="$(git diff --cached --name-only --diff-filter=AM -- resources/geojson | grep '\.geojson$' || true)"
+          if [ -z "${changed_files}" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          artifact_dir="artifacts/geojson-${{ matrix.country }}/resources/geojson"
+          artifact_dir="artifacts/geojson-${{ matrix.country }}"
           mkdir -p "${artifact_dir}"
-          cp -R resources/geojson/. "${artifact_dir}/"
+          printf '%s\n' "${changed_files}" | xargs -d '\n' cp --parents -t "${artifact_dir}"
+          echo "Changed GeoJSON files: $(printf '%s\n' "${changed_files}" | wc -l)"
 
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
@@ -288,6 +293,31 @@ jobs:
           echo "exit_code=${exit_code}" >> "$GITHUB_OUTPUT"
           exit 0
 
+      - name: Prepare GeoJSON artifact from retries
+        id: retry_geojson
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          set -euo pipefail
+          git add resources/geojson
+          changed_files="$(git diff --cached --name-only --diff-filter=AM -- resources/geojson | grep '\.geojson$' || true)"
+          if [ -z "${changed_files}" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          python scripts/check_geojson_plausibility.py
+          mkdir -p artifacts/geojson-retry
+          printf '%s\n' "${changed_files}" | xargs -d '\n' cp --parents -t artifacts/geojson-retry
+          echo "Retried GeoJSON files: $(printf '%s\n' "${changed_files}" | wc -l)"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Upload GeoJSON changes from retries
+        if: steps.retry_geojson.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: geojson-changes-zz-retry
+          if-no-files-found: error
+          path: artifacts/geojson-retry/
+
       - name: Upload post-retry failures
         if: always()
         uses: actions/upload-artifact@v4
@@ -299,27 +329,25 @@ jobs:
       - name: Append recovery summary
         if: always()
         run: |
-          {
-            echo "## Recovery Fetch Summary"
-            if [ ! -s artifacts/fetch-failures-after-retry.jsonl ]; then
-              echo "No failed fetch tasks to retry or all retries succeeded."
-            else
-              python - <<'PY'
-              import json
-              from pathlib import Path
-              path = Path('artifacts/fetch-failures-after-retry.jsonl')
-              for line in path.read_text(encoding='utf-8').splitlines()[:50]:
-                  if not line.strip():
-                      continue
-                  try:
-                      row = json.loads(line)
-                  except Exception:
-                      continue
-                  msg = str(row.get('error_message', '')).replace('\n', ' ')[:160]
-                  print(f"- {row.get('country','')}/{row.get('region_key','')}:{row.get('category','')} | {row.get('error_type','')} | {msg}")
-              PY
-            fi
-          } >> "$GITHUB_STEP_SUMMARY"
+          echo "## Recovery Fetch Summary" >> "$GITHUB_STEP_SUMMARY"
+          if [ ! -s artifacts/fetch-failures-after-retry.jsonl ]; then
+            echo "No failed fetch tasks to retry or all retries succeeded." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          python - >> "$GITHUB_STEP_SUMMARY" <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('artifacts/fetch-failures-after-retry.jsonl')
+          for line in path.read_text(encoding='utf-8').splitlines()[:50]:
+              if not line.strip():
+                  continue
+              try:
+                  row = json.loads(line)
+              except Exception:
+                  continue
+              msg = str(row.get('error_message', '')).replace('\n', ' ')[:160]
+              print(f"- {row.get('country','')}/{row.get('region_key','')}:{row.get('category','')} | {row.get('error_type','')} | {msg}")
+          PY
 
       - name: Fail when retry still has failures
         if: steps.retry.outputs.exit_code != '0'
@@ -355,6 +383,27 @@ jobs:
 
           cp -R combined-artifacts/resources/geojson/. resources/geojson/
           echo "has_artifacts=true" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Python
+        if: steps.restore_geojson.outputs.has_artifacts == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Regenerate manifest and check plausibility
+        if: steps.restore_geojson.outputs.has_artifacts == 'true'
+        run: |
+          set -euo pipefail
+          pip install -r fetch_data/requirements.txt
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, "fetch_data")
+          import fetch_overpass as f
+          config = f.load_config()
+          f.save_manifest(f.normalize_regions(config), config.get("categories") or {})
+          PY
+          python scripts/check_geojson_integrity.py
+          python scripts/check_geojson_plausibility.py
 
       - name: Detect combined GeoJSON changes
         if: steps.restore_geojson.outputs.has_artifacts == 'true'

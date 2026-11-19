@@ -999,6 +999,10 @@ def build_manifest(regions: List[Dict[str, Any]], categories: Dict[str, str]) ->
     manifest_regions: List[Dict[str, Any]] = []
     for region in regions:
         region_path = resolve_region_data_path(region)
+        if not has_geojson_files(RESOURCE_DIR / region_path):
+            # Configured but not fetched yet (e.g. a newly added country): keep it out of the
+            # app until data exists, otherwise the client requests files that are not there.
+            continue
         manifest_regions.append(
             {
                 "id": region["id"],
@@ -1709,7 +1713,7 @@ def run(
     if dry_run or skip_manifest:
         print("[dry-run] Skipping manifest write")
     else:
-        save_manifest(regions, categories)
+        save_manifest(all_regions, categories)
 
     endpoints_used = sorted(run_stats["endpoints_used"])
     print(
