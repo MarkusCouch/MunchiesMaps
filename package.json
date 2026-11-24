@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.5.2",
-    "i18next": "20.6.1",
+    "i18next": "27.2.6",
     "leaflet": "1.9.4",
     "leaflet.markercluster": "1.5.3",
-    "opening_hours": "3.6.0",
+    "opening_hours": "3.16.0",
     "suncalc": "1.9.0"
   },
   "devDependencies": {
